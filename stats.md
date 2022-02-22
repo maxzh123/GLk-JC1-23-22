@@ -20,7 +20,7 @@
 | Проект | Состояние |
 | --- | --- |
 | Интерфейсы  | SUCCESS |
-| ПРИМЕРЫ  | FAILURE |
+| ПРИМЕРЫ  | SUCCESS |
 | Быковский Юрий Павлович  | SUCCESS |
 | Гамезо Николай Николаевич  | SUCCESS |
 | Катарский Алексей Александрович  | SUCCESS |
@@ -37,7 +37,3 @@
 
 # Ошибки:
 
-1. Examples/src/test/java/Test2.java строка:18 символ:22 cannot find symbol
-1. Examples/src/test/java/Test2.java строка:23 символ:22 cannot find symbol
-1. Examples/src/test/java/Test2.java строка:18 символ:22 cannot find symbol
-1. Examples/src/test/java/Test2.java строка:23 символ:22 cannot find symbol
