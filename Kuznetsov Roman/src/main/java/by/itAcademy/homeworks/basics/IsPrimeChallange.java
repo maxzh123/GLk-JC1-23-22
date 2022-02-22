@@ -12,8 +12,8 @@ public class IsPrimeChallange {
         }
 
         private static boolean isPrime(int number){
-            if (number==2 || number==3){ //Если число которое нам передали одно из 0 1 2
-                return true;//возвращаем да
+            if (number==2 || number==3){
+                return true;
             }
             else{
                 int temp = (number>10?9:number-1);
@@ -26,6 +26,4 @@ public class IsPrimeChallange {
             }
             return true;
         }
-        //1 2 3 5 7 11 13 17 19
-        // лучший результат 78022 || 2923 || 2914 || 2907
 }
