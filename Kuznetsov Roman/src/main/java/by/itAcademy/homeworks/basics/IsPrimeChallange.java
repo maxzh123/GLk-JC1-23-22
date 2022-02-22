@@ -2,13 +2,16 @@ package by.itAcademy.homeworks.basics;
 
 public class IsPrimeChallange {
         private static int count=0;
+    private static int nums=0;
         public static void main (String[] arg){
             for (int i=1;i<=1000;i++){
                 if (isPrime(i)){
+                    nums++;
                     System.out.println(i);
                 }
             }
             System.out.println("Произвели сравнений остатка от деления:"+count);
+            System.out.println("Чисел:"+nums);//Достаем системный поток out и вызываем его метод println (напечатать и перевести строку). В качестве аргумента передаем то, что хотим напечатать.
         }
 
         private static boolean isPrime(int number){
