@@ -16,6 +16,18 @@
 <modules>    
  <module>Interfaces</module>
  <module>Examples</module>
+
+   <module>Bykovski Ura</module>
+   <module>Gamezo Nikolai</module>
+   <module>Katarski Aliaksei</module>
+   <module>Korotkevich Lyesha</module>
+   <module>Kotsuba Alexander</module>
+   <module>Kuznetsov Roman</module>
+   <module>Levanchukov Sergey</module>
+   <module>Maryna Liakh</module>
+   <module>Melanich Olga</module>
+   <module>Ryabkov Vlad</module>
+   <module>Sinelnik Anton</module>
 </modules>
 
 </project>
