@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.sampler;
+package by.itAcademy.homeworks.sample;
 
 /* Задание:
 1. запустить убедится, что работает.
