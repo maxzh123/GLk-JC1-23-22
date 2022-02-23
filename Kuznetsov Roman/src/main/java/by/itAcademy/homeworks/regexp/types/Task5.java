@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.types;
+package by.itAcademy.homeworks.regexp.types;
 
 import java.util.Calendar;
 import java.util.Date;
