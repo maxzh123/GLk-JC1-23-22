@@ -3,7 +3,7 @@
 2. изменить количество повторений.
 * */
 
-package by.itAcademy.homeworks.basics;
+package by.itAcademy.homeworks.sample;
 
 public class Sample2 {
     /* Это зарезервированное имя. функция класса с таким именем и параметрами, может быть вызвана из вне JVM, т.е являться точкой входа

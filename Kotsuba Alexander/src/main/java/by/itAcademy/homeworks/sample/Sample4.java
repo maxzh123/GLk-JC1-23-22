@@ -4,7 +4,7 @@
 3. поменять функцию обработчик так, чтобы она выводила еще и информацию, о том делится ли значение i на 3
 * */
 
-package by.itAcademy.homeworks.basics;
+package by.itAcademy.homeworks.sample;
 
 public class Sample4 {
     private static int[] array=new int[]{5,16,22,18,49,68,-3,12,21}; //определяем масив целых чисел с именем array и сразу наполняем его значениями.
@@ -25,5 +25,4 @@ public class Sample4 {
             System.out.println("Значение масива № " + index + " равняется " + i );
         }
     }
-
 }
