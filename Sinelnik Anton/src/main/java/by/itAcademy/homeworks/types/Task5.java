@@ -10,7 +10,7 @@ public class Task5 {
         int h = sec/3600;
         int d = sec/86400;
         int w = sec/604800;
-        System.out.println("Значение "+sec+" равняется:");
+        System.out.println("Значение "+sec+" секунд равняется:");
         System.out.println(min +" минут");
         System.out.println(h+" часов");
         System.out.println(d+" дней");
