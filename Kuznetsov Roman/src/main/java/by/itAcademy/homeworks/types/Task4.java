@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.regexp.types;
+package by.itAcademy.homeworks.types;
 
 public class Task4 {
     public static int sum(int a, int b){
