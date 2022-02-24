@@ -4,7 +4,7 @@
 3. Челенж. Переделываем, так что количество вычислений остатка от деления было как можно меньше. Посмотрим у кого что получится.
 * */
 
-package by.itAcademy.homeworks.basics;
+package by.itAcademy.homeworks.sample;
 
 public class Sample6 {
     private static int count=0;

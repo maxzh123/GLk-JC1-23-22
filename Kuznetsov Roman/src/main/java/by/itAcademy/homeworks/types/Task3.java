@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.regexp.types;
+package by.itAcademy.homeworks.types;
 
 public class Task3 {
     public static void main(String[] args) {
