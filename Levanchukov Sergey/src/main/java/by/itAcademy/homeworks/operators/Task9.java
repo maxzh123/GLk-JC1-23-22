@@ -1,7 +1,6 @@
 package by.itAcademy.homeworks.operators;
-/*
-Задать три числа – день, месяц, год. Вывести на экран в виде трех чисел дату
-следующего дня.
+/**
+*Задать три числа – день, месяц, год. Вывести на экран в виде трех чисел дату следующего дня.
 */
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -30,6 +29,6 @@ public class Task9 {
         System.out.println(calendar.get(Calendar.DAY_OF_MONTH)+" "+calendar.get(Calendar.MONTH)+" "+calendar.get(Calendar.YEAR));
 
 
-        System.out.println(calendar.getTime());
+       // System.out.println(calendar.getTime());
     }
 }
