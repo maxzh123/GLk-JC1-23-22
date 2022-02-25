@@ -14,14 +14,13 @@ public class IsPrimeChallange {
             System.out.println("Чисел:"+nums);
         }
 
-        private static boolean isPrime(int number){
+        public static boolean isPrime(int number){
             if (number <= 1)
                 return false;
             if (number <= 3)
                 return true;
             if (number % 2 == 0 || number % 3 == 0)
                 return false;
-
             for (int i = 5; Math.pow(i,2) <= number; i+=6) {
                 count++;
                 if (number % i == 0 || number % (i + 2) == 0)
