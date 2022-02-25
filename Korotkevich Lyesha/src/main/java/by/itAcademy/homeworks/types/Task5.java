@@ -19,6 +19,6 @@ public class Task5 {
         m %= 3600;
         min = m / 60;
         sec =m % 60;
-        System.out.print(weeks+" weeks "+days+" days "+ hours+" hours "+min+" minutes "+sec+" sec");
+        System.out.println(weeks+" weeks "+days+" days "+ hours+" hours "+min+" minutes "+sec+" sec");
     }
 }
