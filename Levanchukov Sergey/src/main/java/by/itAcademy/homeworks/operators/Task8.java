@@ -3,9 +3,9 @@ package by.itAcademy.homeworks.operators;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/*
-> Задать целое число в виде переменной, это число – сумма денег в рублях.
-> Вывести это число на экран, добавив к нему слово «рублей» в правильном падеже
+/**
+*> Задать целое число в виде переменной, это число – сумма денег в рублях.
+*> Вывести это число на экран, добавив к нему слово «рублей» в правильном падеже
 */
 public class Task8 {
     public static void main(String[] args) throws Exception {
