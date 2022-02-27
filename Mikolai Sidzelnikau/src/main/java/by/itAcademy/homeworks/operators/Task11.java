@@ -8,6 +8,7 @@ import java.util.Scanner;
  > на этот день.*/
 public class Task11 {
     public static void main(String[] args) {
+        System.out.println("Введите число месяца и мы посмотрим что там запланированно");
         Scanner scanner =new Scanner(System.in);
         int sum = scanner.nextInt();
         String[] week = {"Понедельник","Вториник","Среда","Четверг","Пятница","Субота","Воскресенье"};
@@ -21,7 +22,7 @@ public class Task11 {
          sum1 = month[s]; // Присваиваю числа из масива в переменную
          if (sum == sum1){
              sum1 = month[s];
-             System.out.println(sum1); // вывожу введенное число и присвоенное число из масива
+             System.out.println("Вы ввели число"+" "+ sum1); // вывожу введенное число и присвоенное число из масива
          } //Ввыводим веденное число из масива
  //       System.out.println(month[sum1]);
      } //заполнил масив чслом от 1 до 31 и выводим введенное число из масива
@@ -30,23 +31,23 @@ public class Task11 {
      } // присвоение с масива недели
         if (sum <= 7){
             week1 = week[sum -1];
-            System.out.println(week1);
+            System.out.println("Первая неделя"+" "+ week1);
         }else if (sum<=14){
             sum = sum -7;
             week1 = week[sum - 1];
-            System.out.println(week1);
+            System.out.println("Вторая неделя"+" "+ week1);
         }else if (sum<=21) {
             sum = sum - 14;
             week1 = week[sum - 1];
-            System.out.println(week1);
+            System.out.println("Третья неделя"+" "+ week1);
         }else if (sum<=28) {
             sum = sum - 21;
             week1 = week[sum - 1];
-            System.out.println(week1);
+            System.out.println("Четвертая неделя"+" "+ week1);
         }else if (sum<=35) {
             sum = sum - 28;
             week1 = week[sum - 1];
-            System.out.println(week1);
+            System.out.println("Пятая неделя"+" "+ week1);
         } // условия для всего месяца
      for (int s = 0;s<schedule.length;s++){
          schedule1 = schedule[s];
