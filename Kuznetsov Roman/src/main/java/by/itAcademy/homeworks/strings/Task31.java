@@ -16,13 +16,14 @@ public class Task31 {
             for (int i = 0; i < 100000; i++) {
                 temp.append(String.valueOf(i));
             }
+            temp.toString();
             System.out.println("StringBuilder done it's task");
         }
     };
     public static void main(String[] args) {
         Thread a = new Thread(task);
         Thread b = new Thread(task2);
-        a.start(); b.start();
+        a.start(); b.start(); //Запускаем два паралельных потока для сравнения скорости работы String и StringBuilder
 
     }
 }
