@@ -14,7 +14,7 @@ public class Task21 {
     public static void main(String[] args) {
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 101);/**Заполнение массива случайными числами до 100*/
+            array[i] = (int) (Math.random() * 101);
             System.out.println("----" + array[i]+"----");
         }
         /**Инициализировли максимальное и минимальное значение для дальнейшего поиска*/
@@ -28,7 +28,7 @@ public class Task21 {
         int sum=0;
 
         /**Производим поиск максимально значения*/
-        for (int i=0;i< array.length;i++){/**Цикл для проверки всех элементов массива и нахождения большего из них */
+        for (int i=0;i< array.length;i++){
             if (array[i]>max){
                 max=array[i];
                 indexMax=i;
@@ -36,7 +36,7 @@ public class Task21 {
         }
 
         /**Производим поиск минимального значения*/
-        for (int i=0;i< array.length;i++){/**Цикл для проверки всех элементов массива и нахождения меньшего из них */
+        for (int i=0;i< array.length;i++){
             if (array[i]<min){
                 min=array[i];
                 indexMin=i;
