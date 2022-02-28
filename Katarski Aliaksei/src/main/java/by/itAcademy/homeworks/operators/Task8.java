@@ -4,6 +4,14 @@ package by.itAcademy.homeworks.operators;
 */
 
 public class Task8{
-
+  public static void main(String[] args){
+      int money=660;
+      if(money%10==1){
+          System.out.println(money+" рубль");
+      }else if(money%10>1&&money%10<5){
+          System.out.println(money+" рубля");
+      }else{
+          System.out.println(money+" рублей");
+      }
+  }
 }
-
