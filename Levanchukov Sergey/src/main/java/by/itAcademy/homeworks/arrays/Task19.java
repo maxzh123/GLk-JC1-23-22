@@ -7,12 +7,12 @@ package by.itAcademy.homeworks.arrays;
 public class Task19 {
     public static void main(String[] args) {
         int [] array=new int[10];
-        for (int i=0;i<10;i++)
+        for (int i=0;i< array.length;i++)
         {
             array[i]= (int) (Math.random()*10);/**Заполнение массива случайными числами до 9*/
             System.out.println("-------------"+array[i]);
         }
-        System.out.println("Последний элемент "+array[10-1]);/**Вывод последнего элемента массива*/
+        System.out.println("Последний элемент "+array[array.length-1]);/**Вывод последнего элемента массива*/
     }
 }
 
