@@ -1,6 +1,6 @@
 package by.itAcademy.homeworks.types;
 
-/* Task 3
+/** Task 3
  * Написать код, который выведет значения переменных на экран:
  *
  * byte b = 0х55;
