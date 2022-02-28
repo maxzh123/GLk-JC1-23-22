@@ -8,7 +8,7 @@ public class Task26 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
-        Pattern pattern = Pattern.compile("[-.?!)(,:]");
+        Pattern pattern = Pattern.compile("[.]{3,}|\\?+!+|!+\\?+|!+|\\?+|[.,;:\\-\"]");
         Matcher matcher = pattern.matcher(text);
         int count = 0;
         while (matcher.find()) {
