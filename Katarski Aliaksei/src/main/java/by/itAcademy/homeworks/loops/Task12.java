@@ -4,16 +4,15 @@ package by.itAcademy.homeworks.loops;
 
 public class Task12 {
     public static void main(String[] args){
-        int firstLoop=0;
-        int i=0;
+        int factorial=1;
+        int i=1;
         while(i<=10){
-            if(firstLoop<=0){
-                firstLoop++;
-            }
-            firstLoop*=i;
+            factorial*=i;
             i++;
-            System.out.println(firstLoop);
+            System.out.println(factorial);
         }
     }
 }
-//Не знаю как избежать костыля с If.
+
+
+

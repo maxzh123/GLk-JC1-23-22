@@ -15,7 +15,8 @@ public class Task7 {
         int a,b,r;
     }
 
-    static void Circle (int a,int b,int r){
+    static void printCircle (int a,int b,int r){
+
         if (r*2>=Math.sqrt((Math.pow(a,2)+Math.pow(b,2)))){
             System.out.println("Картонка радиусом "+r+" закрывает прямоугольное отверстие со сторонами a="+a+" b="+b+".");
         }
@@ -23,6 +24,7 @@ public class Task7 {
             System.out.println("Картонка не закрывает прямоугольное отверстие");
         }
     }
+
     static Circle value() throws IOException {
 
         BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
@@ -32,14 +34,11 @@ public class Task7 {
         result.r=Integer.parseInt(reader.readLine());
         return result;
     }
+
     public static void main(String[] args) throws IOException {
-        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
-        int a=Integer.parseInt(reader.readLine());
-        int b=Integer.parseInt(reader.readLine());
-        int r=Integer.parseInt(reader.readLine());
-        Circle(a,b,r);
-
-
+       Circle circle=new Circle();
+       circle=value();
+       printCircle(circle.a, circle.b, circle.r);
     }
 
 }
