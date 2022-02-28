@@ -8,7 +8,7 @@ public class Task27 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
-        Pattern pattern = Pattern.compile("\\S\\s\\S"); // \\S - непробельный символ. \\s - проблельный символ.
+        Pattern pattern = Pattern.compile("\\w{1,}"); //Регулярка которая ищет не пробельные символы
         Matcher matcher = pattern.matcher(text);
         int count = 0;
         while (matcher.find()) {
