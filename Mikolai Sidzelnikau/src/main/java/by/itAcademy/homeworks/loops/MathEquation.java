@@ -3,7 +3,7 @@ package by.itAcademy.homeworks.loops;
 public class MathEquation {
 
     /**
-     * факториал числа
+     * факториал числа произведение чисел
      */
     public static int sum1 = 1;
 
