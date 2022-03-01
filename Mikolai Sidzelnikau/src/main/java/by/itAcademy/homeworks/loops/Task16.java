@@ -9,15 +9,13 @@ public class Task16 {
     public static void main(String[] args) {
         int[] sum = new int[100];
         String r = "Hope!";
-        int sum1 = 0;
-        for (int s = 0; s < sum.length; s++) {
-            sum[s] = s + 1;
-            sum1 = sum[s];
-            while (sum1 % 7 == 0) {
-                System.out.println(sum1 + " " + r); // вывел числа которые длятся на 7
-                break;
+        int s = 0;
+        while (s < sum.length){
+            sum[s] = s +1;
+            if (sum[s] % 7==0){
+                System.out.println(sum[s]+" " + r);
             }
-            System.out.println(sum1); // вывел все числа
+            s++;
         }
     }
 }
