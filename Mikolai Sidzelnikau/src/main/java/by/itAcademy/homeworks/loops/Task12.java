@@ -7,9 +7,6 @@ package by.itAcademy.homeworks.loops;
  */
 public class Task12 {
 
-
-    public static by.itAcademy.homeworks.loops.MathEquation MathEquation;
-
     public static void main(String[] args) {
         System.out.println(MathEquation.factorial(10));
     }
