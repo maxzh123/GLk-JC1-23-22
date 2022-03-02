@@ -1,5 +1,8 @@
 package by.itAcademy.homeworks.arrays;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  * > Создайте переменную для массива из 10 элементов. Заполните его
  * > произвольными значениями целочисленного типа. Определите сумму элементов
@@ -11,58 +14,57 @@ package by.itAcademy.homeworks.arrays;
 
 public class Task21 {
 
-    public static void main(String[] args) {
-        int[] array = new int[10];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 101);/**Заполнение массива случайными числами до 100*/
-            System.out.println("----" + array[i]+"----");
-        }
-        /**Инициализировли максимальное и минимальное значение для дальнейшего поиска*/
-        int max=array[0];
-        int min=array[0];
+       public static void main(String[] args) {
 
-        /**Переменные для индекса максимального и минимального значения*/
-        int indexMax=0;
-        int indexMin=0;
-
-        int sum=0;
-
-        /**Производим поиск максимально значения*/
-        for (int i=0;i< array.length;i++){/**Цикл для проверки всех элементов массива и нахождения большего из них */
-            if (array[i]>max){
-                max=array[i];
-                indexMax=i;
-            } else ;
-        }
-
-        /**Производим поиск минимального значения*/
-        for (int i=0;i< array.length;i++){/**Цикл для проверки всех элементов массива и нахождения меньшего из них */
-            if (array[i]<min){
-                min=array[i];
-                indexMin=i;
-            } else ;
-        }
-
-       /* System.out.println(max+" "+indexMax); Проверка что выводит
-        System.out.println(min+" "+indexMin);*/
-        System.out.println("                                                      ");
-
-        /**Проверяем какой индекс больше и суммируем массив между ними*/
-        if (indexMin>indexMax){
-            for(int i=indexMax;i<=indexMin;i++){
-                sum=sum+array[i];
-                System.out.println("----" + array[i]+"----"); //Проверка
-            }
-        }else {
-            for (int i=indexMin;i<=indexMax;i++){
-                sum=sum+array[i];
-                System.out.println("----" + array[i]+"----"); //Проверка
-            }
-        }
-
-        System.out.println("Максимальное значение массива: "+max);
-        System.out.println("Минимальное значение массива: "+min);
-        System.out.println("Сумма элементов между ними равно "+sum);
+           int [] array=new int[4];
+           initArray(array);
+           System.out.println(Arrays.toString(array));
+           System.out.println(minMax(array));
 
     }
+
+    /**инициализация массива*/
+    public static void initArray (int [] arr){
+       for (int i=0 ;i< arr.length;i++){
+           arr[i]=(int)(Math.random()*100);
+       }
+    }
+
+    /**поиск минимального и максимального значения*/
+    //Посмотрел как делал Роман, увидел класс IndexSearcher не стал использовать так как не очень понял как работает, но потом залез в сам класс
+    //и просидев минут 10 понял, что идти по массиву с одной стороны для поиска максимума и минимума не очень хорошая идея, в общем  если надо могу переделать
+    //с использованием класса IndexSearcher теперь я знаю как он работает
+    public static int minMax(int [] arr){
+        int min=arr[arr.length-1];
+        int indexMin=arr.length-1,indexMax = 0;
+        int max=arr[0];
+        for (int i=arr.length-2;i>=0;i--){
+            if (arr[i]<min){
+                min=arr[i];
+                indexMin=i;
+            }
+        }
+        for (int i=0;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i];
+                indexMax=i;
+            }
+        }
+        return sumArray(arr, indexMax,indexMin);}
+
+    /**нахождение суммы от минимума до максимума*/
+    public static int sumArray (int [] arr, int indexMax, int indexMin){
+        int sum=0;
+        {
+            if(indexMax>indexMin){
+                for(int i=indexMin;indexMin<indexMax;indexMin++){sum=sum+arr[indexMin];}
+            }
+            if(indexMin>indexMax){
+                for(int i=indexMax;indexMax<indexMin;indexMax++){sum=sum+arr[indexMax];}
+            }
+        }
+        return sum;
+
+    }
+
 }
