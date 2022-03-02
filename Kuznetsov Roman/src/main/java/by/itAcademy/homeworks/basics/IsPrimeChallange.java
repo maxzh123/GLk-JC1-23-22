@@ -4,7 +4,7 @@ public class IsPrimeChallange {
         private static int count=0;
     private static int nums=0;
         public static void main (String[] arg){
-            for (int i=1;i<=1000;i++){
+            for (int i=1;i<=100000;i++){
                 if (isPrime(i)){
                     nums++;
                     System.out.println(i);
@@ -19,7 +19,7 @@ public class IsPrimeChallange {
                 return false;
             if (number <= 3)
                 return true;
-            if (number % 2 == 0 || number % 3 == 0)
+            if ((number & 1) == 0 || number % 3 == 0) //(number & 1) == 0
                 return false;
             for (int i = 5; Math.pow(i,2) <= number; i+=6) {
                 count++;
