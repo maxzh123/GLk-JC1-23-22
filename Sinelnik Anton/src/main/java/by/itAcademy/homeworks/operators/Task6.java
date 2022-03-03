@@ -9,10 +9,10 @@ import java.util.Random;
 public class Task6 {
     public static void main(String[] args) {
         int count = (int) (Math.random() * 100);
-        sevencheck(count);
+        sevenCheck(count);
     }
 
-    private static void sevencheck(int count) {
+    private static void sevenCheck(int count) {
         if (count % 10==7)
             System.out.println("последняя цифра числа "+count+ " является семеркой");
         else
