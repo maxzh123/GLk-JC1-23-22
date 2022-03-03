@@ -19,7 +19,8 @@ public class Task21 {
            int [] array=new int[10];
            initArray(array);
            System.out.println(Arrays.toString(array));
-           System.out.println(minMax(array));
+           System.out.println(SearchMax.);
+
 
     }
 
@@ -30,27 +31,6 @@ public class Task21 {
        }
     }
 
-    /**поиск минимального и максимального значения*/
-    //Посмотрел как делал Роман, увидел класс IndexSearcher не стал использовать так как не очень понял как работает, но потом залез в сам класс
-    //и просидев минут 10 понял, что идти по массиву с одной стороны для поиска максимума и минимума не очень хорошая идея, в общем  если надо могу переделать
-    //с использованием класса IndexSearcher теперь я знаю как он работает
-    public static int minMax(int [] arr){
-        int min=arr[arr.length-1];
-        int indexMin=arr.length-1,indexMax = 0;
-        int max=arr[0];
-        for (int i=arr.length-2;i>=0;i--){
-            if (arr[i]<min){
-                min=arr[i];
-                indexMin=i;
-            }
-        }
-        for (int i=0;i<arr.length;i++){
-            if(arr[i]>max){
-                max=arr[i];
-                indexMax=i;
-            }
-        }
-        return sumArray(arr, indexMax,indexMin);}
 
     /**нахождение суммы от минимума до максимума*/
     public static int sumArray (int [] arr, int indexMax, int indexMin){
