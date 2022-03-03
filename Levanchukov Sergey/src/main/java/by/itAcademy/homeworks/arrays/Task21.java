@@ -16,7 +16,7 @@ public class Task21 {
 
        public static void main(String[] args) {
 
-           int [] array=new int[4];
+           int [] array=new int[10];
            initArray(array);
            System.out.println(Arrays.toString(array));
            System.out.println(minMax(array));
@@ -57,10 +57,15 @@ public class Task21 {
         int sum=0;
         {
             if(indexMax>indexMin){
-                for(int i=indexMin;indexMin<indexMax;indexMin++){sum=sum+arr[indexMin];}
-            }
-            if(indexMin>indexMax){
-                for(int i=indexMax;indexMax<indexMin;indexMax++){sum=sum+arr[indexMax];}
+                for(int i=indexMin;indexMin<=indexMax;indexMin++)
+                {
+                    sum=sum+arr[indexMin];
+                }
+            }else if(indexMin>indexMax){
+                for(int i=indexMax;indexMax<=indexMin;indexMax++)
+                {
+                    sum=sum+arr[indexMax];
+                }
             }
         }
         return sum;
