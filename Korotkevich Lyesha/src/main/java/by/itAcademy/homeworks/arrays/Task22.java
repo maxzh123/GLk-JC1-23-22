@@ -8,7 +8,7 @@ public class Task22 {
         int arr[] = new int[10];
         arr = fill(arr);
         output(arr);
-        output_reverse(arr);
+        output(reverse_array(arr));
     }
 
     public static int[] fill(int array[]){
@@ -24,9 +24,13 @@ public class Task22 {
         }
         System.out.println();
     }
-    public static void output_reverse(int[] array){
-        for (int i=array.length-1; i>=0;i--){
-            System.out.print(array[i]+" ");
+    public static int[] reverse_array(int[] array){
+        for (int i=0; i<array.length/2;i++){
+            int c = 0;
+            c = array[i];
+            array[i] = array[array.length-i-1];
+            array[array.length-i-1] =c;
         }
+        return array;
     }
 }
