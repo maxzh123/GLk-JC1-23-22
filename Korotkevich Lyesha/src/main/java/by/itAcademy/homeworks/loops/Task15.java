@@ -7,23 +7,23 @@ package by.itAcademy.homeworks.loops;
 
 public class Task15 {
     public static void main(String[] args){
-        System.out.println(SecondSimple());
+        System.out.println(secondSimple());
     }
 
-    public static int SecondSimple(){
+    public static int secondSimple(){
         int c = 0;
         int n = 0;
         for (int i =50 ; i <= 70; i++){
-            if (c == 1 && Simple(i) == true){
+            if (c == 1 && simple(i)){
                 n = i;
                 break;
-            } else if (Simple(i) == true){
+            } else if (simple(i)){
                 c++;
             }
         }
         return n;
     }
-    public static boolean Simple(int num) {
+    public static boolean simple(int num) {
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0)
                 return false;
