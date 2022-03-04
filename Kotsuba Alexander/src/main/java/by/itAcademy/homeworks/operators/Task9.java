@@ -11,7 +11,12 @@ public class Task9 {
         int day = sc.nextInt();
         int month = sc.nextInt();
         int year = sc.nextInt();
-        day++;
-        System.out.println(day+" " + month+" " + year);
+        dayOfMonth(day,month,year);
+    }
+
+    public static void dayOfMonth(int day,int month,int year){
+        if(day == 31){
+            System.out.println("Next day: " + 1 + " " +  ++month +" " +  year);
+        }
     }
 }
