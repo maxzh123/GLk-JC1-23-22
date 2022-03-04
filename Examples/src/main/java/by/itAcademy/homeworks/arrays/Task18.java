@@ -6,16 +6,15 @@ public class Task18 {
 
     public static void main(String[] args) {
         int i=3;
-        System.out.println( (i>4)?"Да":"Нет");
+        //System.out.println( (i>4)?"Да":"Нет");
 
-        if(check(3) & check(5)){
+        if(check(3) && check(5)){
             System.out.println("Yes");
         }
-
     }
 
     public static boolean check(int x){
-        System.out.println(x);
+        System.out.println("Вызов для:"+x);
         return x>5;
     }
 
