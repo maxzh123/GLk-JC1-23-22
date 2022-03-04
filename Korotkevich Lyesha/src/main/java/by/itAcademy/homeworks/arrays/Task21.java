@@ -34,16 +34,16 @@ public class Task21 {
         } else{
             for (int i = 0; i<array.length;i++){
                 if (array[i] == array[find_min_ind(array)]){
-                    for (int j=i; j< array.length;j++){
-                        if (array[j] ==array[find_max_ind(array)] && j-i>sum){
-                            sum = j-i;
+                    for (int j=i+1; j< array.length;j++){
+                        if (array[j] ==array[find_max_ind(array)] && sum_between_i_j(array, i, j)>sum){
+                            sum = sum_between_i_j(array, i, j);
                         }
                     }
                 }
                 if (array[i] == array[find_max_ind(array)]){
                     for (int j=i+1; j< array.length;j++){
-                        if (array[j] ==array[find_min_ind(array)] && j-i>sum){
-                            sum = j-i;
+                        if (array[j] ==array[find_min_ind(array)] && sum_between_i_j(array, i, j)>sum){
+                            sum = sum_between_i_j(array, i, j);
                         }
                     }
                 }
@@ -94,6 +94,14 @@ public class Task21 {
             }
         }
         return count;
+    }
+
+    public static int sum_between_i_j(int[] array, int i, int j){
+        int sum =0;
+        for (int k =i+1;k<j;k++){
+            sum+=array[k];
+        }
+        return sum;
     }
 
 }
