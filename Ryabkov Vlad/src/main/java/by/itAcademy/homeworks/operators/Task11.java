@@ -19,21 +19,31 @@ public class Task11 {
             System.out.println("ОШИБКА!!! \n Введите число от 1 до 7");
             return;
         }
-        if (day == 1) {
-            System.out.println("В понедельник у Вас занятие в IT Academy с 18:30 до 21:30");
-        } else if (day == 2) {
-            System.out.println("Во вторник у Вас тренировка с 17:00 до 18:30");
-        } else if (day == 3) {
-            System.out.println("В среду Вы идете в кино. Начало сеанса в 19:30");
-        } else if (day == 4) {
-            System.out.println("В четверг у Вас занятие в IT Academy с 18:30 до 21:30");
-        } else if (day == 5) {
-            System.out.println("В пятницу у Вас совещание в 15:00");
-        } else if (day == 6) {
-            System.out.println("В субботу Вы весь день на даче");
-        } else if (day == 7) {
-            System.out.println("На воскресенье никаких дел не запланированно");
+
+        switch (day) {
+            case 1:
+                System.out.println("В понедельник у Вас занятие в IT Academy с 18:30 до 21:30");
+                break;
+            case 2:
+                System.out.println("Во вторник у Вас тренировка с 17:00 до 18:30");
+                break;
+            case 3 :
+                System.out.println("В среду Вы идете в кино. Начало сеанса в 19:30");
+                break;
+            case 4 :
+                System.out.println("В четверг у Вас занятие в IT Academy с 18:30 до 21:30");
+                break;
+            case 5:
+                System.out.println("В пятницу у Вас совещание в 15:00");
+                break;
+            case 6 :
+                System.out.println("В субботу Вы весь день на даче");
+                break;
+            case 7 :
+                System.out.println("На воскресенье никаких дел не запланировано");
+                break;
         }
+
     }
 }
 

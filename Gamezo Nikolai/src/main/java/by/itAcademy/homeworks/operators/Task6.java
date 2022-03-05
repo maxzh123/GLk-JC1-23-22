@@ -6,12 +6,10 @@ package by.itAcademy.homeworks.operators;
 
 public class Task6 {
     public static void main(String[] args) {
-        int i = 101;
-        boolean b=true;
-        if (i % 10 == 7) {
-            b=true;
-        } else
-            b=false;
-        System.out.println(b);
+        System.out.println(LastSeven(17));
+    }
+    public static boolean LastSeven(int a) {
+        boolean b = a % 10 == 7;
+        return b;
     }
 }
