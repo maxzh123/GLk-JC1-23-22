@@ -3,8 +3,6 @@ package by.itAcademy.homeworks.operators;
 /** Имеется прямоугольное отверстие размерами a и b, где a и b – целые числа.
  *  Определить, можно ли его полностью закрыть круглой картонкой радиусом r (тоже целое число).
  */
-
-
 public class Task7 {
     public static void main(String[] args) {
         int a = 5;

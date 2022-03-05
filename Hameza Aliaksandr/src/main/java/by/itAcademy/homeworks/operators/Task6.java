@@ -2,7 +2,6 @@ package by.itAcademy.homeworks.operators;
 /**
  Создайте метод с одним целочисленным параметром. Метод должен определить, является ли последняя цифра числа семеркой и вернуть boolean значение.
  */
-
 public class Task6 {
     public static void main(String[] args) { System.out.println(LastSeven(77));}
         public static boolean LastSeven(int a) {
