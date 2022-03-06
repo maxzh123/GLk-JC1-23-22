@@ -21,6 +21,7 @@ public class Task21 {
 
     public static int sum_between_max_min(int array[]){
         int sum = 0;
+        int max = 0;
         if (max_count(array)+min_count(array) ==2){
             if (find_min_ind(array) < find_max_ind(array)){
                 for (int i=find_min_ind(array)+1; i<find_max_ind(array);i++) {
@@ -35,14 +36,16 @@ public class Task21 {
             for (int i = 0; i<array.length;i++){
                 if (array[i] == array[find_min_ind(array)]){
                     for (int j=i+1; j< array.length;j++){
-                        if (array[j] ==array[find_max_ind(array)] && sum_between_i_j(array, i, j)>sum){
+                        if (array[j] ==array[find_max_ind(array)] && j-i>max){
+                            max = j-i;
                             sum = sum_between_i_j(array, i, j);
                         }
                     }
                 }
                 if (array[i] == array[find_max_ind(array)]){
                     for (int j=i+1; j< array.length;j++){
-                        if (array[j] ==array[find_min_ind(array)] && sum_between_i_j(array, i, j)>sum){
+                        if (array[j] ==array[find_min_ind(array)] && j-i>max){
+                            max =j-i;
                             sum = sum_between_i_j(array, i, j);
                         }
                     }
