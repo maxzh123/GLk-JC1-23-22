@@ -24,7 +24,7 @@ public class Task18 {
 
     public static int random(int ran) {
         Random random = new Random();
-        ran = random.ints(1, 200000).findFirst().getAsInt();
+        ran = random.ints(1, ran).findFirst().getAsInt();
         return ran;
     }
 }
