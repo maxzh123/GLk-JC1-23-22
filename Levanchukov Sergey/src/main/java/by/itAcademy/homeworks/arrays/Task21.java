@@ -19,11 +19,9 @@ public class Task21 {
            int [] array=new int[10];
            initArray(array);
            System.out.println(Arrays.toString(array));
-           System.out.println(SearchMax.);
-
+           System.out.println(forSumArray(array));
 
     }
-
     /**инициализация массива*/
     public static void initArray (int [] arr){
        for (int i=0 ;i< arr.length;i++){
@@ -31,25 +29,23 @@ public class Task21 {
        }
     }
 
+    /**метод возвращающий максимально удаленные индексы друг от друга*/
+    public static int forSumArray(int arr[]){
+        int min=Search.getIndexMin(arr);
+        int max=Search.getIndexMax(arr);
+        return sumArray(arr, min,max);
+    }
 
-    /**нахождение суммы от минимума до максимума*/
-    public static int sumArray (int [] arr, int indexMax, int indexMin){
-        int sum=0;
-        {
-            if(indexMax>indexMin){
-                for(int i=indexMin;indexMin<=indexMax;indexMin++)
-                {
-                    sum=sum+arr[indexMin];
-                }
-            }else if(indexMin>indexMax){
-                for(int i=indexMax;indexMax<=indexMin;indexMax++)
-                {
-                    sum=sum+arr[indexMax];
-                }
+    /**сумма между максимальных и минимальным индексом*/
+    public static int sumArray(int arr[], int max, int min){
+        int sum = 0;
+        for (int i = 0; i <= arr.length; i++) {
+            if (i >= max && i <= min) {
+                sum = sum + arr[i];
+            } else if (i >= min&& i <= max) {
+                sum = sum + arr[i];
             }
         }
         return sum;
-
     }
-
 }
