@@ -4,8 +4,8 @@ package by.itAcademy.homeworks.operators;
  */
 public class Task8 {
     public static void main(String[] args) {
-        int a = 11;
-        int b = 2;
+        int a = 21;
+        int b = 3;
         int sum = a + b;
         //если число заканчивается на 1, исключение 11
         if (sum % 10 == 1 && sum != 11) {
