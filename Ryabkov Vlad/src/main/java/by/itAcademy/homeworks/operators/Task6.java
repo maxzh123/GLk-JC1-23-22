@@ -1,5 +1,7 @@
 package by.itAcademy.homeworks.operators;
 
+import java.util.Scanner;
+
 /**
  * ## Задание 6
  * > Создайте метод с одним целочисленным параметром. Метод должен
@@ -9,12 +11,18 @@ package by.itAcademy.homeworks.operators;
 
 public class Task6 {
     public static void main(String[] args) {
-        int value = 5477;
-        int check = value % 10;
-        if (check == 7){
-            System.out.println(true);
-        }else
-            System.out.println(false);
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Введите число : ");
+        int value = sc.nextInt();
+        boolean check = checkValue(value);
+        System.out.println(check);
 
+    }
+
+    public static boolean checkValue(int value) {
+        int check = value % 10;
+        if (check == 7) {
+            return true;
+        } else return false;
     }
 }

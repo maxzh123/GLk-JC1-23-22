@@ -7,13 +7,11 @@ package by.itAcademy.homeworks.loops;
  */
 public class Task16 {
     public static void main(String[] args) {
-        int[] sum = new int[100];
         String r = "Hope!";
         int s = 0;
-        while (s < sum.length){
-            sum[s] = s +1;
-            if (sum[s] % 7==0){
-                System.out.println(sum[s]+" " + r);
+        while (s <= 100){
+            if (s % 7==0){
+                System.out.println(s +" " + r);
             }
             s++;
         }
