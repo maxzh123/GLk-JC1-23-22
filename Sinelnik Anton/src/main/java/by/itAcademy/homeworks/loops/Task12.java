@@ -9,9 +9,10 @@ public class Task12 {
         int i = 0;
         int f = 0;
         while (i <= x) {
-            f = f*i;
+            f = f * i;
             i++;
         }
-        System.out.println("f = "+f);
+        System.out.println("Число итераций " + i + "f = " + f);
     }
 }
+
