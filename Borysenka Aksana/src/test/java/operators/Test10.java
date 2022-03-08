@@ -1,3 +1,5 @@
+package operators;
+
 import by.itAcademy.homeworks.operators.Task10;
 import org.junit.jupiter.api.Test;
 
