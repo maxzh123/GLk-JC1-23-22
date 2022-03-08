@@ -19,7 +19,7 @@ public class Test21 {
     public void testArrayLength(int sum,@ConvertWith(IntArrayConverter.class)  Integer[] data ){
         int[] arr=new int[data.length];
         for(int i=0;i<data.length;i++){arr[i]=data[i];};
-        Assertions.assertEquals(sum, Task21.minMax(arr));
+        Assertions.assertEquals(sum, Task21.forSumArray(arr));
     }
 
 }
