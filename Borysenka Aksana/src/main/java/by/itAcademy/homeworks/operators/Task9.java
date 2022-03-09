@@ -34,10 +34,10 @@ public class Task9 {
 
 
     public static String nextDayData (int day, int month, int year){
-        if ((day == 28) && (month == 2) && isLeapYear(year)) {
+        if ((day == 28) && (month == 2) && !isLeapYear(year)) {
             day = 1;
             month++;
-        } else if ((day == 28) && (month == 2) && !isLeapYear(year)) {
+        } else if ((day == 28) && (month == 2) && isLeapYear(year)) {
             day++;
         } else if (day == 29 && month == 2) {
             day = 1;
