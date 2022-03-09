@@ -1,3 +1,5 @@
+package operators;
+
 import by.itAcademy.homeworks.operators.Task8;
 //import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
