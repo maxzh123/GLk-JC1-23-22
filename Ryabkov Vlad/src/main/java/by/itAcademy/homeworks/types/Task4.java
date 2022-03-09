@@ -10,13 +10,13 @@ package by.itAcademy.homeworks.types;
 
 
 public class Task4 {
-    static  int resultvalues(int value1, int value2){
-        int result = (value1 + value2) + (value1 * value2);
-        return result;
-    }
 
     public static void main(String[] args) {
         int result1 = resultvalues(5,10);
         System.out.println(result1);
+    }
+    static  int resultvalues(int value1, int value2){
+        int result = (value1 + value2) + (value1 * value2);
+        return result;
     }
 }
