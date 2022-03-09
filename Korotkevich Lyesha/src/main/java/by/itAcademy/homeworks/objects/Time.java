@@ -1,6 +1,5 @@
 package by.itAcademy.homeworks.objects;
 
-import java.sql.SQLOutput;
 
 /**Создать класс, описывающий промежуток времени.
  *  Сам промежуток в классе должен задаваться тремя свойствами: секундами, минутами, часами.
@@ -12,9 +11,9 @@ import java.sql.SQLOutput;
  */
 
 public class Time {
-    public int seconds;
-    public int minutes;
-    public int hours;
+    private int seconds;
+    private int minutes;
+    private int hours;
     public int getSeconds() {
         return hours * 3600 + minutes * 60 + seconds;
     }
@@ -27,7 +26,12 @@ public class Time {
         seconds=s;
     }
     public void printTime(){
-        System.out.printf("%s hours %s minutes %s seconds", hours,minutes, seconds);
+        System.out.printf("%s hours %s minutes %s seconds\n", hours,minutes, seconds);
+    }
+    public void compareTime(int time1, int time2){
+        if (time1 > time2) System.out.println("time1 > time2");
+        else if (time1 < time2) System.out.println("time1 < time2");
+        else System.out.println("time1 = time2");
     }
 
 }
