@@ -40,7 +40,7 @@ public class Task23 {
 
     /**Заполняем вторую половину массива с конца необходимыми значениями*/
     public static void secondHalfArray (int [][] arr,int i,int j) {
-        for (i = arr.length - 1; i >= arr.length / 2 + 1; i--) {
+        for (i = arr.length - 1; i >= arr.length / 2; i--) {
             for (j = 0; j < arr[i].length; j++) {
                 if ((j < (arr[i].length - 1 - i)) || (j > i))
                     arr[i][j] = 0;

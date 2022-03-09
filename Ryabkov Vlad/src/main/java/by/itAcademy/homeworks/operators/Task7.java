@@ -9,15 +9,17 @@ package by.itAcademy.homeworks.operators;
 
 public class Task7 {
     public static void main(String[] args) {
-        int a = 6;
-        int b = 6;
+        comparison(7,4,55);
+
+
+    }
+    public static void comparison (int a, int b, int r){
         int perimetr = a * b;
-        int r = 25;
         int diametr = r * 2;
         if (perimetr > diametr){
             System.out.println("Не закроет отверстие");
         }else
             System.out.println("Закроет отверстие");
-
+        return;
     }
 }

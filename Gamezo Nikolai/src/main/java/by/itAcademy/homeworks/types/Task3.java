@@ -22,8 +22,13 @@ public class Task3 {
         float f = .25f;
         double d = .00001234;
         boolean bool = true;
-
-        //Выводится всё одной командой, каждая переменная с новой строки
-        System.out.println("b=" + b + "\n" + "s=" + s + "\n" + "i=" + i + "\n" + "l=" + l + "\n" + "c=" + c + "\n" + "f=" + f + "\n" + "d=" + d + "\n" + "bool=" + bool);
+        System.out.println("b = " + b);
+        System.out.println("s = " + s);
+        System.out.println("i = " + i);
+        System.out.println("l = " + l);
+        System.out.println("c = " + c);
+        System.out.println("f = " + f);
+        System.out.println("d = " + d);
+        System.out.println("bool = " + bool);
     }
 }

@@ -6,6 +6,6 @@ package by.itAcademy.homeworks.operators;
 public class Task8 {
     public static void main(String[] args) {
         int sumRub = 2300;
-        System.out.println(sumRub+" RUB");
+        System.out.println(sumRub+" рублей");
     }
 }

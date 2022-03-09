@@ -8,14 +8,17 @@ package by.itAcademy.homeworks.operators;
  */
 public class Task6 {
     public static void main(String[] args) {
-        int sum = 205;
+        numbers(237);
+    }
+
+    public static int numbers(int sum) {
         int sum1 = sum % 10;
         boolean b;
-        if(sum1 != 7){
+        if (sum1 != 7) {
             System.out.println(b = false);
         } else {
             System.out.println(b = true);
         }
+        return sum;
     }
-
 }
