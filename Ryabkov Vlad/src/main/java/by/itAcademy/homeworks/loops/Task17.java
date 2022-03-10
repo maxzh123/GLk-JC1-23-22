@@ -20,7 +20,7 @@ public class Task17 {
 //        symbols.setGroupingSeparator(' ');
 //        formater.setDecimalFormatSymbols(symbols);
 //        System.out.println(formater.format(value));
-        long l = ;
+        long l = 589798749;
         String result = "";
         do {
             result = l % 1000 + " " + result;
