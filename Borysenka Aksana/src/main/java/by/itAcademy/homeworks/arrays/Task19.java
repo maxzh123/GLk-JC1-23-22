@@ -12,14 +12,14 @@ public class Task19 {
     public static void main(String[] args) {
         int[] array = new int[10];
         elementArr(array);
-        System.out.println(evenElementArr(array));
+        System.out.println("Еlements standing in even places: " +evenElementArr(array));
     }
 
     public static void elementArr(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100);
         }
-        System.out.println("Еlements standing in even places: " + Arrays.toString(arr));
+        System.out.println("Array: " + Arrays.toString(arr));
     }
 
     public static String evenElementArr(int[] arr) {
