@@ -11,10 +11,13 @@ public class Task10 {
         int b = 2;
         int c = 3;
         int d = 4;
-        int e = 6;
-        int f = 6;
-        if ((a + c <= e && b + d <= f) && (a + c<= f && b + d <= e) && (a + d <= f && b + c <= e) && (a + d <= e && b + c <=f)) {
-            System.out.println("Дома помещаются на участок");
+        int e = 5;
+        int f = 5;
+        if ((a + c <= e && b + d <= f) && (a + c <= f && b + d <= e) && (a + d <= f && b + c <= e) && (a + d <= e && b + c <= f)) {
+            System.out.println("Дома помещаются на участок в любой конфигурации");
+        }
+        else if ((a + c <= e || b + d <= f) || (a + c <= f || b + d <= e) || (a + d <= f || b + c <= e) || (a + d <= e || b + c <= f)) {
+            System.out.println("Дома помещаются на участок в определённой конфигурации");
         }
         else {
             System.out.println("Дома не помещаются на участок");
