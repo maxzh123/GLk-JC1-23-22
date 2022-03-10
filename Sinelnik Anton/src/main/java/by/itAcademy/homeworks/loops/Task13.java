@@ -5,9 +5,9 @@ package by.itAcademy.homeworks.loops;
 
 public class Task13 {
     public static void main(String[] args) {
-        int x = 25;
-        int i = 1;
-        int f = 1;
+        double x = 25;
+        double i = 1;
+        double f = 1;
         do {
             f = f * i;
             i++;
