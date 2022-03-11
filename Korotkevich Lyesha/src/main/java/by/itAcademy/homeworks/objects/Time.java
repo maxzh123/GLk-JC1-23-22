@@ -10,7 +10,7 @@ package by.itAcademy.homeworks.objects;
  Сделать метод для вывода данных. Прочее на ваше усмотрение.
  */
 
-public class Time {
+class Time implements Comparable<Time>{
     private int seconds;
     private int minutes;
     private int hours;
@@ -28,10 +28,9 @@ public class Time {
     public void printTime(){
         System.out.printf("%s hours %s minutes %s seconds\n", hours,minutes, seconds);
     }
-    public void compareTime(int time1, int time2){
-        if (time1 > time2) System.out.println("time1 > time2");
-        else if (time1 < time2) System.out.println("time1 < time2");
-        else System.out.println("time1 = time2");
+    @Override
+    public int compareTo(Time p){
+        return seconds > p.seconds ? 1 : seconds < p.seconds ? -1 : 0;
     }
 
 }
