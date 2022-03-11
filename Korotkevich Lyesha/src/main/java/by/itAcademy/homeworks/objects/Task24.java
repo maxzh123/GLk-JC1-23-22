@@ -9,9 +9,10 @@ package by.itAcademy.homeworks.objects;
 
 public class Task24 {
     public static void main(String[] args) {
-        Time time = new Time(3600);
-        System.out.println(time.getSeconds());
-        time.printTime();
-        time.compareTime(2000, 2100);
+        Time time1 = new Time(3600);
+        Time time2 = new Time(3900);
+        System.out.println(time1.getSeconds());
+        time1.printTime();
+        System.out.println(time1.compareTo(time2));
     }
 }

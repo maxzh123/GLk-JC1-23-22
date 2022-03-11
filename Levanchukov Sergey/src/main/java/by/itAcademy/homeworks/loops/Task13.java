@@ -4,7 +4,7 @@ package by.itAcademy.homeworks.loops;
 
 public class Task13 {
     public static void main (String[] args) {
-        int i=1; int result=1;
+        double i=1; double result=1;
         do{
             result *=i;
             i++;
