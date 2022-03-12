@@ -1,5 +1,7 @@
 package by.itAcademy.homeworks.loops;
 
+import by.itAcademy.homeworks.utils.Printer;
+
 import java.util.Arrays;
 
 /**
@@ -9,68 +11,38 @@ import java.util.Arrays;
 
 public class Task17 {
     public static void main(String[] args) {
-//        Scanner in = new Scanner(System.in);
-//        Printer.print("Enter the number: ");
-//        int number = in.nextInt();
-        int number = 422_675_768;
-
-        int length = getArrayLength(number);
-        int[] array = new int[length];
-        for (int i = array.length - 1; i >= 0; i--) {
-            array[i] = number % 1000;
-            number = number / 1000;
-            System.out.print(array[i] + " ");
-            // Как вывести нужный результат???
+        long number = -34897;
+        if (number > 0) {
+            Printer.print(accountingNumberFormatPlus(number));
         }
-        System.out.println(Arrays.toString(array));
+        if (number < 0) {
+            Printer.print(accountingNumberFormatMinus(number));
+        }
+        if (number == 0) {
+            Printer.print("0");
+        }
     }
 
-    public static int getArrayLength(int number) {
-        int divider = 1000;
-        int loopCounter = 1;
-        int counter = 0;
-        while (loopCounter > 0) {
-            loopCounter = number / divider;
-            counter++;
-            divider *= 1000;
-        }
-        return counter;
+    public static String accountingNumberFormatPlus(long number) {
+        String result = "";
+        do {
+            result = number % 1000 + " " + result;
+            number = number / 1000;
+        } while (number > 0);
+        return result;
+    }
+
+    public static String accountingNumberFormatMinus(long number) {
+        String result = "";
+        do {
+            result = (number % 1000 * (-1)) + " " + result;
+            number = number / 1000;
+        } while (number < 0);
+        return "-" + result;
     }
 }
 
 
-//    public static String accountingFormat(int number, int counter) {
-//        String str = "";
-//        int a = 0;
-//        int b = 0;
-//        while (b >= counter) {
-//            a = number % 1000;
-//            number = number / 1000;
-//            str = " " + a;
-//            b++;
-//        }
-//        return str;
-//    }
-
-
-
-
-//        String s = " ";
-//        for (int i = number; i > 999; number  /= 1000) {
-//            int a = number % 1000;
-//
-//
-//        }
-//        return;
-//
-
-
-//        int lastThreeNumber = 0;
-//        while (number > 999) {
-//            lastThreeNumber = number % 1000;
-//
-//        }
-//        return lastThreeNumber;
 
 
 
