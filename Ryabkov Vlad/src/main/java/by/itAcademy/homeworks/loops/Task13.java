@@ -1,5 +1,7 @@
 package by.itAcademy.homeworks.loops;
 
+import java.math.BigInteger;
+
 /**
  * ## Задание 13
  * > Вычислить произведение чисел от 1 до 25 с помощью цикла do while.
@@ -7,18 +9,16 @@ package by.itAcademy.homeworks.loops;
 
 public class Task13 {
     public static void main(String[] args) {
-        int value = 25;
-        int product = multipler(value);
-        System.out.println(product);
+        System.out.println(multipler(1,25));
     }
 
-    public static int multipler (int value){
-        int product = 1;
-        int i = 1;
+    public static BigInteger multipler (int value1, int value2){
+        BigInteger product = new BigInteger("1");
+        int i = value1;
             do {
-                product *=i;
+                product =product.multiply(BigInteger.valueOf(i));
             i++;
-        } while (i <= value);
+        } while (i <= value2);
             return product;
     }
 }

@@ -6,9 +6,9 @@ package by.itAcademy.homeworks.operators;
 
 public class Task6 {
     public static void main(String[] args) {
-        System.out.println(LastSeven(17));
+        System.out.println(lastSeven(17));
     }
-    public static boolean LastSeven(int a) {
+    public static boolean lastSeven(int a) {
         boolean b = a % 10 == 7;
         return b;
     }
