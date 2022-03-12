@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class Task17 {
     public static void main(String[] args) {
-        long number = -34897;
+        long number = -9876543;
         if (number > 0) {
             Printer.print(accountingNumberFormatPlus(number));
         }
