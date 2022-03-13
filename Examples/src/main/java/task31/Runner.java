@@ -7,7 +7,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Runner {
     public static void main(String... args){
-        final int repeats=10;
+        final int repeats=100000;
         final String appendStr="Бла бла бла";
         report(new StringBufferTest(repeats,appendStr),"StringBuffer");
         report(new StringBuilderTest(repeats,appendStr),"StringBuilder");
