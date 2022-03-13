@@ -7,18 +7,26 @@ package by.itAcademy.homeworks.operators;
  * > значение.
  */
 public class Task6 {
-    public static void main(String[] args) {
-        numbers(237);
+ public int numbers;
+
+    public int getNumbers() {
+        setNumbers(numbers);
+        return numbers;
     }
 
-    public static int numbers(int sum) {
-        int sum1 = sum % 10;
-        boolean b;
-        if (sum1 != 7) {
-            System.out.println(b = false);
-        } else {
-            System.out.println(b = true);
-        }
-        return sum;
+    public void setNumbers(int numbers) {
+        this.numbers = numbers % 10;
     }
+
+    public boolean getaBoolean() {
+        setNumbers(numbers);
+        setaBoolean();
+        return aBoolean;
+    }
+
+    public void setaBoolean() {
+        this.aBoolean = numbers == 7;
+    }
+
+    public boolean aBoolean = true;
 }
