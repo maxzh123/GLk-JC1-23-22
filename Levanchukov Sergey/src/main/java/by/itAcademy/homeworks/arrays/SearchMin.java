@@ -36,4 +36,5 @@ public class SearchMin {
             return lastIndex;
         }else return firstIndex;
     }
+
 }
