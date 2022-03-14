@@ -18,7 +18,7 @@ public class Task27 {
     public static void countForWords() {
         int count = 0;
         Scanner sc = new Scanner(System.in);
-        Pattern p = Pattern.compile("\\w+"); //пытался добавить киррилицу, но не получилось
+        Pattern p = Pattern.compile("[А-Яа-я-A-Za-zЁё]+"); //пытался добавить киррилицу, но не получилось
         Matcher m = p.matcher(sc.nextLine());
         while (m.find()) {
             count++;
