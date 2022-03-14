@@ -14,6 +14,6 @@ public class Task14 {
         } while (numb>0);
         return sum;
 
-    }
+     }
 
 }
