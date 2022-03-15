@@ -3,7 +3,8 @@ package by.itAcademy.homeworks.io.Task51;
 import java.io.*;
 
 public class Task51 {
-    private static String path = ".\\Kuznetsov Roman\\src\\main\\java\\by\\itAcademy\\homeworks\\io\\Objects.txt";
+
+    private static final String path = String.valueOf(Task51.class.getResourceAsStream("itAcademy\\homeworks\\io\\Objects.txt"));
     public static void main(String[] args) {
         Person[] people = new Person[10];
         for (int i = 0; i < people.length; i++) {
