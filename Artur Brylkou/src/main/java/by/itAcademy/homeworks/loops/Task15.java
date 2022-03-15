@@ -19,7 +19,7 @@ public class Task15 {
             if(b%i == 0){
                 return false;
             }
-        }return true;
+         }return true;
 
     }
 }
