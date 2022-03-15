@@ -9,16 +9,16 @@ public class Task7 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int r = sc.nextInt();
-        System.out.println(closeCircle(a, b, r));
+        closeCircle(a, b, r);
     }
 
-    public static boolean closeCircle(int a, int b, int r) {
+    public static void closeCircle(int a, int b, int r) {
         int diameter = 2 * r;
         int hypotenuse = (int) Math.sqrt(a * a + b * b);
         if (diameter >= hypotenuse) {
-            return true;
+            System.out.println("Закроет");;
         } else {
-            return false;
+            System.out.println("Не закроет");;
         }
     }
-}
+    }

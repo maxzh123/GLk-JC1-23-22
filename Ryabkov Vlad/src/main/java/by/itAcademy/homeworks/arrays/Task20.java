@@ -2,6 +2,8 @@ package by.itAcademy.homeworks.arrays;
 
 import java.util.Arrays;
 
+import static by.itAcademy.homeworks.Untils.RandomArray.randomarray;
+
 /**
  * Создать переменную для массива из 10 элементов. Заполнить его
  * произвольными значениями целочисленного типа. Найти максимальный элемент
@@ -12,24 +14,21 @@ public class Task20 {
     public static void main(String[] args) {
         int[] array = new int[10];
         System.out.println(Arrays.toString(randomarray(array)));
-        System.out.println("Max Array is :" + maxArray(array));
+        System.out.println("Max index is :" + maxIndexofArray(array));
 
     }
 
-    public static int[] randomarray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            array[i] = ((int) (Math.random() * 100) + 1);
-        }
-        return array;
-    }
 
-    public static int maxArray(int[] array) {
-        int maxArray = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > maxArray) {
-                maxArray = array[i];
+    public static int maxIndexofArray(int[] values) {
+        int maxValue = values[0];
+        int maxIndex = 0;
+        for (int i = 0; i < values.length; i++) {
+            if (maxValue < values[i]) {
+                maxValue = values[i];
+                maxIndex = i;
             }
+
         }
-        return maxArray;
+        return maxIndex;
     }
 }
