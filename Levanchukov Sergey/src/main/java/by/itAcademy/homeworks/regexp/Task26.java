@@ -17,7 +17,7 @@ public class Task26 {
     public static void count() {
         int count = 0;
         Scanner sc = new Scanner(System.in);
-        Pattern p = Pattern.compile("\\.{3}|\\p{P}");
+        Pattern p = Pattern.compile("\\.{3}?|\\p{Punct}");
         Matcher m = p.matcher(sc.nextLine());
         while (m.find()) {
             count++;
