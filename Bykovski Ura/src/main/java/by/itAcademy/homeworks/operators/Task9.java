@@ -10,9 +10,10 @@ public class Task9 {
         int day=sc.nextInt();
         int month=sc.nextInt();
         int year=sc.nextInt();
-        if (day==30) {
+        if (day>=30) {
             day = 1;
-            if (month == 12) {
+            month+=1;
+            if (month >= 13) {
                 month = 1;
                 year += 1;
             }
