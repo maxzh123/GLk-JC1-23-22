@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class Task47 {
     public static void main(String[] args) {
-        String filedata= readFile(".\\Kuznetsov Roman\\src\\main\\java\\by\\itAcademy\\homeworks\\io\\47.txt");
+        String filedata= readFile(String.valueOf(Task47.class.getResource("itAcademy\\homeworks\\io\\47.txt")));
         Pattern pattern = Pattern.compile("[.]{3,}|\\?+!+|!+\\?+|!+|\\?+|[.,;:\\-\"]");
         Matcher matcher = pattern.matcher(filedata);
         int count = 0;
