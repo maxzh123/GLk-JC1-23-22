@@ -13,8 +13,8 @@ class Task13Test {
         BigInteger expectResult = new BigInteger("0");
         BigInteger expectResult1 = new BigInteger("20160");
 
-        BigInteger actualResult = Task13.multiplier(0, 25);
-        BigInteger actualResult1 = Task13.multiplier(3, 8);
+        BigInteger actualResult = Task13.multipler(0, 25);
+        BigInteger actualResult1 = Task13.multipler(3, 8);
 
         assertEquals(expectResult, actualResult );
         assertEquals(expectResult1, actualResult1);
