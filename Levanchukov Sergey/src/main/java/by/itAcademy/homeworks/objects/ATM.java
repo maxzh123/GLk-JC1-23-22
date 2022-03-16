@@ -8,8 +8,12 @@ package by.itAcademy.homeworks.objects;
  * > экран каким количеством купюр и какого номинала выдается сумма. Создать
  * > конструктор с тремя параметрами – количеством купюр. Прочее – на ваше
  * > усмотрение.
- **/
+ * */
 
-public class Task25 {
+public class ATM {
+    public double amount;
 
+    public ATM(double amount) {
+        this.amount = amount;
+    }
 }
