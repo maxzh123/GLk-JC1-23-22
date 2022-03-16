@@ -1,4 +1,7 @@
 package by.itAcademy.homeworks.objects;
+
+import java.util.Scanner;
+
 /**
  * > Создать класс, описывающий Банкомат. Набор купюр, находящихся в
  * > банкомате, должен задаваться тремя свойствами: количеством купюр номиналом 20,
@@ -11,5 +14,12 @@ package by.itAcademy.homeworks.objects;
  **/
 
 public class Task25 {
-
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        ATM wallet=new ATM(10,10,10);
+        wallet.addFifty(10);
+        wallet.addTwenty(10);
+        wallet.addHundred(10);
+        wallet.withdrawalOfMoney(10);
+    }
 }
