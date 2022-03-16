@@ -7,13 +7,13 @@ public class Task8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        if (a == 0) {
+        if (a%10 == 0) {
             System.out.println(a + " рублей");
-        } else if (a == 1) {
+        } else if (a%10 == 1) {
             System.out.println(a + " рубль");
-        } else if (a >= 2 & a <= 4) {
+        } else if (a%10>=2 & a%10<=4) {
             System.out.println(a + " рубля");
-        } else if (a >= 5) {
+        } else if (a%10>=5 & a%10<=9) {
             System.out.println(a + " рублей");
         }
     }
