@@ -23,7 +23,7 @@ public class Task26 {
 
         System.out.println("");
         System.out.println("");
-        System.out.println("admin@ex.com".matches("^[a-zA-Z0-9_-]+\\@[a-zA-Z0-9_\\.-]+$"));
+        System.out.println("admin@ex.com".matches("[a-zA-Z0-9_-]+\\@[a-zA-Z0-9_\\.-]+"));
 
     }
 }

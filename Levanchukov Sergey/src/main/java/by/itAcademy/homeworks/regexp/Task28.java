@@ -18,11 +18,12 @@ public class Task28 {
     }
 
     public static void result (String text){
-        Pattern patternForWords=Pattern.compile("[A-Za-z]+(?:[-][a-z]+)"+Pattern.MULTILINE);
+        System.out.println(text);
+        Pattern patternForWords=Pattern.compile("[A-Za-z]+(?:[-][a-z]+)?",Pattern.MULTILINE);
         Pattern patternForLastLetter=Pattern.compile("([a-z])$");
         Matcher matcherForWords=patternForWords.matcher(text);
         while (matcherForWords.find()){
-            System.out.println("Найдено "+matcherForWords.group(1));
+            System.out.println("Найдено "+matcherForWords.group(0));
         }
     }
 }
