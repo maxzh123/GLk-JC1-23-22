@@ -6,8 +6,8 @@ package by.itAcademy.homeworks.loops;
  */
 
 public class Task17 {
-    public static void main(String[] args) {
-        long value = 544883949;
+   public static void main(String[] args) {
+        long value = 11000;
         String result = "";
         do {
             result = value % 1000 + " " + result;

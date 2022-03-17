@@ -28,5 +28,6 @@ public class Task31 {
         for (long i =1; i<= 1_000_000l;i++){
             str1.append("aaabbbccc");
         }
+        str1.toString();
     }
 }
