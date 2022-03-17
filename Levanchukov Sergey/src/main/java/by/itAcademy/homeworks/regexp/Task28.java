@@ -7,16 +7,22 @@ import java.util.regex.Pattern;
 /**
  * > Введите с клавиатуры текст. Выведите на экран текст, составленный из
  * > последних букв всех слов из исходного текста.
- * //[A-Za-z]+(?:[-][a-z]+)
  **/
 
 public class Task28 {
-    Scanner sc=new Scanner(System.in);
-    String text=sc.toString();
 
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String text=sc.nextLine();
+        result(text);
+    }
 
-    public static void printText(String text){
-        Pattern pattern=Pattern.compile("");
-        Matcher matcher=pattern.matcher(text);
+    public static void result (String text){
+        Pattern patternForWords=Pattern.compile("[A-Za-z]+(?:[-][a-z]+)"+Pattern.MULTILINE);
+        Pattern patternForLastLetter=Pattern.compile("([a-z])$");
+        Matcher matcherForWords=patternForWords.matcher(text);
+        while (matcherForWords.find()){
+            System.out.println("Найдено "+matcherForWords.group(1));
+        }
     }
 }
