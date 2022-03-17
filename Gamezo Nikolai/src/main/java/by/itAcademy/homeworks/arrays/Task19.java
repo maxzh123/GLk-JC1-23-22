@@ -10,29 +10,32 @@ import java.util.Arrays;
 
 public class Task19 {
     public static void main(String[] args) {
-        int mass[] = new int[10];
+        int l = 10;
+        int mass [] = new int[l];
         fillMass(mass);
         System.out.println(Arrays.toString(mass));
-        System.out.println(select(mass));
+        System.out.println(Arrays.toString(select(mass)));
     }
-        //метод заполнения массива случайными числами
-        public static int [] fillMass(int[] array){
-            for (int i = 0; i < array.length; i++) {
-                array[i] = (int) (Math.random() * 100);
-            }
-            return array;
+    //метод заполнения массива случайными числами
+    public static int [] fillMass(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 100);
         }
-        //метод выбора элементов стоящих на четных позициях
-        public static String select(int[] array) {
-            int n = 0;
-            int []newarray = new int[5];
-            for (int i = 0; i < array.length; i++) {
-                if (i % 2 == 0) {
-                    newarray[n++] = array[i];
-                }
+        return array;
+    }
+    //нужно разобраться с цифрой 5
+    //метод выбора элементов стоящих на четных позициях
+    public static int [] select(int[] array) {
+        int n = 0;
+        int [] newarray = new int[5];
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 == 0) {
+                newarray[n] = array[i];
+                n++;
             }
-            return Arrays.toString(newarray);
         }
+        return newarray;
+    }
 }
 
 
