@@ -5,7 +5,8 @@ import java.util.regex.Pattern;
 
 public class Task26 {
     public static void main(String[] args) {
-        Pattern p=Pattern.compile("[A-Za-z]+(?:[-][a-z]+)*"
+//        Pattern p=Pattern.compile("[A-Za-z]+(?:[-][a-z]+)"
+        Pattern p=Pattern.compile("[a-zA-Z]*([a-z])"
                 ,Pattern.MULTILINE);
         Pattern p2=Pattern.compile("([A-Za-z])$");
         Matcher m=p.matcher("01 05 2021 Test admin@example.com\n" +
