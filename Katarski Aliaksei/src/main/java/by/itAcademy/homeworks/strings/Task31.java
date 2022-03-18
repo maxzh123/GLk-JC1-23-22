@@ -8,15 +8,18 @@ package by.itAcademy.homeworks.strings;
 public class Task31 {
     public static void main(String[] args) {
         String str = "abcdabcd";
+        System.gc();
         builderTimerTest(str);
+        System.gc();
         concatTimerTest(str);
     }
 
     public static void strBuild(String str) {
         StringBuilder stringBuilder = new StringBuilder(str);
-        for (int i = 0; i <= 1000000; i++) {
+        for (int i = 0; i <= 10000; i++) {
             stringBuilder.append("abc");
         }
+        stringBuilder.toString();
     }
     //Конкатинация работает нереально долго.Уменьшил кол-во повторений в цикле.
     public static void strConcat(String str){
