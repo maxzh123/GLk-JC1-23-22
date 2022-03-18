@@ -4,7 +4,7 @@ package by.itAcademy.homeworks.operators;
  */
 public class Task8 {
     public static void main(String[] args) {
-        int a = 21;
+        int a = 22;
         int b = 3;
         int sum = a + b;
         //если число заканчивается на 1, исключение 11

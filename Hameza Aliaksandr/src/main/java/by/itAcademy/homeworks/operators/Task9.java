@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
  */
 public class Task9 {
     public static void main(String[] args) {
-        int day =7;
+        int day =8;
         int month  =3;
         int year =2022;
         GregorianCalendar calendar = new GregorianCalendar(year,month,day+1);
