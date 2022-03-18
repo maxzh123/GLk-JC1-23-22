@@ -15,9 +15,10 @@ public class Task31 {
     public static long theFirstMerhod (){
         String s="aaabbbccc";
         long time=System.currentTimeMillis();
-        for (int i=0;i<100000;i++){
+        for (int i=0;i<10000;i++){
             s=s+"aaabbbccc";
         }
+        System.gc();
         return (System.currentTimeMillis()-time);
         }
     /**Метод возвращает время за которое выполниться сложение строк типа StringBuilder*/

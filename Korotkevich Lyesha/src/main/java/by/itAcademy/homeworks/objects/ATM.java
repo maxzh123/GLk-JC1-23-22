@@ -17,7 +17,7 @@ public class ATM {
         this.fifty = fifty;
         this.hundred = hundred;
     }
-    public void put_money(int money){
+    public void putMoney(int money){
         this.hundred += money/100;
         money%=100;
         this.fifty += money/50;
@@ -25,7 +25,7 @@ public class ATM {
         this.twenty += money/20;
     }
 
-    public boolean withdraw_money(int money){
+    public boolean withdrawMoney(int money){
         if (money <= this.hundred*100 + this.fifty*50 + this.twenty*20){
             int h = money/100;
             money%=100;
