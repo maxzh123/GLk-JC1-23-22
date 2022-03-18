@@ -23,11 +23,17 @@ public class Task19 {
         }
         return array;
     }
-    //нужно разобраться с цифрой 5
     //метод выбора элементов стоящих на четных позициях
     public static int [] select(int[] array) {
         int n = 0;
-        int [] newarray = new int[5];
+        int j = 0;
+        if (array.length %2 == 0 ) {
+            j = array.length / 2;
+        }
+        else {
+            j = array.length / 2 + 1;
+        }
+        int [] newarray = new int[j];
         for (int i = 0; i < array.length; i++) {
             if (i % 2 == 0) {
                 newarray[n] = array[i];
