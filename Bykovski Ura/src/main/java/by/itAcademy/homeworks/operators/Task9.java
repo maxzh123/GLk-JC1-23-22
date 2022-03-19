@@ -25,7 +25,7 @@ public class Task9 {
             if (month<10){
                 System.out.println("0"+day+"."+"0"+month+"."+ year);
             }
-            else if (month>=10){
+            else if (month>=10 ){
                 System.out.println("0"+day+"."+month+"."+ year);
             }
         }
