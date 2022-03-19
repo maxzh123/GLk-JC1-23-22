@@ -10,8 +10,8 @@ package by.itAcademy.homeworks.objects;
 public class Task25 {
     public static void main(String[] args) {
         ATM atm = new ATM(5, 4, 3);
-        atm.put_money(120);
-        atm.withdraw_money(120);
+        atm.putMoney(120);
+        atm.withdrawMoney(120);
         System.out.println("\n"+atm.toString());
     }
 }

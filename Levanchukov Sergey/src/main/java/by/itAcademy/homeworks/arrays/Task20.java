@@ -12,6 +12,7 @@ public class Task20 {
             array[i]= (int) (Math.random()*10);/**Заполнение массива случайными числами до 9*/
             System.out.println("-----------------"+array[i]);
         }
+
         int max= array[0];
         for (int i=0;i< array.length;i++){/**Цикл для проверки всех элементов массива и нахождения большего из них */
             if (array[i]>max){
@@ -20,7 +21,4 @@ public class Task20 {
         }
         System.out.println("Максимальный элемент равен "+max);
     }
-
-
-
 }
