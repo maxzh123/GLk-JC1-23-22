@@ -19,11 +19,17 @@ public class Task28 {
 
     public static void result (String text){
         System.out.println(text);
+        StringBuilder stb=new StringBuilder();
         Pattern patternForWords=Pattern.compile("[A-Za-z]+(?:[-][a-z]+)?",Pattern.MULTILINE);
         Pattern patternForLastLetter=Pattern.compile("([a-z])$");
         Matcher matcherForWords=patternForWords.matcher(text);
         while (matcherForWords.find()){
             System.out.println("Найдено "+matcherForWords.group(0));
+            Matcher matcherForLastLetter=patternForLastLetter.matcher(matcherForWords.group(0));
+            if (matcherForLastLetter.find()){
+                stb.append(matcherForLastLetter.group(0));
+            }
         }
+        System.out.println(stb);
     }
 }
