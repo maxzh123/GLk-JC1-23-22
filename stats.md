@@ -1,0 +1,55 @@
+# Статистика
+
+| Name | Tasks | class | Матем.операций | Методов | Присваиваний | анон.класов | внутр.класов | констант | логирование | лямбды | переменных | перхватов исключений | приват. методов | приват. полей | сравнений | циклов |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Kuznetsov Roman | 63 | 89 | 129 | 198 | 362 | 2 | 0 | 4 | 0 | 1 | 265 | 12 | 7 | 22 | 24 | 61 |
+| Levanchukov Sergey | 33 | 45 | 105 | 88 | 234 | 0 | 1 | 0 | 0 | 0 | 170 | 0 | 9 | 10 | 19 | 42 |
+| Korotkevich Lyesha | 32 | 36 | 77 | 79 | 195 | 0 | 0 | 0 | 0 | 0 | 133 | 0 | 0 | 6 | 16 | 35 |
+| Borysenka Aksana | 26 | 52 | 169 | 114 | 272 | 0 | 0 | 0 | 0 | 0 | 207 | 0 | 8 | 9 | 69 | 36 |
+| Ryabkov Vlad | 25 | 32 | 115 | 57 | 130 | 0 | 0 | 0 | 0 | 0 | 104 | 0 | 2 | 7 | 61 | 17 |
+| Kotsuba Alexander | 25 | 31 | 79 | 45 | 143 | 0 | 0 | 0 | 0 | 0 | 109 | 0 | 3 | 2 | 26 | 32 |
+| Melanich Olga | 23 | 38 | 70 | 80 | 213 | 0 | 0 | 0 | 0 | 0 | 175 | 0 | 0 | 0 | 37 | 21 |
+| Gamezo Nikolai | 22 | 24 | 87 | 41 | 132 | 0 | 0 | 0 | 0 | 0 | 94 | 0 | 0 | 0 | 22 | 27 |
+| Katarski Aliaksei | 21 | 40 | 68 | 73 | 116 | 0 | 0 | 0 | 0 | 0 | 93 | 0 | 12 | 8 | 16 | 30 |
+| Mikolai Sidzelnikau | 20 | 35 | 75 | 102 | 202 | 0 | 0 | 12 | 0 | 0 | 147 | 0 | 6 | 14 | 43 | 15 |
+| Artur Brylkou | 18 | 22 | 45 | 38 | 74 | 0 | 0 | 0 | 0 | 0 | 56 | 0 | 2 | 0 | 35 | 8 |
+| Hameza Aliaksandr | 17 | 18 | 45 | 22 | 62 | 0 | 0 | 0 | 0 | 0 | 50 | 0 | 0 | 0 | 13 | 6 |
+| Sinelnik Anton | 15 | 15 | 57 | 17 | 44 | 0 | 0 | 0 | 0 | 0 | 40 | 0 | 2 | 0 | 35 | 3 |
+| Bykovski Ura | 10 | 10 | 30 | 12 | 35 | 0 | 0 | 0 | 0 | 0 | 26 | 0 | 0 | 0 | 3 | 0 |
+| Arkhangelskiy Vlad | 7 | 7 | 18 | 8 | 15 | 0 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 0 | 1 | 0 |
+| Denis Stelmashok | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Maryna Liakh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+
+# Сборка
+
+| Проект | Состояние |
+| --- | --- |
+| Интерфейсы  | SUCCESS |
+| ПРИМЕРЫ  | SUCCESS |
+| Быковский Юрий Павлович  | SUCCESS |
+| Гамезо Николай Николаевич  | SUCCESS |
+| Катарский Алексей Александрович  | SUCCESS |
+| Короткевич Алексей Геннадьевич  | SUCCESS |
+| Коцуба Александр Сергеевич  | FAILURE |
+| Кузнецов Роман Вадимович  | SUCCESS |
+| Леванчуков Сергей Анатольевич  | SUCCESS |
+| Лях Марина Игоревна  | SUCCESS |
+| Меланич Ольга Викторовна  | SUCCESS |
+| Рябков Владислав Николаевич  | SUCCESS |
+| Синельник Антон Станиславович  | SUCCESS |
+| Брильков Артур Владимирович  | SUCCESS |
+| Сидельников Николай Сергеевич  | SUCCESS |
+| Борисенко Оксана Евгеньевна  | SUCCESS |
+| Гамезо Александр Геннадьевич  | SUCCESS |
+| Архангельский Владислав Витальевич  | SUCCESS |
+| Стельмашок Денис Сергеевич  | SUCCESS |
+| GLk-JC1-17-21  | SUCCESS |
+
+
+# Ошибки:
+
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:3 символ:33 package org.jetbrains.annotations does not exist
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:33 символ:27 cannot find symbol
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:3 символ:33 package org.jetbrains.annotations does not exist
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:33 символ:27 cannot find symbol
