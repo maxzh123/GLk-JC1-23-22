@@ -2,21 +2,21 @@
 
 | Name | Tasks | class | Матем.операций | Методов | Присваиваний | анон.класов | внутр.класов | констант | логирование | лямбды | переменных | перхватов исключений | приват. методов | приват. полей | сравнений | циклов |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Kuznetsov Roman | 57 | 69 | 109 | 132 | 266 | 2 | 0 | 2 | 0 | 1 | 198 | 3 | 6 | 10 | 18 | 42 |
-| Levanchukov Sergey | 25 | 34 | 81 | 55 | 141 | 0 | 1 | 0 | 0 | 0 | 104 | 0 | 7 | 4 | 18 | 33 |
-| Korotkevich Lyesha | 25 | 28 | 61 | 63 | 144 | 0 | 0 | 0 | 0 | 0 | 99 | 0 | 0 | 0 | 16 | 30 |
-| Kotsuba Alexander | 21 | 26 | 48 | 35 | 92 | 0 | 0 | 0 | 0 | 0 | 80 | 0 | 3 | 2 | 12 | 19 |
-| Mikolai Sidzelnikau | 18 | 23 | 51 | 30 | 97 | 0 | 0 | 0 | 0 | 0 | 65 | 0 | 0 | 0 | 8 | 11 |
-| Katarski Aliaksei | 17 | 34 | 51 | 54 | 68 | 0 | 0 | 0 | 0 | 0 | 58 | 0 | 12 | 8 | 16 | 20 |
-| Ryabkov Vlad | 14 | 17 | 71 | 23 | 53 | 0 | 0 | 0 | 0 | 0 | 51 | 0 | 1 | 0 | 49 | 4 |
-| Melanich Olga | 12 | 17 | 42 | 29 | 91 | 0 | 0 | 0 | 0 | 0 | 77 | 0 | 0 | 0 | 31 | 0 |
-| Gamezo Nikolai | 11 | 13 | 38 | 15 | 33 | 0 | 0 | 0 | 0 | 0 | 33 | 0 | 0 | 0 | 9 | 1 |
-| Sinelnik Anton | 10 | 10 | 44 | 12 | 24 | 0 | 0 | 0 | 0 | 0 | 24 | 0 | 2 | 0 | 34 | 0 |
-| Borysenka Aksana | 9 | 15 | 51 | 25 | 38 | 0 | 0 | 0 | 0 | 0 | 37 | 0 | 8 | 2 | 17 | 6 |
-| Artur Brylkou | 6 | 9 | 13 | 11 | 16 | 0 | 0 | 0 | 0 | 0 | 16 | 0 | 1 | 0 | 1 | 2 |
-| Hameza Aliaksandr | 6 | 7 | 21 | 7 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 0 | 0 | 0 | 0 | 0 |
-| Arkhangelskiy Vlad | 4 | 4 | 1 | 4 | 8 | 0 | 0 | 0 | 0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
-| Bykovski Ura | 3 | 3 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kuznetsov Roman | 63 | 89 | 129 | 198 | 362 | 2 | 0 | 4 | 0 | 1 | 265 | 12 | 7 | 22 | 24 | 61 |
+| Levanchukov Sergey | 33 | 45 | 105 | 88 | 234 | 0 | 1 | 0 | 0 | 0 | 170 | 0 | 9 | 10 | 19 | 42 |
+| Korotkevich Lyesha | 32 | 36 | 77 | 79 | 195 | 0 | 0 | 0 | 0 | 0 | 133 | 0 | 0 | 6 | 16 | 35 |
+| Borysenka Aksana | 26 | 52 | 169 | 114 | 272 | 0 | 0 | 0 | 0 | 0 | 207 | 0 | 8 | 9 | 69 | 36 |
+| Ryabkov Vlad | 25 | 32 | 115 | 57 | 130 | 0 | 0 | 0 | 0 | 0 | 104 | 0 | 2 | 7 | 61 | 17 |
+| Kotsuba Alexander | 25 | 31 | 79 | 45 | 143 | 0 | 0 | 0 | 0 | 0 | 109 | 0 | 3 | 2 | 26 | 32 |
+| Melanich Olga | 23 | 38 | 70 | 80 | 213 | 0 | 0 | 0 | 0 | 0 | 175 | 0 | 0 | 0 | 37 | 21 |
+| Gamezo Nikolai | 22 | 24 | 87 | 41 | 132 | 0 | 0 | 0 | 0 | 0 | 94 | 0 | 0 | 0 | 22 | 27 |
+| Katarski Aliaksei | 21 | 40 | 68 | 73 | 116 | 0 | 0 | 0 | 0 | 0 | 93 | 0 | 12 | 8 | 16 | 30 |
+| Mikolai Sidzelnikau | 20 | 35 | 75 | 102 | 202 | 0 | 0 | 12 | 0 | 0 | 147 | 0 | 6 | 14 | 43 | 15 |
+| Artur Brylkou | 18 | 22 | 45 | 38 | 74 | 0 | 0 | 0 | 0 | 0 | 56 | 0 | 2 | 0 | 35 | 8 |
+| Hameza Aliaksandr | 17 | 18 | 45 | 22 | 62 | 0 | 0 | 0 | 0 | 0 | 50 | 0 | 0 | 0 | 13 | 6 |
+| Sinelnik Anton | 15 | 15 | 57 | 17 | 44 | 0 | 0 | 0 | 0 | 0 | 40 | 0 | 2 | 0 | 35 | 3 |
+| Bykovski Ura | 10 | 10 | 30 | 12 | 35 | 0 | 0 | 0 | 0 | 0 | 26 | 0 | 0 | 0 | 3 | 0 |
+| Arkhangelskiy Vlad | 7 | 7 | 18 | 8 | 15 | 0 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 0 | 1 | 0 |
 | Denis Stelmashok | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maryna Liakh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -31,9 +31,9 @@
 | Гамезо Николай Николаевич  | SUCCESS |
 | Катарский Алексей Александрович  | SUCCESS |
 | Короткевич Алексей Геннадьевич  | SUCCESS |
-| Коцуба Александр Сергеевич  | SUCCESS |
+| Коцуба Александр Сергеевич  | FAILURE |
 | Кузнецов Роман Вадимович  | SUCCESS |
-| Леванчуков Сергей Анатольевич  | FAILURE |
+| Леванчуков Сергей Анатольевич  | SUCCESS |
 | Лях Марина Игоревна  | SUCCESS |
 | Меланич Ольга Викторовна  | SUCCESS |
 | Рябков Владислав Николаевич  | SUCCESS |
@@ -49,5 +49,7 @@
 
 # Ошибки:
 
-1. Levanchukov Sergey/src/main/java/by/itAcademy/homeworks/arrays/Task21.java строка:22 символ:41 <identifier> expected
-1. Levanchukov Sergey/src/main/java/by/itAcademy/homeworks/arrays/Task21.java строка:22 символ:41 <identifier> expected
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:3 символ:33 package org.jetbrains.annotations does not exist
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:33 символ:27 cannot find symbol
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:3 символ:33 package org.jetbrains.annotations does not exist
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:33 символ:27 cannot find symbol

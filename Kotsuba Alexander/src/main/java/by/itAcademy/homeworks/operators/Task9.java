@@ -14,9 +14,19 @@ public class Task9 {
         dayOfMonth(day,month,year);
     }
 
-    public static void dayOfMonth(int day,int month,int year){
+    public static void dayOfMonth(int day,int month,int year){//Исправил,выводит теперь ВСЁ
         if(day == 31){
             System.out.println("Next day: " + 1 + " " +  ++month +" " +  year);
-        }
+         } else if (day == 30 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+        System.out.println("Next day: " + 1 + " " + ++month + " " + year);
+    } else if (day == 28 && month == 2) {
+        System.out.println("Next day: " + 1 + " " + ++month + " " + year);
+    } else if (day == 31 && month == 12) {
+        System.out.println("Next day: " + 1 + " " + 1 + " " + ++year);
+    } else if (day > 31 || month > 12 || (day > 28 && month == 2) || day > 30 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+        System.out.println("There is no day with such a date");
+    } else {
+        System.out.println("Next day: " + ++day + " " + month + " " + year);
+    }
     }
 }
