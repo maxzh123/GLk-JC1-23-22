@@ -13,7 +13,7 @@ public class Task9 {
         if (day>=30) {
             day = 1;
             month+=1;
-            if (month >= 13) {
+            if (month >= 13 ) {
                 month = 1;
                 year += 1;
             }
