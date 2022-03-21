@@ -19,7 +19,7 @@ public class Task29 {
     public static void searchEngineForHexadecimalValues(){
         Scanner sc=new Scanner(System.in);
         String text=sc.nextLine();
-        Pattern searchHexadecimal= Pattern.compile("(0[xX][0-9]+[a-fA-F])");
+        Pattern searchHexadecimal= Pattern.compile("(0х[0-9AF]+)");
         Matcher search=searchHexadecimal.matcher(text);
         while (search.find()){
             System.out.println(search.group(0));
