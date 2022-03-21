@@ -28,4 +28,9 @@ public class TimeInterval implements Comparable<TimeInterval> {
         }
         return result;
     }
+    public static void printResult(TimeInterval time1,TimeInterval time2){
+        System.out.println(time1.getSeconds());
+        System.out.println(time2.getSeconds());
+        System.out.println(time1.compareTo(time2));
+    }
 }

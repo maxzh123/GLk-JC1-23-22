@@ -27,12 +27,7 @@ public class Task24 {
         minutes=sc.nextInt();
         hours=sc.nextInt();
         TimeInterval time2=new TimeInterval(seconds,minutes,hours);
-        printResult(time1,time2);
+        TimeInterval.printResult(time1,time2);
     }
 
-    public static void printResult(TimeInterval time1,TimeInterval time2){
-        System.out.println(time1.getSeconds());
-        System.out.println(time2.getSeconds());
-        System.out.println(time1.compareTo(time2));
-    }
 }
