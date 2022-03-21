@@ -15,7 +15,7 @@ public class Task29 {
         find16x(str);
     }
     public static void find16x(String str){
-        Pattern p= Pattern.compile("0[xX][0-9]+[a-f193A-F]");
+        Pattern p= Pattern.compile("0[xX][0-9]+[a-fA-F]");
         Matcher m = p.matcher(str);
         while (m.find()){
             System.out.println(m.group());
