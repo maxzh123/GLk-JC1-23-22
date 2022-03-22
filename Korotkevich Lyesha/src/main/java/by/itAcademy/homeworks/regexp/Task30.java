@@ -10,10 +10,10 @@ public class Task30 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        System.out.println(replaceTags(str));
+        replaceTags(str);
     }
 
-    public static String replaceTags(String str){
-        return str.replaceAll("<p\\s*?\\S*>", "<p>");
+    public static void replaceTags(String str){
+        System.out.println(str.replaceAll("<p\\s*?\\S*?>", "<p>"));
     }
 }

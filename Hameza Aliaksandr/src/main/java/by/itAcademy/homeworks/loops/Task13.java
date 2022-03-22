@@ -6,10 +6,11 @@ package by.itAcademy.homeworks.loops;
 public class Task13 {
     public static void main(String[] args) {
         int a = 1;
-        int res = 1;
+        double res = 1;
         System.out.println(res);
         do {
-            res*=a;
+            res= res * a;
+            a++;
         }while(a<=25);
         System.out.println(res);
     }

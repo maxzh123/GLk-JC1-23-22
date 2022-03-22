@@ -2,21 +2,21 @@
 
 | Name | Tasks | class | Матем.операций | Методов | Присваиваний | анон.класов | внутр.класов | констант | логирование | лямбды | переменных | перхватов исключений | приват. методов | приват. полей | сравнений | циклов |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Kuznetsov Roman | 63 | 82 | 133 | 175 | 341 | 2 | 0 | 3 | 0 | 1 | 254 | 12 | 7 | 23 | 24 | 62 |
-| Levanchukov Sergey | 28 | 38 | 95 | 71 | 194 | 0 | 1 | 0 | 0 | 0 | 142 | 0 | 9 | 10 | 18 | 40 |
-| Korotkevich Lyesha | 26 | 29 | 63 | 67 | 153 | 0 | 0 | 0 | 0 | 0 | 107 | 0 | 0 | 3 | 16 | 32 |
-| Ryabkov Vlad | 23 | 28 | 93 | 45 | 106 | 0 | 0 | 0 | 0 | 0 | 92 | 0 | 1 | 1 | 54 | 17 |
-| Borysenka Aksana | 22 | 41 | 103 | 88 | 197 | 0 | 0 | 0 | 0 | 0 | 156 | 0 | 8 | 3 | 60 | 30 |
-| Melanich Olga | 22 | 35 | 64 | 72 | 188 | 0 | 0 | 0 | 0 | 0 | 158 | 0 | 0 | 0 | 35 | 13 |
-| Kotsuba Alexander | 22 | 27 | 58 | 37 | 104 | 0 | 0 | 0 | 0 | 0 | 84 | 0 | 3 | 2 | 26 | 25 |
-| Katarski Aliaksei | 19 | 38 | 62 | 66 | 100 | 0 | 0 | 0 | 0 | 0 | 80 | 0 | 12 | 8 | 16 | 26 |
-| Mikolai Sidzelnikau | 19 | 30 | 64 | 79 | 151 | 0 | 0 | 0 | 0 | 0 | 113 | 0 | 0 | 6 | 14 | 12 |
-| Gamezo Nikolai | 18 | 20 | 59 | 24 | 59 | 0 | 0 | 0 | 0 | 0 | 46 | 0 | 0 | 0 | 12 | 7 |
-| Artur Brylkou | 16 | 19 | 37 | 31 | 67 | 0 | 0 | 0 | 0 | 0 | 50 | 0 | 2 | 0 | 33 | 6 |
+| Kuznetsov Roman | 63 | 89 | 129 | 198 | 362 | 2 | 0 | 4 | 0 | 1 | 265 | 12 | 7 | 22 | 24 | 61 |
+| Levanchukov Sergey | 33 | 45 | 105 | 88 | 234 | 0 | 1 | 0 | 0 | 0 | 170 | 0 | 9 | 10 | 19 | 42 |
+| Korotkevich Lyesha | 32 | 36 | 77 | 79 | 195 | 0 | 0 | 0 | 0 | 0 | 133 | 0 | 0 | 6 | 16 | 35 |
+| Borysenka Aksana | 26 | 52 | 169 | 114 | 272 | 0 | 0 | 0 | 0 | 0 | 207 | 0 | 8 | 9 | 69 | 36 |
+| Ryabkov Vlad | 25 | 32 | 115 | 57 | 130 | 0 | 0 | 0 | 0 | 0 | 104 | 0 | 2 | 7 | 61 | 17 |
+| Kotsuba Alexander | 25 | 31 | 79 | 45 | 143 | 0 | 0 | 0 | 0 | 0 | 109 | 0 | 3 | 2 | 26 | 32 |
+| Melanich Olga | 23 | 38 | 70 | 80 | 213 | 0 | 0 | 0 | 0 | 0 | 175 | 0 | 0 | 0 | 37 | 21 |
+| Gamezo Nikolai | 22 | 24 | 87 | 41 | 132 | 0 | 0 | 0 | 0 | 0 | 94 | 0 | 0 | 0 | 22 | 27 |
+| Katarski Aliaksei | 21 | 40 | 68 | 73 | 116 | 0 | 0 | 0 | 0 | 0 | 93 | 0 | 12 | 8 | 16 | 30 |
+| Mikolai Sidzelnikau | 20 | 35 | 75 | 102 | 202 | 0 | 0 | 12 | 0 | 0 | 147 | 0 | 6 | 14 | 43 | 15 |
+| Artur Brylkou | 18 | 22 | 45 | 38 | 74 | 0 | 0 | 0 | 0 | 0 | 56 | 0 | 2 | 0 | 35 | 8 |
+| Hameza Aliaksandr | 17 | 18 | 45 | 22 | 62 | 0 | 0 | 0 | 0 | 0 | 50 | 0 | 0 | 0 | 13 | 6 |
 | Sinelnik Anton | 15 | 15 | 57 | 17 | 44 | 0 | 0 | 0 | 0 | 0 | 40 | 0 | 2 | 0 | 35 | 3 |
-| Bykovski Ura | 8 | 8 | 15 | 10 | 24 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 0 | 0 | 1 | 0 |
+| Bykovski Ura | 10 | 10 | 30 | 12 | 35 | 0 | 0 | 0 | 0 | 0 | 26 | 0 | 0 | 0 | 3 | 0 |
 | Arkhangelskiy Vlad | 7 | 7 | 18 | 8 | 15 | 0 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 0 | 1 | 0 |
-| Hameza Aliaksandr | 6 | 7 | 21 | 7 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 0 | 0 | 0 | 0 | 0 |
 | Denis Stelmashok | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maryna Liakh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -31,7 +31,7 @@
 | Гамезо Николай Николаевич  | SUCCESS |
 | Катарский Алексей Александрович  | SUCCESS |
 | Короткевич Алексей Геннадьевич  | SUCCESS |
-| Коцуба Александр Сергеевич  | SUCCESS |
+| Коцуба Александр Сергеевич  | FAILURE |
 | Кузнецов Роман Вадимович  | SUCCESS |
 | Леванчуков Сергей Анатольевич  | SUCCESS |
 | Лях Марина Игоревна  | SUCCESS |
@@ -49,3 +49,7 @@
 
 # Ошибки:
 
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:3 символ:33 package org.jetbrains.annotations does not exist
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:33 символ:27 cannot find symbol
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:3 символ:33 package org.jetbrains.annotations does not exist
+1. Kotsuba Alexander/src/main/java/by/itAcademy/homeworks/objects/TimeInterval.java строка:33 символ:27 cannot find symbol
