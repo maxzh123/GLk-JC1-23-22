@@ -11,7 +11,7 @@ public class Task28 {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         String str1 = "";
-        Pattern p = Pattern.compile("\\w\\b");
+        Pattern p = Pattern.compile("[\\wА-Яа-яЁё]\\b");
         Matcher m = p.matcher(str);
         while (m.find()){
             str1+= m.group();
