@@ -11,7 +11,7 @@ public class Task27 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        String[] str1 = str.split("\\s+");
+        String[] str1 = str.split("(\\s+|[!?]+|\\.{3}|[,;:\"'()\\.-]\\s?)");
         System.out.println(str1.length);
     }
 }

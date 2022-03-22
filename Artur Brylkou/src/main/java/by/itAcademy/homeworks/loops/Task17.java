@@ -4,9 +4,33 @@ import java.text.NumberFormat;
 
 public class Task17 {
     public static void main(String[] args) {
-        NumberFormat f = NumberFormat.getInstance();
-        int i = -2002314356;
-        System.out.println(f.format(i));
+        int number = -523100356;
+        if (number > 0) {
+            System.out.println(numberPlus(number));
+        }
+        if (number < 0) {
+            System.out.println(numberMinus(number));
+        }
+        if (number == 0) {
+            System.out.println("0");
+        }
     }
+        public static String numberPlus(int number){
+            String rezult = "";
+            do {
+                rezult = number % 1000 + " " + rezult;
+                number = number / 1000;
+            } while (number > 0);
+            return rezult;
+        }
+        public static String numberMinus(int number){
+        String rezult = "";
+        do {
+            rezult = (number % 1000*(-1)) + " " + rezult;
+            number = number / 1000;
+        } while (number <0);
+        return "-" + rezult;
+    }
+
 
 }

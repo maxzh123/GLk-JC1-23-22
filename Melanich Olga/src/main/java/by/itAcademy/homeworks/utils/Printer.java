@@ -15,4 +15,7 @@ public class Printer {
     public static void print(BigInteger b) {
         System.out.println(b);
     }
+    public static void print(Object obj) {
+        System.out.println(obj);
+    }
 }
