@@ -11,22 +11,14 @@ import java.util.Arrays;
 
 public class Task21 {
     public static void main(String[] args) {
-       // int l = 10;
-       // int array[] = new int[l];
-      //  fillArray(array);
-        int array[] = {2, 9, 1, 1, 1, 2, 2, 2, 2};
+        // int l = 10;
+        // int array[] = new int[l];
+        // fillArray(array);
+        // для тестирования массив заполняется вручную
+        int array[] = {1, 2, 9, 2, 2, 2, 2, 1, 2};
         System.out.println(Arrays.toString(array));
-       // System.out.println(minIndex(array));
-       // System.out.println(calcSum(array));
-        System.out.println(checkTwo(array));
-
-      //  System.out.println(newCalcSum(array));
-       // System.out.println(maxIndex(array));
-      //  System.out.println(calcSum(array));
-       // System.out.println("Максимальный элемент " + maxElement(array));
-        // System.out.println("Индекс максимального элемента " + maxIndex(array));
+        System.out.println("Сумма = " + calcSum(array));
     }
-
     //метод заполнения массива случайными числами
     public static int[] fillArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -34,120 +26,77 @@ public class Task21 {
         }
         return array;
     }
-
     //метод поиска индекса максимального элемента массива
     public static int maxIndex(int[] array) {
         int maxindex = 0;
-        int max = 0;
+        int max = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] >= max) {
+            if (array[i] > max) {
                 max = array[i];
                 maxindex = i;
             }
         }
         return maxindex;
     }
-
     //метод поиска индекса минимального элемента массива
     public static int minIndex(int[] array) {
         int minindex = 0;
         int min = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] <= min) {
+            if (array[i] < min) {
                 min = array[i];
                 minindex = i;
             }
         }
         return minindex;
     }
-
-
-
-    //метод проверки на наличие двух максимальных или минимальных значений (в процессе создания)
-    public static int checkTwo(int[] array) {
-        int sum = 0;
-        int l = 0;
-        int t = 0;
-        int indexNewMax = 0;
-        int indexNewMin = 0;
-        if (countMin(array) ==1 && countMax(array) ==1) {
-            sum = calcSum(array);
-        }
-        else {
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] == array[maxIndex(array)] && i != maxIndex(array)) {
-                    l = i;
-                    for (int j = 0; i < array.length; i++) {
-                        if (l - maxIndex(array) < l - i) {
-                            indexNewMax = i;
-                        }
-                    }
-                }
-            }
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] == array[minIndex(array)] && i != minIndex(array)) {
-                    t = i;
-                    for (int j = 0; i < array.length; i++) {
-                        if (t - minIndex(array) < t - i) {
-                            indexNewMin = i;
-                        }
-                    }
-                }
-            }
-            sum = newCalcSum(array, indexNewMin, indexNewMax);
-        }
-        return sum;
-    }
-
-    //метод подсчёта количества минимальных значений
-    public static int countMin(int [] array){
-        int count = 0;
+    //метод проверки на наличие второго максимального значения
+    public static int checkNewMax(int[] array) {
+        int secondMax = 0;
+        int indexNewMax = maxIndex(array);
+        int countmax = 0;
         for (int i = 0; i < array.length; i++) {
-            if(array[i] == array[minIndex(array)]){
-                count++;
+            if (array[i] == array[maxIndex(array)] && i != maxIndex(array)) {
+                secondMax = i;
+                countmax++;
             }
         }
-        return count;
-    }
-
-    //метод подсчёта количества максимальных значений
-    public static int countMax(int [] array){
-        int count = 0;
         for (int i = 0; i < array.length; i++) {
-            if(array[i] == array[maxIndex(array)]){
-                count++;
+            if ((Math.abs(minIndex(array) - maxIndex(array)) < Math.abs(minIndex(array) - secondMax)) && countmax != 0) {
+                indexNewMax = secondMax;
             }
         }
-        return count;
+        return indexNewMax;
     }
-
-
-
-    //вычисление суммы элементов массива между минимальным и максимальным значением
-    public static int calcSum(int[] array) {
-        int sum = 0;
-        if (minIndex(array) < maxIndex(array)) {
-            for (int i = minIndex(array); i < maxIndex(array) + 1; ++i) {
-                sum = sum + array[i];
-            }
-        } else {
-            for (int j = minIndex(array); j > maxIndex(array) - 1; j--) {
-                sum = sum + array[j];
+    //метод проверки на наличие второго маинимального значения
+    public static int checkNewMin(int[] array) {
+        int secondMin = 0;
+        int indexNewMin = minIndex(array);
+        int countmin = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == array[minIndex(array)] && i != minIndex(array)) {
+                secondMin = i;
+                countmin++;
             }
         }
-        return sum;
+        for (int i = 0; i < array.length; i++) {
+            if ((Math.abs(maxIndex(array) - minIndex(array)) < Math.abs(maxIndex(array) - secondMin)) && countmin != 0) {
+                indexNewMin = secondMin;
+            }
+        }
+        return indexNewMin;
     }
-
-
     //вычисление суммы элементов массива между минимальным и максимальным значением New
-    public static int newCalcSum(int[] array, int indexNewMin, int indexNewMax) {
+    public static int calcSum(int[] array) {
+        int indexMin = checkNewMin(array);
+        int indexMax = checkNewMax(array);
         int sum = 0;
-        if (indexNewMin < indexNewMax) {
-            for (int i = indexNewMin; i < indexNewMax + 1; ++i) {
+        if (indexMin < indexMax) {
+            for (int i = indexMin; i < indexMax + 1; ++i) {
                 sum = sum + array[i];
             }
         } else {
-            for (int j = indexNewMin; j > indexNewMax - 1; j--) {
+            for (int j = indexMin; j > indexMax - 1; j--) {
                 sum = sum + array[j];
             }
         }

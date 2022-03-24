@@ -12,7 +12,7 @@ import by.itAcademy.homeworks.utils.Printer;
 
 public class Task24 {
     public static void main(String[] args) {
-        TimeInterval timeInterval1 = new TimeInterval(0, 5, 0);
+        TimeInterval timeInterval1 = new TimeInterval(1, 5, 0);
         TimeInterval timeInterval2 = new TimeInterval(300);
         Printer.print(timeInterval1);
         Printer.print(timeInterval2);
@@ -21,10 +21,10 @@ public class Task24 {
         if (result == 0) {
             Printer.print("Первый объект равен второму объекту");
         }
-        if (result >= 1) {
+        if (result == 1) {
             Printer.print("Первый объект больше второго объекта");
         }
-        if (result <= -1) {
+        if (result == -1) {
             Printer.print("Первый объект меньше второго объекта");
         }
     }

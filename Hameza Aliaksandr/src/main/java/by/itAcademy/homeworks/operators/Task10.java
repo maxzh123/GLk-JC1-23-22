@@ -7,19 +7,17 @@ package by.itAcademy.homeworks.operators;
 
 public class Task10 {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 3;
-        int c = 7;
-        int d = 8;
-        int e = 6;
-        int f = 2;
-        int areaofhouseone = a * b;
-        int areaofhousetwo = c * d;
-        int areaofland = e * f;
-        if (areaofhouseone+areaofhousetwo > areaofland ){
-            System.out.println("Нельзя вместить");
-        } else System.out.println("Можно поместить");
-
+        System.out.println(houses(5, 6,2,3,4,5));
     }
+        public static String houses(int a, int b, int c, int d, int e, int f) {
+            String str = "";
+            if ((b + c <= f && a <= e && d <= e) || (b + d <= f && a <= e && c <= e) || (a + d <= f && b <= e && c <= e) || (a + c <= f && b <= e && d <= e) ||
+                    (a + c <= e && b <= f && d <= f) || (a + d <= e && b <= f && c <= f) || (b + c <= e && a <= f && d <= f) || (b + d <= e && a <= e && c <= e)) {
+                str = "Дома можно вместить на участок";
+            } else {
+                str = "Дома нельзя поместить на участок";
+            }
+            return str;
+        }
 
 }
