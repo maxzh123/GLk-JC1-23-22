@@ -1,7 +1,5 @@
 package by.itAcademy.homeworks.arrays;
 
-import java.util.Arrays;
-
 /**
  *Задание 23
  Создать двухмерный квадратный массив и заполнить его «бабочкой», то есть таким образом:
