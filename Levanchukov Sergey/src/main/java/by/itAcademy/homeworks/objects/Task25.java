@@ -1,5 +1,6 @@
 package by.itAcademy.homeworks.objects;
 
+import java.util.Collection;
 import java.util.Scanner;
 
 /**
@@ -15,11 +16,11 @@ import java.util.Scanner;
 
 public class Task25 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        ATM wallet=new ATM(10,10,10);
-        wallet.addFifty(10);
-        wallet.addTwenty(10);
-        wallet.addHundred(10);
-        wallet.withdrawalOfMoney(10);
+        Banknotes coin20=new Banknotes(1);
+        Banknotes coin50=new Banknotes(1);
+        Banknotes coin100=new Banknotes(1);
+        Amount c20=new Amount();
+        c20.setCollection((Collection) coin20);
+        System.out.println(c20.toString());
     }
 }
