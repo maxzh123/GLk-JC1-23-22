@@ -24,5 +24,12 @@ public class Task33 {
             if (i>0){System.out.print(" ");}
         }
         System.out.println();
+        AbstractNumberGroup t=new SuperNumberGroup();
+
+        if (t instanceof МожетДатьВДыню){
+            System.out.println("Не дерзить!");
+        }
+
+
     }
 }
