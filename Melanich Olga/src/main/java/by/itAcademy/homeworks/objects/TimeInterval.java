@@ -33,7 +33,12 @@ public class TimeInterval implements Comparable<TimeInterval> {
     public int compareTo(TimeInterval o) {
         int first = getTotalNumberOfSeconds();
         int second = o.getTotalNumberOfSeconds();
-        return first - second;
+        if (first < second) {
+            return -1;
+        }
+        if (first > second) {
+            return 1;
+        } else return 0;
     }
 
     @Override

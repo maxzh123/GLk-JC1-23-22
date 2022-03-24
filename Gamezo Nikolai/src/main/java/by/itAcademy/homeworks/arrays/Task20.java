@@ -28,7 +28,7 @@ public class Task20 {
     public static int  maxElement(int[] array) {
         int max = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] >= max) {
+            if (array[i] > max) {
                 max = array[i];
             }
         }
@@ -39,7 +39,7 @@ public class Task20 {
         int max = 0;
         int maxindex = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] >= max) {
+            if (array[i] > max) {
                 max = array[i];
                 maxindex = i;
             }
