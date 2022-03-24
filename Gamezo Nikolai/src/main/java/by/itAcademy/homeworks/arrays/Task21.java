@@ -15,7 +15,7 @@ public class Task21 {
         // int array[] = new int[l];
         // fillArray(array);
         // для тестирования массив заполняется вручную
-        int array[] = {1, 2, 2, 2, 1, 2, 2, 2, 9};
+        int array[] = {1, 2, 2, 2, 2, 2, 2, 2, 9};
         System.out.println(Arrays.toString(array));
         System.out.println("Сумма = " + checkTwo(array));
     }
@@ -29,7 +29,7 @@ public class Task21 {
     //метод поиска индекса максимального элемента массива
     public static int maxIndex(int[] array) {
         int maxindex = 0;
-        int max = 0;
+        int max = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] >= max) {
                 max = array[i];
@@ -41,7 +41,7 @@ public class Task21 {
     //метод поиска индекса минимального элемента массива
     public static int minIndex(int[] array) {
         int minindex = 0;
-        int min = 0;
+        int min = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] <= min) {
                 min = array[i];
@@ -51,14 +51,13 @@ public class Task21 {
         return minindex;
     }
     //метод проверки на наличие двух максимальных или минимальных значений (в процессе создания)
+    //добавить проверку на наличие второго максимального или минимального элемента
     public static int checkTwo(int[] array) {
         int sum = 0;
         int l = 0;
         int t = 0;
-        int indexNewMax = 0;
-        int indexNewMin = 0;
-        indexNewMin = minIndex(array);
-        indexNewMax = maxIndex(array);
+        int indexNewMin = minIndex(array);
+        int indexNewMax = maxIndex(array);
         for (int i = 0; i < array.length; i++) {
             if (array[i] == array[maxIndex(array)] && i != maxIndex(array)) {
                 l = i; //по сути индекс другово максимального элемента
@@ -80,6 +79,13 @@ public class Task21 {
             }
         }
         sum = newCalcSum(array, indexNewMin, indexNewMax);
+
+        System.out.println("indexNewMin " + indexNewMin);
+        System.out.println("indexNewMax " + indexNewMax);
+        System.out.println("minIndex(array) " + minIndex(array));
+        System.out.println("maxIndex(array) " + maxIndex(array));
+        System.out.println("l " + l);
+
         return sum;
     }
     //вычисление суммы элементов массива между минимальным и максимальным значением New
