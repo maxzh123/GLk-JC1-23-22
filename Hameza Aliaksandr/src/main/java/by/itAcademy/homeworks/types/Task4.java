@@ -6,11 +6,11 @@ package by.itAcademy.homeworks.types;
  */
 
 public class Task4 {
+        public static int calculation (int a , int b ) {
+            int x = (a+b)+(a*b);
+            return x;
+        }
     public static void main(String[] args) {
-        int a = 10;
-        int b = 3;
-        int x = (a+b)+(a*b);
-        System.out.println(x);
-
+            int x = calculation(3, 6);
+        System.out.println (x); }
     }
-}
