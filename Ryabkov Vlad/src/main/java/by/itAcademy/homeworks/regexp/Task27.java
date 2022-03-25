@@ -11,18 +11,12 @@ import java.util.regex.Pattern;
  */
 
 
-//[а-яА-яa-zA-z]+
 public class Task27 {
     public static void main(String[] args) {
         System.out.println("Input text : ");
         Scanner scanner = new Scanner(System.in);
-        String string = scanner.toString();
-        Pattern pattern = Pattern.compile("[а-яА-яa-zA-z]+");
-        Matcher matcher = pattern.matcher(scanner.nextLine());
-        int value = 0;
-        while (matcher.find()){
-            value++;
+        String string = scanner.nextLine();
+        String[]strings = string.split("\\s|[!?]+|[,.-;:]|(\\.{3})");
+            System.out.println(strings.length);
         }
-        System.out.println(value);
     }
-}

@@ -1,6 +1,9 @@
 package by.itAcademy.homeworks.loops;
 
+import javafx.scene.transform.Scale;
+
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 /**
  * Задать произвольное целое число и вывести его в бухгалтерском формате,
@@ -10,13 +13,17 @@ import java.text.DecimalFormat;
 
 public class Task17 {
     public static void main(String[] args) {
-        long number = 20_023_143L;
-        String result = "";
-        do  {
-            result = number % 1000 + " " + result;
-            number = number / 1000;
-            }
-        while (number > 0);
-        System.out.println(result);
+//     код Николая так и не понял
+//        long number = 20_023_143L;
+//        String result = "";
+//        do  {
+//            result = number % 1000 + " " + result;
+//            number = number / 1000;
+//            }
+//        while (number > 0);
+//        System.out.println(result);
+        Scanner console = new Scanner(System.in);
+        long numb = console.nextLong();
+        System.out.print(new DecimalFormat( "###,###" ).format(numb));
     }
 }
