@@ -48,7 +48,7 @@ public class ATM {
             nominalValueTwenty = nominalValueTwenty - count20;
             msg = "Выдано: " +  count100 + " * 100, " + count50 + " * 50, " + count20 + " * 20";
         } else {
-            msg = "Увы! Нет необходимых купюр для выдачи денег";
+            msg = "Увы! Нет необходимых купюр для выдачи денег ";
         }
         return msg;
     }
