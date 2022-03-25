@@ -12,20 +12,21 @@ public class Task26 {
 
     public static void main(String[] args) {
 
-        Scanner  sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Введите строку");
         String str = sc.nextLine();
+        System.out.println("Количество знаков препинания в строке " + getPunctCount(str));
+    }
 
-        Pattern p = Pattern.compile("[,:;()\"-]+|[\\?|\\!][\\?\\!\\.]{0,3}|[\\.]{1,3}");
-        Matcher m = p.matcher(str);
+
+     public static int getPunctCount(String s){
         int count = 0;
+        Pattern p = Pattern.compile("[\\.]{3}|[\\?|\\!][\\!\\?\\.]*|[\\.,!?:;\\-\"()]");
+        Matcher m = p.matcher(s);
         while ((m.find())){
             count++;
         }
-        System.out.println("Количество знаков препинания в строке " + count);
+        return count;
     }
-
-    //[,:;()"-]+|[\?|\!][\?\!\.]{0,3}|[\.]{1,3}
-
 
 }
