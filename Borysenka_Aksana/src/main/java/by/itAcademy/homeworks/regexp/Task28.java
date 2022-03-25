@@ -16,12 +16,17 @@ public class Task28 {
 
 
     public static String getText (String str){
-        String text = "";
-        Pattern p = Pattern.compile("([А-Яа-яЁёA-Za-z](?=\\s|\\.|,|;|:|\\!|\\?))*", Pattern.MULTILINE);
-        Matcher m = p.matcher(str);
-        while (m.find()){
-            text += m.group();
+
+        StringBuilder sb = new StringBuilder();
+        Pattern words = Pattern.compile("[A-Za-zFА-Яа-яЁ-ё]+", Pattern.MULTILINE);
+        Pattern lastLetterWord = Pattern.compile("[a-zа-яё]$", Pattern.MULTILINE);
+        Matcher mWords = words.matcher(str);
+        while (mWords.find()){
+
+            Matcher mLastLetterWord = lastLetterWord.matcher(mWords.group());
+            if(mLastLetterWord.find())
+            sb.append(mLastLetterWord.group());
         }
-        return text;
+        return sb.toString();
     }
 }
