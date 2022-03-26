@@ -12,7 +12,7 @@ public class Task29 {
      * Результат работы метода выведите на экран.
      */
 
-    //0x([0-9A-Fa-f]{0,2})*
+
     public static void main(String[] args) {
         strScanner strObject = new strScanner();
         String str = strObject.strEnter();
@@ -21,7 +21,7 @@ public class Task29 {
 
     public static String getResult( String str){
         String str16 = "";
-        Pattern p = Pattern.compile("0x([0-9A-Fa-f]{0,2})*");
+        Pattern p = Pattern.compile("0x([0-9A-Fa-f]{0,2})+");
         Matcher m = p.matcher(str);
         while (m.find()){
             str16 += m.group() + " " ;

@@ -14,6 +14,6 @@ public class Task25 {
     public static void main(String[] args){
         ATM one=new ATM(12,11,13);
         one.getTotalMoney();
-        one.takeMoney(1220);
+        one.takeMoney(1420);
     }
 }
