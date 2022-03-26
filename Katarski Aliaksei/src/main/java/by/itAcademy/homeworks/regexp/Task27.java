@@ -18,7 +18,7 @@ public class Task27 {
 
     public static int numOfWords(String string){
         int count=0;
-        Pattern p=Pattern.compile("[a-яA-Яa-zA-ZёЁ]+");
+        Pattern p=Pattern.compile("([a-zA-Zа-яА-ЯЁё]+[-]?[ ]{2,}[a-zA-Zа-яА-ЯЁё]+)|([a-zA-Zа-яА-ЯЁё]+[-]?[a-zA-Zа-яА-ЯЁё]+)");
         Matcher m=p.matcher(string);
         while(m.find()){
             count++;
