@@ -16,14 +16,14 @@ public class SmartIron implements IPayable {
 
     @Override
     public boolean addMoney(BigDecimal money) {
-        balance= balance.add(money);
+        balance = balance.add(money);
         return true;
     }
 
     @Override
     public boolean withdrawMoney(BigDecimal money) {
         boolean result = false;
-        if(balance.subtract(money).intValue()>0){
+        if (balance.subtract(money).intValue() > 0) {
             balance = balance.subtract(money);
             result = true;
         }
