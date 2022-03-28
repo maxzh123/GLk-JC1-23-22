@@ -85,15 +85,6 @@ class appliances {
 
     class Cooker extends kitchenAppliances{
 
-        @Override
-        public String toString() {
-            return "Cooker{" +
-                    "type='" + type + '\'' +
-                    ", capacity=" + capacity + " liters=" +
-                    ", numberOfBurners=" + numberOfBurners +
-                    '}';
-        }
-
         private String type;
         private int capacity;
         private  int numberOfBurners;
@@ -104,6 +95,23 @@ class appliances {
             this.type = type;
             this.capacity = capacity;
             this.numberOfBurners = numberOfBurners;
+        }
+        @Override
+        public String toString() {
+            return "Cooker{" +
+                    "manufacturer='" + getManufacturer() + '\'' +
+                    ", serialNumber='" + getSerialNumber() + '\'' +
+                    ", color=" + getColor()  + "\n" +
+                    " lifetime= " + getLifetime() + "hours" + ", function=" + getFunction()  +
+                    ", weight= " + getWeight()  + " kilogram" +   "\n" +
+                    " height= " + getHeight() + " centimeters" +
+                    ", depth= " + getDepth() + " centimeters" +
+                    ", width= " + getWidth() + " centimeters"  + "\n"+
+                    " wattage= " + getWattage() + " Watt " +
+                    ", type= " + type  +
+                    ", capacity= " + capacity + " liters"  + "\n"+
+                    " numberOfBurners= " + numberOfBurners +
+                    '}';
         }
 
 
