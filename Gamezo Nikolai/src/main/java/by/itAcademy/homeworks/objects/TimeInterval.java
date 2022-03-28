@@ -17,8 +17,9 @@ public class TimeInterval implements Comparable<TimeInterval> {
         this.hours = seconds / 3600;
     }
     //метод для получения полного количества секунд в объекте
-    public int getSeconds(){
-        return seconds;
+    public int getSeconds() {
+        int sec = seconds + (minutes * 60) + (hours * 3600);
+        return sec;
     }
     //метод для сравнения двух объектов (TimeInterval и O) по количеству секунд
     public int compareTo(TimeInterval O) {

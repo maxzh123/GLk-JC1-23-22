@@ -14,7 +14,9 @@ public class Task24 {
         TimeInterval first = new TimeInterval(2000);
         TimeInterval second = new TimeInterval(200, 5 ,1);
         first.printTime();
+        System.out.println("Cекунд в объекте " + first.getSeconds());
         second.printTime();
+        System.out.println("Cекунд в объекте " + second.getSeconds());
         System.out.println(first.compareTo(second));
     }
 }
