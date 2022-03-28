@@ -83,52 +83,97 @@ class appliances {
     }
 
 
-    class Cooker extends kitchenAppliances{
+    class Cooker extends kitchenAppliances {
 
         private String type;
         private int capacity;
-        private  int numberOfBurners;
+        private int numberOfBurners;
 
 
-       public Cooker(String manufacturer, String serialNumber, String color, int lifetime, String function, double weight, double height, double depth, double width, int wattage, String type, int capacity, int numberOfBurners) {
+        public Cooker(String manufacturer, String serialNumber, String color, int lifetime, String function, double weight, double height, double depth, double width, int wattage, String type, int capacity, int numberOfBurners) {
             super(manufacturer, serialNumber, color, lifetime, function, weight, height, depth, width, wattage);
             this.type = type;
             this.capacity = capacity;
             this.numberOfBurners = numberOfBurners;
         }
+
         @Override
         public String toString() {
             return "Cooker{" +
                     "manufacturer='" + getManufacturer() + '\'' +
                     ", serialNumber='" + getSerialNumber() + '\'' +
-                    ", color=" + getColor()  + "\n" +
-                    " lifetime= " + getLifetime() + "hours" + ", function=" + getFunction()  +
-                    ", weight= " + getWeight()  + " kilogram" +   "\n" +
+                    ", color=" + getColor() + "\n" +
+                    " lifetime= " + getLifetime() + "hours" + ", function=" + getFunction() +
+                    ", weight= " + getWeight() + " kilogram" + "\n" +
                     " height= " + getHeight() + " centimeters" +
                     ", depth= " + getDepth() + " centimeters" +
-                    ", width= " + getWidth() + " centimeters"  + "\n"+
+                    ", width= " + getWidth() + " centimeters" + "\n" +
                     " wattage= " + getWattage() + " Watt " +
-                    ", type= " + type  +
-                    ", capacity= " + capacity + " liters"  + "\n"+
+                    ", type= " + type +
+                    ", capacity= " + capacity + " liters" + "\n" +
                     " numberOfBurners= " + numberOfBurners +
                     '}';
         }
 
 
-        public String getType() {return type;}
-        public int getCapacity() {return capacity;}
-        public int getNumberOfBurners() {return numberOfBurners;}
-        public String work(){return "Cook";}
+        public String getType() {
+            return type;
+        }
 
+        public int getCapacity() {
+            return capacity;
+        }
+
+        public int getNumberOfBurners() {
+            return numberOfBurners;
+        }
+
+        public String work() {
+            return "Cook";
+        }
+    }
+
+    class Fridge extends kitchenAppliances {
+        public Fridge(String manufacturer, String serialNumber, String color, int lifetime, String function, double weight, double height, double depth, double width, int wattage) {
+            super(manufacturer, serialNumber, color, lifetime, function, weight, height, depth, width, wattage);
+        }
+        private int capacity;
+        private int numberOfDoors;
+
+        public int getCapacity() {return capacity;}
+        public int getNumberOfDoors() {return numberOfDoors;}
+        public String work(){return "I freeze U";}
+
+        @Override
+        public String toString() {
+            return "fridge{" +
+                    "manufacturer='" + getManufacturer() + '\'' +
+                    ", serialNumber='" + getSerialNumber() + '\'' +
+                    ", color=" + getColor()  + "\n" +
+                    " lifetime= " + getLifetime() + "hours" + ", function=" + getFunction()  +
+                    ", weight= " + getWeight()  + " kilogram" +   "\n" +
+                    " height= " + getHeight() + " meters" +
+                    ", depth= " + getDepth() + " meters" +
+                    ", width= " + getWidth() + " meters"  + "\n"+
+                    " wattage= " + getWattage() + " Watt " +
+                    "capacity=" + capacity +
+                    ", numberOfDoors=" + numberOfDoors +
+                    '}';
+        }
     }
 
 
 public class Task32 {
     public static void main(String[] args) {
-        Cooker cooker = new Cooker("Bosch","7866g54g","White", 12, "Cook", 12.5, 1.2, 1.5,
-                1.3, 2000, "Elecric", 60,4);
-        if (cooker.turnOn()){
-            System.out.println(cooker +"\n" +cooker.work());
-        }else System.out.println("Impossible Turn on :(");
+        Cooker cooker = new Cooker("Bosch", "7866g54g", "White", 12, "Cook", 12.5, 1.2, 1.5,
+                1.3, 2000, "Elecric", 60, 4);
+        if (cooker.turnOn()) {
+            System.out.println(cooker + "\n" + cooker.work());
+        } else System.out.println("Impossible Turn on :(");
+
+        Fridge fridge = new Fridge("LG", "LG65RHJ886VB", "Silver", 20, "Food Storage",
+                75, 2.20, 1, 1, 1300);
+        System.out.println();
+        System.out.println(fridge + "\n" + fridge.work());
     }
 }
