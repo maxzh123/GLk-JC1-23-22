@@ -11,7 +11,7 @@ import java.util.List;
  * Класс отвечающий за создание объекта парковки
  * @param <T>
  */
-public class Parking<T extends Vehicle> implements IParking{
+abstract class Parking<T extends Vehicle> implements IParking{
     private final List<ParkingLot> lots;
 
     public Parking(int size) {
