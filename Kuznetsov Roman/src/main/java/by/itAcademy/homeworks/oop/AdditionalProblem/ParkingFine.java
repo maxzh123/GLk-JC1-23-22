@@ -33,6 +33,7 @@ public class ParkingFine<T extends Vehicle, B extends IPayer> extends Parking<T>
         }
         return result;
     }
+
     public boolean takeVehicleBack(T vehicle, Card card) {
         boolean result = false;
         if (payer.getPayment(card, tickets.get(vehicle).getPrice())) {
