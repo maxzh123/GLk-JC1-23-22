@@ -26,8 +26,17 @@ public class MStack implements ManeyStack{
     }
 
     @Override
+    public boolean isEmpty() {
+        return st.isEmpty();
+    }
+
+    @Override
     public String toString() {
         StringBuffer sb=new StringBuffer();
+        for (Banknote b:st) {
+            sb.append(String.format("%d %s sn: %08d\r\n",b.getNominal(),b.getCurrency(),b.getSerialNumber()));
+        }
+
         for (Map.Entry<Currency,Long> e:calc().entrySet()) {
             sb.append(String.format("%s --> %d",e.getKey(),e.getValue()));
         }
