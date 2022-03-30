@@ -1,10 +1,7 @@
 package by.itAcademy.homeworks.collections;
 
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**Создать коллекцию, заполнить ее случайными целыми числами. Удалить повторяющиеся числа.*/
 
@@ -15,7 +12,7 @@ public class Task40 {
             collection.add((int)(Math.random()*100)+1);
         }
         System.out.println(collection);
-        Set<Integer> collection2 = new HashSet<>();
+        Set<Integer> collection2 = new LinkedHashSet<>();
         collection2.addAll(collection);
         collection.clear();
         for(Integer i: collection2){

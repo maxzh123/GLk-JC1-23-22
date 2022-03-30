@@ -11,13 +11,13 @@ import java.util.Scanner;
 
 public class Task39 {
     public static void main(String[] args) {
-        ArrayInitialization listOfRatings=new ArrayInitialization();
         Scanner s= new Scanner(System.in);
-
-        listOfRatings.setCount(s.nextInt());
-
-        listOfRatings.printArrayList(listOfRatings.deleteUnsatisfiedRatings(listOfRatings.arrayInitialization()));
-
+        ArrayCollection sad=new ArrayCollection();
+        sad.arrayInitialization(s.nextInt());
+        sad.printArray();
+        sad.deleteUnsatisfiedRatings();
+        System.out.println();
+        sad.printArray();
     }
 
 }
