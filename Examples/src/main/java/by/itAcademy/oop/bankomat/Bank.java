@@ -5,7 +5,8 @@ public interface Bank {
     Card issueCard(Currency curr,String name);
     BanknoteBox packMoneyBox(Currency curr,long nominal);
     boolean checkCard(Card c);
-    boolean withdrawMoney(Currency c, long amount,Card card);
+    Transaction withdrawMoney(Currency c, long amount,Card card) throws Exception;
     boolean topUpAccount(long amount,Card card);
-
+//Добавил метод посмотреть баланс. Потому что теперь есть конверсия валют и это важно
+    long checkBalance(Card currentCard);
 }
