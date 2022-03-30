@@ -1,8 +1,5 @@
 package by.itAcademy.homeworks.oop;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Task32 {
 
     /**Task32
@@ -11,20 +8,16 @@ public class Task32 {
      */
 
     public static void main(String[] args) {
-//        householdAppliances object1 = new householdAppliances("Atlant" , "Belarus",10);
-//        object1.turnOn();
-//        largeHouseholdAppliances object2 = new largeHouseholdAppliances("Atlant" , "Belarus",10, "Refrigeration equipment", 57);
-//        System.out.println(object1);
-//        System.out.println(object2);
-//
 
-        fridge object3 = new fridge("Atlant" , "Belarus",10, "Refrigeration equipment", 57, "Protected food", 280);
+        fridge object1 = new fridge("Atlant" , "Belarus",2);
+        System.out.println(object1);
+        object1.on();
+        object1.turnOn();
 
-        if(object3.turnOn()){
-            System.out.println(object3 + "\n" + object3.work());
-        } else {
-            System.out.println(object3 + "\n" + "Don't work");
-        }
+        fridge object2 = new fridge("Samsung" , "Republic of Korea",4);
+        System.out.println(object2);
+        object1.off();
+        object1.turnOn();
     }
 
 }

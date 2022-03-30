@@ -80,12 +80,12 @@ public class Task21 {
     }
 
     public int getArray() {
-        setArraySearchIndexMinMax(indexOfMin,indexOfMax,indexOfMin2,indexOfMax2);
+        setArraySearchIndexMinMax();
         getComparisonSumIndex();
         return obSum;
     }
 
-    private void setArraySearchIndexMinMax(int indexOfMin, int indexOfMax, int indexOfMin2, int indexOfMax2) {
+    private void setArraySearchIndexMinMax() {
         int sumIndex = array[0];
         int sumIndex2 = array[0];
         for (int i = 0; i < array.length; i++) {
@@ -110,10 +110,6 @@ public class Task21 {
                 indexOfMax2 = i;
             }
         }
-        this.indexOfMax2 = indexOfMax2;
-        this.indexOfMin2 = indexOfMin2;
-        this.indexOfMin = indexOfMin;
-        this.indexOfMax = indexOfMax;
     }
 
     @Override

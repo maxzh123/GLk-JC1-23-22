@@ -12,41 +12,36 @@ import java.util.Arrays;
         1 1 1 1 1 */
 
 public class Task23 {
-
-    private int[][] array;
-
-    public Task23(int[][] array) {
-        this.array = array;
-    }
+    private int sum1 = 10;
+    private int sum2 = 10;
+    private int[][] array = new int[sum1][sum2];
+    private int sum = 1;
 
     public int[][] getArray() {
-        setArray(array);
+        setArray();
         return array;
     }
 
-    private void setArray(int[][] array) {
-        for (int i = 0; i < array.length; i++) {
-            int sum = 1;
-            for (int j = 0; j < array[i].length; j++) {
-                array[0][j] = sum;
+    private void setArray() {
+        int js = 0;
+        int ks = sum1%2;
+        for (int i = 0; i < sum1; i++) {
+            if (js==sum2){
+                js--;
+                sum2++;
             }
-            for (int j = 1; j < array[i].length-1; j++) {
-                array[1][j] = sum;
-            }
-            for (int j = 2; j < array[i].length-2; j++) {
-                array[2][j] = sum;
-            }
-            for (int j = 1; j < array[i].length-1; j++) {
-                array[3][j] = sum;
-            }
-            for (int j = 0; j < array[i].length; j++) {
-                array[4][j] = sum;
+            for (int j = js; j < sum2; j++) {
+                array[i][j] = sum;
+            }if(i<sum1/2) {
+                js++;
+                sum2 = sum2 - 1;
+            }else{
+                js--;
+                sum2++;
             }
             System.out.println(Arrays.toString(array[i]));
         }
-        this.array = array;
     }
-
     @Override
     public String toString() {
         return "Task23{" +
