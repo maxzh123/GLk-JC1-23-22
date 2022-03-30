@@ -9,10 +9,12 @@ import java.util.Scanner;
 
 public class Task40 {
     public static void main(String[] args) {
-        ArrayInitialization sc=new ArrayInitialization();
-        Scanner s= new Scanner(System.in);
-        sc.setCount(s.nextInt());
-        sc.deleteRecurringNumbers();
+        ArrayCollection array=new ArrayCollection();
+        Scanner sc=new Scanner(System.in);
+        array.arrayInitialization(sc.nextInt());
+        System.out.println(array.getList());
+        array.deleteRecurringNumbers();
+        System.out.println(array.getList());
     }
 
 }

@@ -9,9 +9,10 @@ import java.util.List;
 
 /**
  * Класс отвечающий за создание объекта парковки
+ *
  * @param <T>
  */
-public class Parking<T extends Vehicle> implements IParking{
+abstract class Parking<T extends Vehicle> implements IParking {
     private final List<ParkingLot> lots;
 
     public Parking(int size) {
@@ -20,13 +21,14 @@ public class Parking<T extends Vehicle> implements IParking{
 
     /**
      * Метод отвечает за парковку транспорта на свободное парковочное место
+     *
      * @param vehicle
      * @return boolean
      */
     protected boolean parkVehicle(T vehicle) {
         boolean result = false;
         for (ParkingLot lot : lots) {
-            if(!lot.isBusy()){
+            if (!lot.isBusy()) {
                 lot.parkVehicle(vehicle);
                 result = true;
             }
@@ -36,13 +38,14 @@ public class Parking<T extends Vehicle> implements IParking{
 
     /**
      * Метод забирающий автомобиль с парковочного места.
+     *
      * @param vehicle
      * @return boolean
      */
     protected boolean takeVehicleBack(T vehicle) {
         boolean result = false;
         for (ParkingLot lot : lots) {
-            if(vehicle == lot.getVehicle()){
+            if (vehicle == lot.getVehicle()) {
                 lot.takeVehicleBack(vehicle);
                 result = true;
             }
