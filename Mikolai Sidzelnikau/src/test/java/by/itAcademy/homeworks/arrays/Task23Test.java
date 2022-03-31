@@ -1,11 +1,11 @@
 package by.itAcademy.homeworks.arrays;
 
+import org.junit.jupiter.api.Test;
+
 class Task23Test {
-    public static void main(String[] args) {
-        int[][] array = new  int[5][5];
-        Task23 task23 = new Task23(array);
+    @Test
+    public void test1() {
+        Task23 task23 = new Task23();
         task23.getArray();
-        System.out.println();
-        System.out.println(task23);
     }
 }
