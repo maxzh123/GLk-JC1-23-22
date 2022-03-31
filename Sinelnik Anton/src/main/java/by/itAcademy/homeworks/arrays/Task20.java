@@ -21,7 +21,7 @@ public class Task20 {
         return array;
     }
 
-    public static void getMax(int[] array) {
+    public static int getMax(int[] array) {
         int max = 0;
         int maxIndex = 0;
         for (int i = 0; i < array.length; i++) {
@@ -31,5 +31,6 @@ public class Task20 {
             }
         }
         System.out.println("значение " +max + " под индексом " + maxIndex);
+        return max;
         }
 }
