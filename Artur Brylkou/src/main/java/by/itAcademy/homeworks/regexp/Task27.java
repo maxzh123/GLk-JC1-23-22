@@ -9,7 +9,7 @@ public class Task27 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите текст");
         String text = sc.nextLine();
-        Pattern p = Pattern.compile("[А-Яа-яЁёA-Za-z]+-?[А-Яа-яЁёA-Za-z]+");
+        Pattern p = Pattern.compile("[А-Яа-яЁёA-Za-z]+-?[А-Яа-яЁёA-Za-z]*");
         Matcher m = p.matcher(text);
         int count =0;
         while (m.find()){
