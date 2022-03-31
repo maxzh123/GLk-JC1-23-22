@@ -1,11 +1,11 @@
 package by.itAcademy.homeworks.oop.AdditionalProblem;
 
 import by.itAcademy.homeworks.oop.AdditionalProblem.Enums.PaymentSystems;
-import by.itAcademy.homeworks.oop.AdditionalProblem.Interfaces.ICard;
+import by.itAcademy.homeworks.oop.AdditionalProblem.Interfaces.IPayable;
 
 import java.math.BigDecimal;
 
-public class Card implements ICard {
+public class Card implements IPayable {
     private BigDecimal balance;
     private PaymentSystems paymentSystem;
 
