@@ -1,44 +1,54 @@
 package by.itAcademy.homeworks.threads;
 
-public class Task56 {
-    public static Object Lock1 = new Object();
-    public static Object Lock2 = new Object();
 
-    public static void main(String args[]) {
-        ThreadDemo1 T1 = new ThreadDemo1();
-        ThreadDemo2 T2 = new ThreadDemo2();
-        T1.start();
-        T2.start();
+class Person {
+    private final String name;
+
+    public Person(String name) {
+        this.name = name;
     }
 
-    private static class ThreadDemo1 extends Thread {
-        public void run() {
-            synchronized (Lock1) {
-                System.out.println("Thread 1: Holding lock 1...");
+    public String getName() {
+        return name;
+    }
 
-                try { Thread.sleep(10); }
-                catch (InterruptedException e) {}
-                System.out.println("Thread 1: Waiting for lock 2...");
+    public synchronized void stateYourName(Person person) throws InterruptedException {
+        Thread.sleep(1000);
+        person.stateYourNameBack(this);
+        this.stateYourNameBack(person);
+    }
 
-                synchronized (Lock2) {
-                    System.out.println("Thread 1: Holding lock 1 & 2...");
-                }
-            }
+    public synchronized void stateYourNameBack(Person person) {
+        System.out.println("Меня зовут " + person.getName());
+    }
+}
+class Acquaintance implements Runnable{
+    private final Person person, otherPerson;
+
+    public Acquaintance(Person person, Person otherPerson) {
+        this.person = person;
+        this.otherPerson = otherPerson;
+    }
+
+    @Override
+    public void run() {
+        try {
+            person.stateYourName(otherPerson);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
-    private static class ThreadDemo2 extends Thread {
-        public void run() {
-            synchronized (Lock2) {
-                System.out.println("Thread 2: Holding lock 2...");
-
-                try { Thread.sleep(10); }
-                catch (InterruptedException e) {}
-                System.out.println("Thread 2: Waiting for lock 1...");
-
-                synchronized (Lock1) {
-                    System.out.println("Thread 2: Holding lock 1 & 2...");
-                }
-            }
+}
+public class Task56 {
+    public static void main(String args[]) throws InterruptedException {
+        Person[] people = {new Person("Миша"), new Person("Дима"), new Person("Коля")};
+        Acquaintance[] acquaintances = {new Acquaintance(people[0], people[1]), new Acquaintance(people[1], people[2]), new Acquaintance(people[2], people[0])};
+        Thread[] threads = {new Thread(acquaintances[0]), new Thread(acquaintances[1]), new Thread(acquaintances[2])};
+        for (Thread thread : threads) {
+            thread.start();
+        }
+        if (threads[0].isAlive() && threads[1].isAlive() && threads[2].isAlive()) {
+            System.out.println("Deadlock :c");
         }
     }
 }
