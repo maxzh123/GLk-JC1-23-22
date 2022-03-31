@@ -1,6 +1,5 @@
 package by.itAcademy.homeworks.loops;
 
-import javafx.scene.transform.Scale;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
