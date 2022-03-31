@@ -1,4 +1,7 @@
 package by.itAcademy.homeworks.arrays;
+
+import java.util.Scanner;
+
 /*Создайте переменную для массива из 10 элементов.
  Заполните его произвольными значениями целочисленного типа.
  Определите сумму элементов массива, расположенных между минимальным и максимальным значениями.
@@ -8,14 +11,14 @@ public class Task21 {
     public static void main(String[] args) {
         int sum=0;
         int i;
-        int array[]=new int[10];
-        for (i=0;i<10;i++){
+        int array[]=new int[10]//{3,2,2,1,1,2,1,1,3,1,3,3};
+        for (i=0;i<array.length;i++){
             array[i]=(int)(Math.random()*100);
             System.out.println(array[i]);
         }
         int min=array[0];
         int max=array[0];
-        for (i=0;i<10;i++){
+        for (i=0;i<array.length;i++){
             if (min>array[i]) {
                 min = array[i];
             }
@@ -25,7 +28,7 @@ public class Task21 {
         }
         int kmin=0;
         int kmax=0;
-        for (i=0;i<10;i++){
+        for (i=0;i<array.length;i++){
             if (min==array[i]){
                 kmin+=1;
             }
@@ -36,7 +39,7 @@ public class Task21 {
         if (kmin==1 && kmax==1){
             int min_index=0;
             int max_index=0;
-            for (i=0;i<10;i++){
+            for (i=0;i<array.length;i++){
                 if (min==array[i]){
                     min_index=i;
                 }
@@ -59,18 +62,18 @@ public class Task21 {
                 int first_min_index=0;
                 int last_min_index=0;
                 int max_index=0;
-                for (i=0;i<10;i++){
+                for (i=0;i<array.length;i++){
                     if (min==array[i]){
                         first_min_index=i;
                         break;
                     }
                 }
-                for (i=0;i<10;i++) {
+                for (i=0;i<array.length;i++) {
                     if (min == array[i]) {
                         last_min_index = i;
                     }
                 }
-                for (i=0;i<10;i++) {
+                for (i=0;i<array.length;i++) {
                     if (max == array[i]) {
                         max_index = i;
                     }
@@ -89,24 +92,24 @@ public class Task21 {
                 int last_min_index=0;
                 int first_max_index=0;
                 int last_max_index=0;
-                for (i=0;i<10;i++){
+                for (i=0;i<array.length;i++){
                     if (min==array[i]){
                         first_min_index=i;
                         break;
                     }
                 }
-                for (i=0;i<10;i++){
+                for (i=0;i<array.length;i++){
                     if (min==array[i]){
                         last_min_index=i;
                     }
                 }
-                for (i=0;i<10;i++){
+                for (i=0;i<array.length;i++){
                     if (max==array[i]){
                         first_max_index=i;
                         break;
                     }
                 }
-                for (i=0;i<10;i++){
+                for (i=0;i<array.length;i++){
                     if (max==array[i]){
                         last_max_index=i;
                     }
@@ -144,12 +147,12 @@ public class Task21 {
                     break;
                 }
             }
-            for (i=0;i<10;i++) {
+            for (i=0;i<array.length;i++) {
                 if (max == array[i]) {
                     last_max_index = i;
                 }
             }
-            for (i=0;i<10;i++) {
+            for (i=0;i<array.length;i++) {
                 if (min == array[i]) {
                     min_index = i;
                 }
