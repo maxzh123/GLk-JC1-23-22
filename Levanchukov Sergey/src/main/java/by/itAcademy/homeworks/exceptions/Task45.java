@@ -7,20 +7,25 @@ package by.itAcademy.homeworks.exceptions;
 
 public class Task45 {
     public static void main(String[] args) throws Exception{
-       sumArray();
-    }
 
-    public static void sumArray (){
-        int [] array= new int [] {1,2,3,4,5};
         try {
-            for (int i = 0; i < array.length + 1; i++) {
-                System.out.println(array[i]);
-            }
-
+            sumArray();
         }
         catch (ArrayIndexOutOfBoundsException e){
             e.printStackTrace();
         }
     }
 
+    public static void sumArray () {
+
+        int[] array = new int[]{1, 2, 3, 4, 5};
+        for (int i = 0; i < array.length + 1; i++) {
+            System.out.println(array[i]);
+        }
+    }
 }
+
+
+
+
+
