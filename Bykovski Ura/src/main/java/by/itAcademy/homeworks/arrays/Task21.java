@@ -11,7 +11,7 @@ public class Task21 {
     public static void main(String[] args) {
         int sum=0;
         int i;
-        int array[]=new int[10]//{3,2,2,1,1,2,1,1,3,1,3,3};
+        int array[]=new int[10];//{3,2,2,1,1,2,1,1,3,1,3,3}
         for (i=0;i<array.length;i++){
             array[i]=(int)(Math.random()*100);
             System.out.println(array[i]);
