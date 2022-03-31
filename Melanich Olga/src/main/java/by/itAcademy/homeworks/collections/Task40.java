@@ -15,7 +15,8 @@ public class Task40 {
     public static void main(String[] args) {
         final int number = 10;
         ArrayList<Integer> list = new ArrayList<>();
-        System.out.println(ArrayListUtil.fillArrayList(list, number));
+        ArrayListUtil.fillArrayList(list, number);
+        System.out.println(list);
 
         // способ, если важна последовательность элементов
         Set<Integer> linkedSet = new LinkedHashSet<>();

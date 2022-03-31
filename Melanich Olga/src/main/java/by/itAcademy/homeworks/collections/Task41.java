@@ -14,7 +14,8 @@ public class Task41 {
     public static void main(String[] args) {
         final int studentMarks = 10;
         List<Integer> list = new ArrayList<>();
-        System.out.println(ArrayListUtil.fillArrayList(list, studentMarks));
+        ArrayListUtil.fillArrayList(list, studentMarks);
+        System.out.println(list);
 
         int maxMark = list.get(0);
         for (Iterator<Integer> iter = list.iterator(); iter.hasNext(); ) {
