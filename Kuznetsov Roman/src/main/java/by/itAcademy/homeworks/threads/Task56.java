@@ -40,7 +40,7 @@ class Acquaintance implements Runnable{
     }
 }
 public class Task56 {
-    public static void main(String args[]) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Person[] people = {new Person("Миша"), new Person("Дима"), new Person("Коля")};
         Acquaintance[] acquaintances = {new Acquaintance(people[0], people[1]), new Acquaintance(people[1], people[2]), new Acquaintance(people[2], people[0])};
         Thread[] threads = {new Thread(acquaintances[0]), new Thread(acquaintances[1]), new Thread(acquaintances[2])};
