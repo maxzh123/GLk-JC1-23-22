@@ -16,7 +16,7 @@ public class Task29 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
-        Pattern pattern = Pattern.compile("0X[0-9A-F]+|0x[0-9a-f]+");
+        Pattern pattern = Pattern.compile("0[xX]([0-9A-Fa-f]{2})+");
         Matcher matcher = pattern.matcher(text);
         while (matcher.find()) {
            Printer.print(matcher.group());
