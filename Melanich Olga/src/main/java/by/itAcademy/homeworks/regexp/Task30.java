@@ -19,9 +19,7 @@ public class Task30 {
         String text = scanner.nextLine();
         Pattern pattern = Pattern.compile("<p\\s+[^>]*>");
         Matcher matcher = pattern.matcher(text);
-        while (matcher.find()) {
-            text = matcher.replaceAll("<p>");
-        }
+        text = matcher.replaceAll("<p>");
         Printer.print(text);
     }
 }
