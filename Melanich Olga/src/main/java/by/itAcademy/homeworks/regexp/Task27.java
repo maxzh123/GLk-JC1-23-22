@@ -16,7 +16,7 @@ public class Task27 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
-        Pattern pattern = Pattern.compile ("[А-Яа-я-A-Za-zЁё]+");
+        Pattern pattern = Pattern.compile ("[А-Яа-яA-Za-zЁё]+");
         Matcher matcher = pattern.matcher(text);
         int count = 0;
         while (matcher.find()) {
