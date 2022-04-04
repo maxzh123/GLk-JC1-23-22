@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop;
+package by.itAcademy.homeworks.oop.ForTask32;
 
 public class fridge extends householdAppliances{
 
