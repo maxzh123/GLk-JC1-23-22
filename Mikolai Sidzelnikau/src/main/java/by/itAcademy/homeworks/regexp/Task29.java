@@ -1,6 +1,5 @@
 package by.itAcademy.homeworks.regexp;
 
-import java.math.BigInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
