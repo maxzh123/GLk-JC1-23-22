@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop;
+package by.itAcademy.homeworks.oop.ForTask33;
 
 import java.util.Date;
 
