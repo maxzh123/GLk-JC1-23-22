@@ -19,8 +19,8 @@ public class Task25 {
         int num = 0;
         do {
             System.out.print("Снять 1, добавить 2 , выйти 3: ");
-            Scanner choice1 = new Scanner(System.in);
-            num = choice1.nextInt();
+            Scanner choice = new Scanner(System.in);
+            num = choice.nextInt();
             if (num == 1) {
                 System.out.print("Введите сумму, которую хотите снять: ");
                 Scanner in = new Scanner(System.in);
@@ -29,15 +29,27 @@ public class Task25 {
                 cash.getBanknot();
             }
             if (num == 2) {
-                System.out.print("Склько банкнот по 20 добавить: ");
+                System.out.print("Сколько банкнот по 20 добавить: ");
                 Scanner in20 = new Scanner(System.in);
                 int num20 = in20.nextInt();
-                System.out.print("Склько банкнот по 50 добавить: ");
+                if (num20 < 0 ) {
+                    num20 = 0;
+                    System.out.println("Введено отрицательное значение, приведено к нулю");
+                }
+                System.out.print("Сколько банкнот по 50 добавить: ");
                 Scanner in50 = new Scanner(System.in);
                 int num50 = in50.nextInt();
-                System.out.print("Склько банкнот по 100 добавить: ");
+                if (num50 < 0 ) {
+                    num50 = 0;
+                    System.out.println("Введено отрицательное значение, приведено к нулю");
+                }
+                System.out.print("Сколько банкнот по 100 добавить: ");
                 Scanner in100 = new Scanner(System.in);
                 int num100 = in100.nextInt();
+                if (num100 < 0 ) {
+                    num100 = 0;
+                    System.out.println("Введено отрицательное значение, приведено к нулю");
+                }
                 cash.addCash(num20, num50, num100);
                 cash.getBanknot();
             }
