@@ -19,7 +19,7 @@ public class Task28 {
 
         StringBuilder sb = new StringBuilder();
         Pattern words = Pattern.compile("[A-Za-zFА-Яа-яЁ-ё]+", Pattern.MULTILINE);
-        Pattern lastLetterWord = Pattern.compile("[a-zа-яё]$", Pattern.MULTILINE);
+        Pattern lastLetterWord = Pattern.compile("[A-Za-zFА-Яa-zа-яё]$", Pattern.MULTILINE);
         Matcher mWords = words.matcher(str);
         while (mWords.find()){
 
