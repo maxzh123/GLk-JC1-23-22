@@ -2,20 +2,20 @@
 
 | Name | Tasks | class | Матем.операций | Методов | Присваиваний | анон.класов | внутр.класов | констант | логирование | лямбды | переменных | перхватов исключений | приват. методов | приват. полей | сравнений | циклов |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Kuznetsov Roman | 63 | 90 | 129 | 201 | 368 | 2 | 0 | 4 | 0 | 1 | 268 | 12 | 7 | 24 | 24 | 61 |
-| Borysenka Aksana | 42 | 84 | 196 | 177 | 364 | 0 | 0 | 0 | 0 | 0 | 294 | 0 | 8 | 17 | 69 | 50 |
-| Ryabkov Vlad | 40 | 47 | 131 | 111 | 183 | 0 | 0 | 0 | 0 | 0 | 158 | 0 | 2 | 32 | 61 | 22 |
-| Korotkevich Lyesha | 39 | 44 | 84 | 92 | 220 | 0 | 0 | 0 | 0 | 0 | 156 | 0 | 0 | 8 | 16 | 43 |
-| Levanchukov Sergey | 37 | 52 | 103 | 103 | 256 | 0 | 1 | 3 | 0 | 0 | 196 | 0 | 9 | 15 | 20 | 51 |
-| Melanich Olga | 35 | 55 | 100 | 112 | 298 | 0 | 0 | 4 | 0 | 0 | 244 | 0 | 1 | 5 | 44 | 33 |
-| Katarski Aliaksei | 31 | 58 | 97 | 115 | 185 | 0 | 0 | 0 | 0 | 0 | 148 | 0 | 12 | 14 | 20 | 37 |
-| Kotsuba Alexander | 29 | 37 | 115 | 61 | 184 | 0 | 0 | 0 | 0 | 0 | 138 | 0 | 3 | 2 | 29 | 35 |
-| Gamezo Nikolai | 26 | 31 | 142 | 57 | 182 | 0 | 0 | 0 | 0 | 0 | 127 | 0 | 0 | 6 | 26 | 31 |
+| Kuznetsov Roman | 78 | 108 | 158 | 242 | 431 | 5 | 0 | 10 | 0 | 1 | 324 | 22 | 7 | 38 | 26 | 81 |
+| Borysenka Aksana | 49 | 103 | 213 | 229 | 417 | 0 | 0 | 8 | 0 | 0 | 339 | 3 | 8 | 34 | 79 | 53 |
+| Ryabkov Vlad | 49 | 57 | 133 | 123 | 213 | 0 | 0 | 0 | 0 | 0 | 184 | 0 | 2 | 34 | 62 | 25 |
+| Levanchukov Sergey | 43 | 70 | 111 | 148 | 285 | 0 | 1 | 3 | 0 | 0 | 224 | 3 | 9 | 34 | 21 | 52 |
+| Korotkevich Lyesha | 40 | 48 | 90 | 117 | 239 | 0 | 0 | 0 | 0 | 0 | 171 | 0 | 0 | 20 | 16 | 43 |
+| Katarski Aliaksei | 38 | 79 | 109 | 177 | 233 | 0 | 0 | 0 | 0 | 0 | 188 | 0 | 12 | 32 | 22 | 39 |
+| Melanich Olga | 38 | 58 | 101 | 115 | 309 | 0 | 0 | 4 | 0 | 0 | 254 | 0 | 1 | 5 | 44 | 35 |
+| Gamezo Nikolai | 31 | 36 | 137 | 67 | 217 | 0 | 0 | 0 | 0 | 0 | 157 | 0 | 0 | 6 | 31 | 39 |
+| Kotsuba Alexander | 30 | 38 | 115 | 63 | 188 | 0 | 0 | 0 | 0 | 0 | 142 | 0 | 4 | 2 | 29 | 36 |
+| Mikolai Sidzelnikau | 29 | 48 | 106 | 135 | 301 | 0 | 0 | 12 | 0 | 0 | 221 | 0 | 11 | 29 | 54 | 34 |
 | Artur Brylkou | 25 | 29 | 67 | 50 | 126 | 0 | 0 | 0 | 0 | 0 | 90 | 0 | 2 | 0 | 37 | 21 |
-| Mikolai Sidzelnikau | 24 | 43 | 98 | 130 | 279 | 0 | 0 | 12 | 0 | 0 | 199 | 0 | 11 | 29 | 54 | 29 |
-| Sinelnik Anton | 24 | 25 | 82 | 40 | 106 | 0 | 0 | 0 | 0 | 0 | 78 | 0 | 2 | 0 | 38 | 23 |
-| Bykovski Ura | 22 | 22 | 68 | 24 | 158 | 0 | 0 | 0 | 0 | 0 | 87 | 0 | 0 | 0 | 32 | 34 |
-| Hameza Aliaksandr | 20 | 21 | 55 | 30 | 64 | 0 | 0 | 0 | 0 | 0 | 47 | 0 | 0 | 0 | 13 | 9 |
+| Hameza Aliaksandr | 24 | 27 | 70 | 45 | 100 | 0 | 0 | 0 | 0 | 0 | 74 | 0 | 0 | 0 | 13 | 21 |
+| Sinelnik Anton | 24 | 26 | 82 | 41 | 106 | 0 | 0 | 0 | 0 | 0 | 78 | 0 | 2 | 0 | 38 | 23 |
+| Bykovski Ura | 23 | 23 | 70 | 25 | 163 | 0 | 0 | 0 | 0 | 0 | 89 | 0 | 0 | 0 | 32 | 37 |
 | Denis Stelmashok | 12 | 12 | 47 | 14 | 50 | 0 | 0 | 0 | 0 | 0 | 49 | 0 | 0 | 0 | 6 | 1 |
 | Arkhangelskiy Vlad | 7 | 7 | 18 | 8 | 15 | 0 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 0 | 1 | 0 |
 | Maryna Liakh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -29,18 +29,18 @@
 | ПРИМЕРЫ  | SUCCESS |
 | Быковский Юрий Павлович  | SUCCESS |
 | Гамезо Николай Николаевич  | SUCCESS |
-| Катарский Алексей Александрович  | FAILURE |
+| Катарский Алексей Александрович  | SUCCESS |
 | Короткевич Алексей Геннадьевич  | SUCCESS |
 | Коцуба Александр Сергеевич  | SUCCESS |
 | Кузнецов Роман Вадимович  | SUCCESS |
 | Леванчуков Сергей Анатольевич  | SUCCESS |
 | Лях Марина Игоревна  | SUCCESS |
 | Меланич Ольга Викторовна  | SUCCESS |
-| Рябков Владислав Николаевич  | SUCCESS |
+| Рябков Владислав Николаевич  | FAILURE |
 | Синельник Антон Станиславович  | SUCCESS |
 | Брильков Артур Владимирович  | SUCCESS |
 | Сидельников Николай Сергеевич  | SUCCESS |
-| Борисенко Оксана Евгеньевна  | FAILURE |
+| Борисенко Оксана Евгеньевна  | SUCCESS |
 | Гамезо Александр Геннадьевич  | SUCCESS |
 | Архангельский Владислав Витальевич  | SUCCESS |
 | Стельмашок Денис Сергеевич  | SUCCESS |
@@ -49,27 +49,7 @@
 
 # Ошибки:
 
-1. Katarski Aliaksei/src/main/java/by/itAcademy/homeworks/objects/Time.java строка:3 символ:33 package org.jetbrains.annotations does not exist
-1. Katarski Aliaksei/src/main/java/by/itAcademy/homeworks/objects/Time.java строка:56 символ:27 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:10 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:10 символ:25 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:11 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:11 символ:33 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:12 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:12 символ:27 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:12 символ:35 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:14 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:14 символ:33 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:18 символ:54 cannot find symbol
-1. Katarski Aliaksei/src/main/java/by/itAcademy/homeworks/objects/Time.java строка:3 символ:33 package org.jetbrains.annotations does not exist
-1. Katarski Aliaksei/src/main/java/by/itAcademy/homeworks/objects/Time.java строка:56 символ:27 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:10 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:10 символ:25 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:11 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:11 символ:33 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:12 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:12 символ:27 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:12 символ:35 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:14 символ:9 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:14 символ:33 cannot find symbol
-1. Borysenka_Aksana/src/main/java/by/itAcademy/homeworks/oop/Task33.java строка:18 символ:54 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task40.java строка:16 символ:9 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task41.java строка:15 символ:9 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task40.java строка:16 символ:9 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task41.java строка:15 символ:9 cannot find symbol
