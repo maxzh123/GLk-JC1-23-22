@@ -1,5 +1,7 @@
 package by.itAcademy.homeworks.oop;
 
+import by.itAcademy.homeworks.oop.ForTask33.*;
+
 public class Task33 {
 
     /**Task33
