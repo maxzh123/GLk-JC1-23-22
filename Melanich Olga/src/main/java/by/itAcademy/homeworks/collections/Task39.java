@@ -16,7 +16,8 @@ public class Task39 {
     public static void main(String[] args) {
         final int studentMarks = 30;
         List<Integer> list = new ArrayList<>();
-        System.out.println(ArrayListUtil.fillArrayList(list, studentMarks));
+        ArrayListUtil.fillArrayList(list, studentMarks);
+        System.out.println(list);
 
         // десятибальная система, неуд - 1,2,3
         Iterator<Integer> iter = list.iterator();
