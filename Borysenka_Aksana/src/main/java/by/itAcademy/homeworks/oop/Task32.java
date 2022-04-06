@@ -1,5 +1,7 @@
 package by.itAcademy.homeworks.oop;
 
+import by.itAcademy.homeworks.oop.ForTask32.fridge;
+
 public class Task32 {
 
     /**Task32

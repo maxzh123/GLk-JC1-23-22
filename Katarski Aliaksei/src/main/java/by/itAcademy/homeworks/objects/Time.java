@@ -1,7 +1,5 @@
 package by.itAcademy.homeworks.objects;
 
-import org.jetbrains.annotations.NotNull;
-
 import static java.lang.System.*;
 
 /**
@@ -33,6 +31,11 @@ public class Time implements Comparable<Time>{
         this.minutes = minutes;
         this.seconds = seconds;
     }
+    public Time(int seconds){
+        this.hours=seconds/3600;
+        this.minutes=seconds%3600/60;
+        this.seconds=seconds%60;
+    }
 
     public int getHours() {
     System.out.println(hours);
@@ -53,7 +56,7 @@ public class Time implements Comparable<Time>{
         return hours*3600+minutes*60+seconds;
     }
     @Override
-    public int compareTo(@NotNull Time o) {
+    public int compareTo( Time o) {
         int result=0;
         if(this.hours==o.hours){
             result=0;

@@ -14,5 +14,7 @@ public class Task24 {
     public static void main(String[] args) {
     Time day=new Time(12,22,33);
     Time night=new Time(23,49,22);
+    Time a=new Time(50000);
+    System.out.println(a);
     }
 }
