@@ -25,10 +25,10 @@
         </triggeringPolicy>
     </appender>
 
-    <logger name="by.itAcademy.homeworks" level="ERROR"/>
+    <logger name="by.itAcademy.homeworks" level="DEBUG"/>
     <logger name="by.itAcademy" level="DEBUG"/>
 
-    <root level="ERROR">
+    <root level="DEBUG">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>

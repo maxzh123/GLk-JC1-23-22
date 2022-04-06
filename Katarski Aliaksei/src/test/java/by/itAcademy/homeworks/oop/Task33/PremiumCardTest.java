@@ -8,7 +8,8 @@ class PremiumCardTest {
 
     @Test
     void getCredit() {
-        PremiumCard test=new PremiumCard("Alfa","I",111,"USD",0,12.12,500);
+        PremiumCard test=new PremiumCard("Alfa","I",111,Currency.BYN,0,12.12,500);
         Assertions.assertEquals(500,test.getCredit(Currency.BYN,500));
+        Assertions.assertNotEquals("not successfully",test.getCredit(Currency.USD,490));
     }
 }

@@ -8,10 +8,10 @@ public class BankCard {
     private long cardNumber;
     private Date issueDate;
     private Date expirationDate;
-    private String currency;
+    private Currency currency;
     long moneyAmount;
 
-    public BankCard(String issuer, String owner, long cardNumber, Date issueDate, Date expirationDate, String currency, long moneyAmount) {
+    public BankCard(String issuer, String owner, long cardNumber, Date issueDate, Date expirationDate, Currency currency, long moneyAmount) {
         this.issuer = issuer;
         this.owner = owner;
         this.cardNumber = cardNumber;
@@ -21,7 +21,7 @@ public class BankCard {
         this.moneyAmount = moneyAmount;
     }
 
-    public BankCard(String issuer, String owner, long cardNumber, String currency, long moneyAmount) {
+    public BankCard(String issuer, String owner, long cardNumber, Currency currency, long moneyAmount) {
         this.issuer = issuer;
         this.owner = owner;
         this.cardNumber = cardNumber;
@@ -49,7 +49,7 @@ public class BankCard {
         return expirationDate;
     }
 
-    public String getCurrency() {
+    public Currency getCurrency() {
         return currency;
     }
 
