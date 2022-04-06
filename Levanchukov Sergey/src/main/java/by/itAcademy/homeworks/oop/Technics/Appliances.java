@@ -31,4 +31,5 @@ public class Appliances {
         this.age = age;
         this.manufacturer = manufacturer;
     }
+
 }
