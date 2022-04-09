@@ -8,19 +8,24 @@ package by.itAcademy.homeworks.enums;
  *
  */
 public enum Seasons {
-    WINTER(90), SPRING(92), SUMMER(92), AUTUMN(91);
+    WINTER(90,"Холодно"), SPRING(92,"Тепло"), SUMMER(92,"Жарко"), AUTUMN(91,"Прохладно");
 
-
-    private int daysCount;
-    private int description;
-
-    Seasons(int daysCount ) {
-        this.daysCount = daysCount;
-    }
+private int daysCount;
+private String description;
 
     public int getDaysCount() {
         return daysCount;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    Seasons(int daysCount, String description) {
+        this.daysCount = daysCount;
+        this.description = description;
+    }
+
     public void nextMonth(Seasons seasons){
         switch (seasons){
             case AUTUMN:
