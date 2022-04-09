@@ -25,6 +25,7 @@ public class Task47 {
             System.out.println("Amount of words: " + getCountWords(str));
             System.out.println("Amount of punctuation marks: " + getPunctCount(str));
         }
+        br.close();
     }
 
     public static int getCountWords(String str) {

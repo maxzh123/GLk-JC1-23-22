@@ -33,6 +33,7 @@ public class Task48 {
         System.out.println("All numbers without duplicate numbers: " + getNumbersWithoutDuplicate(getNumbers(str)));
         System.out.println("Amount numbers in the text without duplicate numbers:  " + sumNumbers(getNumbersWithoutDuplicate(getNumbers(str))));
 
+        br.close();
         }
 
     public static List<Integer> getNumbers(String str) {
