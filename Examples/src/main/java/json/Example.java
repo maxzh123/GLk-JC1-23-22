@@ -24,6 +24,8 @@ public class Example {
             People p = mapper.readValue(Example.class.getClassLoader().getResourceAsStream("example.json"), People.class);
             System.out.println(p);
             //p.setName(null);
+            p.setAge(38);
+            p.getPosition()[0]="что-то там";
             System.out.println(mapper.writeValueAsString(p));
         } catch (IOException e) {
             e.printStackTrace();
