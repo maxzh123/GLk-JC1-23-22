@@ -15,7 +15,6 @@ public class Task18 {
         for (int i=0;i< array.length;i++)
         {
             array[i]= sc.nextInt();
-
         }
         System.out.println("Последний элемент "+array[array.length-1]);
     }
