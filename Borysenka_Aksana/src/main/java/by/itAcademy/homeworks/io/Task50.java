@@ -91,6 +91,7 @@ public class Task50 {
 
         try(BufferedWriter bf = new BufferedWriter(new FileWriter(path + "AllNames.txt"))){
             bf.write(lst.toString());
+            bf.flush();
         }catch (IOException e) {
             e.printStackTrace();
         }
