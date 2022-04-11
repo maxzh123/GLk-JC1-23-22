@@ -16,9 +16,9 @@ public class Task27 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите текст: ");
         String str = scan.nextLine();
-        System.out.print("Количество слов в тексте : " + punctuationMarkCount(str));
+        System.out.print("Количество слов в тексте : " + wordsCount(str));
     }
-    public static int punctuationMarkCount(String str) {
+    public static int wordsCount(String str) {
         int count = 0;
         Pattern p = Pattern.compile("[а-яА-ЯёЁa-zA-Z]{2,}");
         Matcher m = p.matcher(str);
