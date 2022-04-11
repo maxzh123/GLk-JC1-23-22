@@ -25,6 +25,7 @@ public class DbExample {
 
         try (Connection connection =DriverManager.getConnection(DB_URL, USER, PASS);){
             connection.setAutoCommit(false);
+            //"insert into table_name (поле1,поле2) values (?,?)";
             PreparedStatement ps=
                     connection.prepareStatement("select r.id,\n" +
                             "       p.name as \"Кто\",\n" +
@@ -44,6 +45,7 @@ public class DbExample {
             ps.setString(1,"Минск");
             ps.setBigDecimal(2,new BigDecimal("80"));
             ResultSet rs=ps.executeQuery();
+
             long count=0;
             while (rs.next()){
                 BigDecimal amount=rs.getBigDecimal("Сколько");
