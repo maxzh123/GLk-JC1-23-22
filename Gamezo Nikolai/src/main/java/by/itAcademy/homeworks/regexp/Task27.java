@@ -20,7 +20,7 @@ public class Task27 {
     }
     public static int punctuationMarkCount(String str) {
         int count = 0;
-        Pattern p = Pattern.compile("[а-яА-ЯёЁa-zA-Z]{3,}");
+        Pattern p = Pattern.compile("[а-яА-ЯёЁa-zA-Z]{2,}");
         Matcher m = p.matcher(str);
         for (count = 0; m.find() == true; count ++) {
         }
