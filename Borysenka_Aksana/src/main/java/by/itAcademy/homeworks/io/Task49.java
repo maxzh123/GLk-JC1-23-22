@@ -23,10 +23,16 @@ public class Task49 {
         DataOutputStream dos = new DataOutputStream(new FileOutputStream("Borysenka_Aksana\\src\\main\\resources\\ForTask49.txt"));
         try {
             dos.write(arr);
+            dos.flush();
         }catch(IOException e){
             e.printStackTrace();
+        }finally{
+            try {
+                dos.close();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
         }
-        dos.close();
 
         List<Integer> lst = new ArrayList<>();
         int sum = 0;
