@@ -19,33 +19,28 @@ public class Task25 {
         int num = 0;
         do {
             System.out.print("Снять 1, добавить 2 , выйти 3: ");
-            Scanner choice = new Scanner(System.in);
-            num = choice.nextInt();
+            num = scanner(num);
             if (num == 1) {
                 System.out.print("Введите сумму, которую хотите снять: ");
-                Scanner in = new Scanner(System.in);
-                int sum = in.nextInt();
+                int sum = scanner(num);
                 cash.withdrawMoney(sum);
                 cash.getBanknot();
             }
             if (num == 2) {
                 System.out.print("Сколько банкнот по 20 добавить: ");
-                Scanner in20 = new Scanner(System.in);
-                int num20 = in20.nextInt();
+                int num20 = scanner(num);
                 if (num20 < 0 ) {
                     num20 = 0;
                     System.out.println("Введено отрицательное значение, приведено к нулю");
                 }
                 System.out.print("Сколько банкнот по 50 добавить: ");
-                Scanner in50 = new Scanner(System.in);
-                int num50 = in50.nextInt();
+                int num50 = scanner(num);
                 if (num50 < 0 ) {
                     num50 = 0;
                     System.out.println("Введено отрицательное значение, приведено к нулю");
                 }
                 System.out.print("Сколько банкнот по 100 добавить: ");
-                Scanner in100 = new Scanner(System.in);
-                int num100 = in100.nextInt();
+                int num100 = scanner(num);
                 if (num100 < 0 ) {
                     num100 = 0;
                     System.out.println("Введено отрицательное значение, приведено к нулю");
@@ -58,6 +53,11 @@ public class Task25 {
             }
         } while (num != 3);
         System.out.println("Выход");
+    }
+    static final int scanner(int num) {
+        Scanner choice = new Scanner(System.in);
+        num = choice.nextInt();
+        return num;
     }
 }
 
