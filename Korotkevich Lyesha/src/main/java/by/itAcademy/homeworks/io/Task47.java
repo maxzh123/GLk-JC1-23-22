@@ -22,7 +22,7 @@ public class Task47 {
 
     public static int geCountPrep(StringBuilder str){
         int count = 0;
-        Pattern pattern = Pattern.compile("([!?]+|\\.{3}|[,;:\"'()\\.—]\\s?)");
+        Pattern pattern = Pattern.compile("([!?]+|\\.{3}|[,;:\"'().—]\\s?)");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find()) {
             count++;
@@ -31,6 +31,6 @@ public class Task47 {
     }
 
     public static int geCountWords(StringBuilder str){
-        return str.toString().split("(\\s+|[!?]+|\\.{3}|[,;:\"'()\\.]\\s?)").length;
+        return str.toString().split("(\\s+|[!?]+|\\.{3}|[,;:\"'().]\\s?)").length;
     }
 }
