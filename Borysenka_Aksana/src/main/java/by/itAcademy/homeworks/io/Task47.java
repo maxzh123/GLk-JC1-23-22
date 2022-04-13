@@ -17,10 +17,9 @@ public class Task47 {
         if (br.equals(null)) {
             System.out.println("Путь должен быть не null");
         }else {
-            String strBr = br.readLine();
-            while (strBr != null) {
-                str += str + strBr + "\n";
-                strBr = br.readLine();
+            String strBr;
+            while ((strBr = br.readLine()) != null) {
+                str += strBr + "\n";
             }
             System.out.println("Amount of words: " + getCountWords(str));
             System.out.println("Amount of punctuation marks: " + getPunctCount(str));

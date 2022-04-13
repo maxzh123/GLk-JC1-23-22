@@ -19,12 +19,9 @@ public class Task30 {
         System.out.print("Изменённая строка : " + replaceP(str));
     }
     public static String replaceP(String str) {
-        String str1 = "";
-        Pattern p = Pattern.compile("0[xX][0-9A-Fa-f]{2}");
+        Pattern p = Pattern.compile("<p\\s[^>]*>");
         Matcher m = p.matcher(str);
-        for (int i = 0; m.find() == true; i++) {
-            str1 = m.replaceAll("<p>");
-        }
-        return str1;
+        str = m.replaceAll("<p>");
+        return str;
     }
 }

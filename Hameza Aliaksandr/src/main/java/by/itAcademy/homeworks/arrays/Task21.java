@@ -10,9 +10,10 @@ import java.util.Arrays;
  */
 
 public class Task21 {
+    //Не работает (
     public static void main(String[] args) {
         int[] array = new int[10];
-        int[] array1 = randomArray(array);
+        randomArray(array);
         System.out.println(Arrays.toString(array));
         System.out.println("Максимальный массив" +findMaxIndex(array));
         System.out.println("Минимальный массив" +findMinIndex(array));
@@ -24,15 +25,21 @@ public class Task21 {
         }
         return array;
     }
-    public static int culcSum (int[] array){
+    public static int culcSum (int[] array) {
         int maxIndex = findMaxIndex(array);
         int minIndex = findMinIndex(array);
         int result = 0;
-        for (int i = minIndex + 1; i < maxIndex - 1; i++) {
-            result += array[i];
+        if (minIndex < maxIndex) {
+            for (int i = minIndex + 1; i < maxIndex + 1; i++) {
+                result += array[i];
+            }
+            } else {
+                for (int j = minIndex; j > maxIndex - 1; j--) {
+                    result = result + array[j];
+                }
+            }
+            return result;
         }
-        return result;
-    }
     public static int findMinIndex (int[]array) {
         int minArray = array[0];
         int minIndex = 0;
