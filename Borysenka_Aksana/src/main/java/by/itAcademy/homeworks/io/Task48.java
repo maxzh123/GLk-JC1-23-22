@@ -19,10 +19,9 @@ public class Task48 {
         String str = "";
         BufferedReader br = new BufferedReader(new FileReader("Borysenka_Aksana\\src\\main\\resources\\ForTask48.txt"));
         try {
-            String strBr = br.readLine();
-            while (strBr != null) {
+            String strBr;
+            while ((strBr = br.readLine()) != null) {
                 str += strBr + "\n";
-                strBr = br.readLine();
             }
         }catch(IOException e){
                 e.printStackTrace();
