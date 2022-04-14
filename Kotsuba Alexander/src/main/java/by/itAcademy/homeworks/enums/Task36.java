@@ -14,7 +14,7 @@ public class Task36 {
     }
 
     public static void nextM(String m){
-        SeasonsNumberTwo seasons = SeasonsNumberTwo.valueOf(m.toUpperCase(Locale.ROOT));
+        SeasonsNumberTwo seasons = SeasonsNumberTwo.valueOf(m);
         seasons.getNextSeason(seasons);
     }
 }
