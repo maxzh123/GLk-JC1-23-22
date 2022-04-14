@@ -27,7 +27,7 @@ public class Task31 {
         for (int i = 0; i < 10000000; i++) {
             sb.append(str);
         }
-//        sb.toString();
+        sb.toString();
         return (System.currentTimeMillis() - time);
     }
 }
