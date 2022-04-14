@@ -3,20 +3,20 @@
 | Name | Tasks | class | Матем.операций | Методов | Присваиваний | анон.класов | внутр.класов | констант | логирование | лямбды | переменных | перхватов исключений | приват. методов | приват. полей | сравнений | циклов |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Kuznetsov Roman | 78 | 108 | 158 | 242 | 431 | 5 | 0 | 10 | 0 | 1 | 324 | 22 | 7 | 38 | 26 | 81 |
-| Borysenka Aksana | 56 | 112 | 234 | 255 | 494 | 0 | 0 | 9 | 0 | 0 | 406 | 13 | 8 | 38 | 82 | 73 |
-| Ryabkov Vlad | 51 | 64 | 143 | 136 | 230 | 0 | 0 | 0 | 0 | 0 | 197 | 1 | 2 | 36 | 62 | 26 |
-| Levanchukov Sergey | 50 | 82 | 119 | 167 | 311 | 0 | 1 | 4 | 0 | 0 | 249 | 5 | 9 | 38 | 21 | 54 |
-| Korotkevich Lyesha | 47 | 60 | 97 | 133 | 262 | 0 | 0 | 0 | 0 | 0 | 191 | 3 | 0 | 23 | 16 | 47 |
+| Borysenka Aksana | 58 | 114 | 239 | 259 | 504 | 0 | 1 | 9 | 0 | 0 | 412 | 14 | 8 | 38 | 82 | 73 |
+| Ryabkov Vlad | 56 | 76 | 149 | 153 | 264 | 0 | 1 | 0 | 0 | 0 | 228 | 3 | 2 | 36 | 63 | 32 |
+| Levanchukov Sergey | 52 | 85 | 121 | 173 | 324 | 0 | 1 | 4 | 0 | 0 | 262 | 5 | 9 | 38 | 21 | 57 |
+| Korotkevich Lyesha | 48 | 61 | 99 | 136 | 270 | 0 | 0 | 0 | 0 | 0 | 198 | 3 | 0 | 23 | 17 | 49 |
 | Melanich Olga | 46 | 77 | 107 | 171 | 346 | 0 | 0 | 4 | 0 | 0 | 286 | 3 | 1 | 18 | 52 | 36 |
 | Katarski Aliaksei | 41 | 90 | 128 | 203 | 258 | 0 | 0 | 0 | 0 | 0 | 209 | 3 | 12 | 45 | 22 | 39 |
-| Gamezo Nikolai | 35 | 41 | 145 | 79 | 230 | 0 | 0 | 0 | 0 | 0 | 166 | 0 | 0 | 8 | 30 | 41 |
-| Kotsuba Alexander | 33 | 50 | 131 | 93 | 228 | 0 | 0 | 1 | 0 | 0 | 169 | 0 | 5 | 2 | 29 | 38 |
-| Mikolai Sidzelnikau | 29 | 48 | 106 | 135 | 301 | 0 | 0 | 12 | 0 | 0 | 221 | 0 | 11 | 29 | 54 | 34 |
+| Gamezo Nikolai | 38 | 44 | 156 | 88 | 247 | 0 | 0 | 0 | 0 | 0 | 182 | 0 | 0 | 8 | 30 | 47 |
+| Kotsuba Alexander | 36 | 56 | 132 | 103 | 236 | 0 | 0 | 3 | 0 | 0 | 177 | 0 | 5 | 5 | 29 | 39 |
+| Mikolai Sidzelnikau | 31 | 50 | 109 | 141 | 311 | 0 | 0 | 14 | 3 | 0 | 227 | 2 | 11 | 29 | 54 | 35 |
 | Artur Brylkou | 27 | 31 | 68 | 52 | 135 | 0 | 0 | 0 | 0 | 0 | 99 | 0 | 2 | 0 | 37 | 23 |
 | Hameza Aliaksandr | 24 | 27 | 80 | 47 | 111 | 0 | 0 | 0 | 0 | 0 | 79 | 0 | 0 | 0 | 13 | 21 |
 | Sinelnik Anton | 24 | 26 | 82 | 41 | 106 | 0 | 0 | 0 | 0 | 0 | 78 | 0 | 2 | 0 | 38 | 23 |
 | Bykovski Ura | 24 | 24 | 73 | 26 | 172 | 0 | 0 | 0 | 0 | 0 | 96 | 0 | 0 | 0 | 32 | 41 |
-| Denis Stelmashok | 20 | 20 | 57 | 22 | 81 | 0 | 0 | 0 | 0 | 0 | 72 | 0 | 0 | 0 | 8 | 9 |
+| Denis Stelmashok | 21 | 21 | 62 | 23 | 92 | 0 | 0 | 0 | 0 | 0 | 79 | 0 | 0 | 0 | 8 | 12 |
 | Arkhangelskiy Vlad | 7 | 7 | 18 | 8 | 15 | 0 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 0 | 1 | 0 |
 | Maryna Liakh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -36,7 +36,7 @@
 | Леванчуков Сергей Анатольевич  | SUCCESS |
 | Лях Марина Игоревна  | SUCCESS |
 | Меланич Ольга Викторовна  | SUCCESS |
-| Рябков Владислав Николаевич  | SUCCESS |
+| Рябков Владислав Николаевич  | FAILURE |
 | Синельник Антон Станиславович  | SUCCESS |
 | Брильков Артур Владимирович  | SUCCESS |
 | Сидельников Николай Сергеевич  | SUCCESS |
@@ -49,3 +49,9 @@
 
 # Ошибки:
 
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:10 символ:56 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:13 символ:36 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:28 символ:15 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:10 символ:56 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:13 символ:36 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:28 символ:15 cannot find symbol
