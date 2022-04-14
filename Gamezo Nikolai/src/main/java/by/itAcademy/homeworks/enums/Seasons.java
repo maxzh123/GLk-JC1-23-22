@@ -22,5 +22,18 @@ public enum Seasons {
     public static String informationOutput(Seasons season) {
         return "Сезон: " + season + " Описание: " + season.getDescription() + " Количество дней: " + season.getCountOfDays();
     }
+    public static Seasons nextSeason(Seasons season) {
+        switch (season) {
+            case WINTER:
+                return SPRING;
+            case SPRING:
+                return SUMMER;
+            case SUMMER:
+                return AUTUMN;
+            case AUTUMN:
+                return WINTER;
+        }
+        return null;
+    }
 }
 
