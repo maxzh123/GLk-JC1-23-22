@@ -8,6 +8,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Task74 {
 
@@ -42,37 +43,41 @@ public class Task74 {
     }
 
     private static class XMLHandler extends DefaultHandler {
-        private String tagName;
         private Point currentPoint;
 
         @Override
-        public void startElement(String uri, String localName, String qName, Attributes attributes) {
-            tagName = qName;
+        public void startElement(String uri, String localName, String tagName, Attributes attributes) {
+
             if(tagName.equals("point")){
+                if(currentPoint != null) {
+                    System.out.println(currentPoint);
+                    currentPoint=null;
+                }
                 currentPoint = new Point();
-                currentPoint.setX(true);
-                currentPoint.setY(true);
+            }
+            if (currentPoint!=null){
+                currentPoint.takeStart(tagName);
+            }else{
+                System.out.println("Тэг проигнорирован:"+tagName);
             }
         }
 
         @Override
         public void characters(char[] ch, int start, int length){
+            char[] val=Arrays.copyOfRange(ch,start,start+length);
             if(currentPoint != null) {
-                String tagContant = new String(ch, start, length).trim();
-                if("x".equals(tagName) && currentPoint.isX() == true){
-                    currentPoint.setPointX(tagContant);
-                    currentPoint.setX(false);
-                }else if ("y".equals(tagName) && currentPoint.isY() == true){
-                    currentPoint.setPointY(tagContant);
-                    currentPoint.setY(false);
-                }
+                currentPoint.setData(new String(val));
             }
         }
 
         @Override
-        public void endElement(String uri, String localName, String qName) {
-            if(qName.equals("point")){
+        public void endElement(String uri, String localName, String tagName) {
+            if(currentPoint != null) {
+                currentPoint.takeEnd(tagName);
+                if (currentPoint.isReady()){
                     System.out.println(currentPoint);
+                    currentPoint=null;
+                }
             }
         }
     }
