@@ -42,41 +42,37 @@ public class Task74 {
     }
 
     private static class XMLHandler extends DefaultHandler {
-        boolean x = false;
-        boolean y = false;
+        private String tagName;
+        private Point currentPoint;
 
         @Override
         public void startElement(String uri, String localName, String qName, Attributes attributes) {
-            if (qName.equals("point")) {
-                System.out.println("<"+qName+">");
-            } else if(qName.equals("x")){
-                x = true;
-            } else if(qName.equals("y")) {
-                y = true;
-            } else {
-                System.out.println("<" + qName + ">");
+            tagName = qName;
+            if(tagName.equals("point")){
+                currentPoint = new Point();
+                currentPoint.setX(true);
+                currentPoint.setY(true);
             }
         }
 
         @Override
         public void characters(char[] ch, int start, int length){
-            StringBuffer sb = new StringBuffer();
-            if(x) {
-                sb.append("(" + new String(ch, start, length));
-                x = false;
-                sb.append(("px,"));
-            } else if(y){
-                sb.append(new String(ch, start, length));
-                y = false;
-                sb.append(("py)" + "\n"));
+            if(currentPoint != null) {
+                String tagContant = new String(ch, start, length).trim();
+                if("x".equals(tagName) && currentPoint.isX() == true){
+                    currentPoint.setPointX(tagContant);
+                    currentPoint.setX(false);
+                }else if ("y".equals(tagName) && currentPoint.isY() == true){
+                    currentPoint.setPointY(tagContant);
+                    currentPoint.setY(false);
+                }
             }
-            System.out.print(sb);
         }
 
         @Override
         public void endElement(String uri, String localName, String qName) {
-            if(!qName.equals("x") && (!qName.equals("y"))) {
-                System.out.println("</" + qName + ">");
+            if(qName.equals("point")){
+                    System.out.println(currentPoint);
             }
         }
     }
