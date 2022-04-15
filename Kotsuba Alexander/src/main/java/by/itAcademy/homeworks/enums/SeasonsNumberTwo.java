@@ -3,24 +3,23 @@ package by.itAcademy.homeworks.enums;
 public enum SeasonsNumberTwo {
     Summer,Autumn,Winter,Spring;
 
-    static String getNextSeason(String season){
+    public void getNextSeason(SeasonsNumberTwo season){
         switch (season){
-            case "Winter":
-                System.out.println("Next season is a Spring");
+            case Summer:
+                System.out.println(Autumn);
                 break;
-            case "Spring" :
-                System.out.println("Next season is a Summer");
+            case Autumn:
+                System.out.println(Winter);
                 break;
-            case "Summer":
-                System.out.println("Next season is an Autumn");
+            case Winter:
+                System.out.println(Spring);
                 break;
-            case "Autumn":
-                System.out.println("Next season is a Winter");
+            case Spring:
+                System.out.println(Summer);
                 break;
             default:
                 System.out.println("Incorrect season");
                 break;
         }
-        return season;
     }
 }
