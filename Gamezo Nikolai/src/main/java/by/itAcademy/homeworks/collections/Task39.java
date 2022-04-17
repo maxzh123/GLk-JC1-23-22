@@ -1,6 +1,7 @@
 package by.itAcademy.homeworks.collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Задание 39
@@ -14,6 +15,7 @@ public class Task39 {
         fillArray(assessment, numOfStudets);
         System.out.println("Исходные оценки: " + assessment);
         System.out.println("Удовлетворительные оценки: " + deleteUnsatisfactory(assessment));
+        System.out.println("Удовлетворительные оценки: " + deleteUnsatisfactoryIter(assessment) + " Iterator");
     }
     //заполнение ArrayList
     public static ArrayList<Integer> fillArray(ArrayList<Integer> assessment, int numOfStudets) {
@@ -31,5 +33,15 @@ public class Task39 {
             }
         }
         return assessmentNew;
+    }
+    //удаление отрицателных оценок в ArrayList с помощью итератора
+    public static ArrayList<Integer> deleteUnsatisfactoryIter(ArrayList<Integer> assessment) {
+        Iterator<Integer> iterator = assessment.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next() <= 3) {
+                iterator.remove();
+            }
+        }
+        return assessment;
     }
 }
