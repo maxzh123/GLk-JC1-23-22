@@ -17,7 +17,7 @@ public class ATM {
         + "Всего: " + (numOfBanknot_20 * 20 + numOfBanknot_50 * 50 + numOfBanknot_100 * 100));
     }
     // метод для добавления денег в банкомат
-    public int addCash(int numOfBanknot_20, int numOfBanknot_50, int numOfBanknot_100){
+    public int addCash(int numOfBanknot_20, int numOfBanknot_50, int numOfBanknot_100) {
         this.numOfBanknot_20 = this.numOfBanknot_20 + numOfBanknot_20;
         this.numOfBanknot_50 = this.numOfBanknot_50 + numOfBanknot_50;
         this.numOfBanknot_100 = this.numOfBanknot_100 + numOfBanknot_100;

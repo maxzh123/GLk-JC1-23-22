@@ -6,5 +6,10 @@ package by.itAcademy.homeworks.objects;
  */
 public class Task24 {
     public static void main(String[] args) {
+        Time24task first = new Time24task(200);
+        Time24task second = new Time24task(600, 21 ,3);
+        System.out.println("Cекунд в объекте " + first.TimeGetSeconds());
+        System.out.println("Cекунд в объекте " + second.TimeGetSeconds());
+        System.out.println(first.compareTo(second));
     }
-}
+    }

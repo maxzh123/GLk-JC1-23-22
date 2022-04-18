@@ -12,14 +12,13 @@ public class Task17 {
 
     }
 
-    static void addSpace(long value) {
-        StringBuffer str = new StringBuffer(Long.toString(value));
-        int i = str.length();
-        for (int j = i / 3 +1; j > 0; j--) {
-            str.insert(i, " ");
-            i -= 3;
-        }
-        System.out.println(str);
+    public static String addSpace(long number) {
+        String result = "";
+        do {
+            result = number % 1000 + " " + result;
+            number = number / 1000;
+        } while (number > 0);
+        return result;
     }
 }
 

@@ -3,20 +3,20 @@
 | Name | Tasks | class | Матем.операций | Методов | Присваиваний | анон.класов | внутр.класов | констант | логирование | лямбды | переменных | перхватов исключений | приват. методов | приват. полей | сравнений | циклов |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Kuznetsov Roman | 78 | 108 | 158 | 242 | 431 | 5 | 0 | 10 | 0 | 1 | 324 | 22 | 7 | 38 | 26 | 81 |
-| Borysenka Aksana | 50 | 104 | 213 | 232 | 418 | 0 | 0 | 8 | 0 | 0 | 340 | 3 | 8 | 34 | 79 | 55 |
-| Ryabkov Vlad | 49 | 57 | 133 | 123 | 213 | 0 | 0 | 0 | 0 | 0 | 184 | 0 | 2 | 34 | 62 | 25 |
-| Levanchukov Sergey | 43 | 70 | 111 | 148 | 285 | 0 | 1 | 3 | 0 | 0 | 224 | 3 | 9 | 34 | 21 | 52 |
-| Katarski Aliaksei | 41 | 90 | 128 | 203 | 258 | 0 | 0 | 0 | 0 | 0 | 209 | 3 | 12 | 45 | 22 | 39 |
-| Korotkevich Lyesha | 40 | 48 | 90 | 117 | 239 | 0 | 0 | 0 | 0 | 0 | 171 | 0 | 0 | 20 | 16 | 43 |
-| Melanich Olga | 38 | 58 | 101 | 115 | 309 | 0 | 0 | 4 | 0 | 0 | 254 | 0 | 1 | 5 | 44 | 35 |
-| Gamezo Nikolai | 31 | 36 | 137 | 67 | 217 | 0 | 0 | 0 | 0 | 0 | 157 | 0 | 0 | 6 | 31 | 39 |
-| Kotsuba Alexander | 30 | 38 | 115 | 63 | 188 | 0 | 0 | 0 | 0 | 0 | 142 | 0 | 4 | 2 | 29 | 36 |
-| Mikolai Sidzelnikau | 29 | 48 | 106 | 135 | 301 | 0 | 0 | 12 | 0 | 0 | 221 | 0 | 11 | 29 | 54 | 34 |
+| Borysenka Aksana | 63 | 120 | 245 | 272 | 542 | 0 | 1 | 9 | 0 | 0 | 434 | 16 | 8 | 42 | 101 | 78 |
+| Ryabkov Vlad | 56 | 76 | 149 | 153 | 264 | 0 | 1 | 0 | 0 | 0 | 228 | 3 | 2 | 36 | 63 | 32 |
+| Levanchukov Sergey | 53 | 87 | 121 | 178 | 335 | 0 | 1 | 4 | 0 | 0 | 271 | 5 | 9 | 38 | 22 | 60 |
+| Korotkevich Lyesha | 53 | 67 | 113 | 152 | 327 | 0 | 0 | 1 | 0 | 0 | 246 | 13 | 0 | 28 | 22 | 65 |
+| Katarski Aliaksei | 50 | 106 | 138 | 235 | 327 | 0 | 0 | 0 | 0 | 0 | 269 | 7 | 12 | 50 | 25 | 54 |
+| Melanich Olga | 46 | 77 | 107 | 171 | 346 | 0 | 0 | 4 | 0 | 0 | 286 | 3 | 1 | 18 | 52 | 36 |
+| Gamezo Nikolai | 41 | 47 | 162 | 95 | 261 | 0 | 0 | 0 | 0 | 0 | 194 | 2 | 0 | 8 | 30 | 50 |
+| Kotsuba Alexander | 38 | 62 | 136 | 113 | 248 | 0 | 0 | 4 | 0 | 1 | 188 | 0 | 5 | 7 | 29 | 40 |
+| Mikolai Sidzelnikau | 35 | 57 | 116 | 151 | 343 | 0 | 0 | 14 | 3 | 0 | 256 | 3 | 11 | 31 | 56 | 43 |
+| Hameza Aliaksandr | 28 | 31 | 80 | 51 | 129 | 0 | 0 | 0 | 0 | 0 | 96 | 0 | 0 | 0 | 13 | 24 |
 | Artur Brylkou | 27 | 31 | 68 | 52 | 135 | 0 | 0 | 0 | 0 | 0 | 99 | 0 | 2 | 0 | 37 | 23 |
-| Hameza Aliaksandr | 24 | 27 | 70 | 45 | 100 | 0 | 0 | 0 | 0 | 0 | 74 | 0 | 0 | 0 | 13 | 21 |
 | Sinelnik Anton | 24 | 26 | 82 | 41 | 106 | 0 | 0 | 0 | 0 | 0 | 78 | 0 | 2 | 0 | 38 | 23 |
-| Bykovski Ura | 23 | 23 | 70 | 25 | 163 | 0 | 0 | 0 | 0 | 0 | 89 | 0 | 0 | 0 | 32 | 37 |
-| Denis Stelmashok | 15 | 15 | 50 | 17 | 65 | 0 | 0 | 0 | 0 | 0 | 60 | 0 | 0 | 0 | 7 | 4 |
+| Bykovski Ura | 24 | 24 | 73 | 26 | 172 | 0 | 0 | 0 | 0 | 0 | 96 | 0 | 0 | 0 | 32 | 41 |
+| Denis Stelmashok | 21 | 21 | 62 | 23 | 92 | 0 | 0 | 0 | 0 | 0 | 79 | 0 | 0 | 0 | 8 | 12 |
 | Arkhangelskiy Vlad | 7 | 7 | 18 | 8 | 15 | 0 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 0 | 1 | 0 |
 | Maryna Liakh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -49,7 +49,9 @@
 
 # Ошибки:
 
-1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task40.java строка:16 символ:9 cannot find symbol
-1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task41.java строка:15 символ:9 cannot find symbol
-1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task40.java строка:16 символ:9 cannot find symbol
-1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/collections/Task41.java строка:15 символ:9 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:10 символ:56 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:13 символ:36 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:28 символ:15 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:10 символ:56 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:13 символ:36 cannot find symbol
+1. Ryabkov Vlad/src/main/java/by/itAcademy/homeworks/exceptions/Task44.java строка:28 символ:15 cannot find symbol
