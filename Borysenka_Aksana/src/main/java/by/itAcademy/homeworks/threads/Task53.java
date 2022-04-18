@@ -2,6 +2,7 @@ package by.itAcademy.homeworks.threads;
 
 
 import by.itAcademy.homeworks.helper.Array;
+import by.itAcademy.homeworks.objects.TimeInterval;
 
 class MyThread extends Thread{
 
@@ -39,21 +40,15 @@ public class Task53 {
      * Запустить 10 потоков.
      */
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int countThread = 5;
 
         System.out.println("Go");
-
-        try {
             for (int i = 1; i <= countThread; i++) {
                 MyThread mt = new MyThread();
                 mt.setName("Thread №" + i + " - ");
                 mt.start();
-                mt.join();
             }
-        }catch (InterruptedException ie){
-            ie.printStackTrace();
-        }
 
         System.out.println("End");
     }
