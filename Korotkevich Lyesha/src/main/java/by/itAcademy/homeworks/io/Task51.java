@@ -8,10 +8,12 @@ import java.io.ObjectOutputStream;
 С помощью Java создать файл, в который запишется информация о этих людях.*/
 
 public class Task51 {
+    public static final char[] LETTERS = "ABCDEFGHIKLMNOPQRSTVXYZ".toLowerCase().toCharArray();
+
     public static void main(String[] args) {
         Person[] people = new Person[10];
         for (int i = 0; i < people.length; i++){
-            people[i] = new Person(generateString(), generateString(), generateInt(100));
+            people[i] = new Person(generateString(8), generateString(10), generateInt(1, 100));
         }
         try (ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("Korotkevich Lyesha/src/main/resources/Task51.bin"))) {
             output.writeObject(people);
@@ -20,17 +22,19 @@ public class Task51 {
         }
     }
 
-    public static int generateInt(int n){
-        return (int)(Math.random()*n+1);
+    public static char generateLetter(){
+        return LETTERS[(int)(Math.random()*LETTERS.length)];
     }
 
-    public static String generateString(){
-        int n = generateInt(10);
-        char[] letters = "ABCDEFGHIKLMNOPQRSTVXYZ".toLowerCase().toCharArray();
-        char[] str = new char[n];
+    public static int generateInt(int min, int max){
+        return (int)(Math.random()*(max - min));
+    }
+
+    public static String generateString(int n){
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < n; i++){
-            str[i] = letters[generateInt(23)-1];
+            result.append(generateLetter());
         }
-        return str.toString();
+        return result.toString();
     }
 }
