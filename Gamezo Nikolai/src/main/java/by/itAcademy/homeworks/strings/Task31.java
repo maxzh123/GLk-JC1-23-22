@@ -10,7 +10,9 @@ package by.itAcademy.homeworks.strings;
 public class Task31 {
     public static void main(String[] args) {
         String str = "aaabbbccc";
+        System.gc();
         System.out.println("Время затраченное на сложение строк: " + sumString(str) + " мс");
+        System.gc();
         System.out.println("Время затраченное с использованием StringBuilder: " + sumStringBuilder(str) + " мс");
     }
     public static long sumString(String str) {

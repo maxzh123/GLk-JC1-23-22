@@ -51,6 +51,7 @@ public class Task50 {
                     output.write(random.nextInt());
                 }
                 output.flush();
+                output.close();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -79,6 +80,7 @@ public class Task50 {
                 }
                 if (output != null) {
                     output.flush();
+                    output.close();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
@@ -106,6 +108,7 @@ public class Task50 {
         }
         try {
             output.flush();
+            output.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

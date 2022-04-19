@@ -21,6 +21,7 @@ public class Task49 {
         }
 
         output.flush();
+        output.close();
 
         DataInputStream input = null;
         try {
