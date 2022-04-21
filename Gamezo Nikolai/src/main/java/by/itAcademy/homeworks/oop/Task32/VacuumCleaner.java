@@ -2,13 +2,21 @@ package by.itAcademy.homeworks.oop.Task32;
 
 public class VacuumCleaner extends AbstarctAppliancesForCleaning {
 
-    @Override
-    public void turnOn() {
+    private int bagCapacity;
+    private int power;
 
+    public VacuumCleaner(String brand, String model, int bagCapacity, int power) {
+        super(brand, model);
+        this.bagCapacity = bagCapacity;
+        this.power = power;
     }
 
-    @Override
-    public void turnOff() {
-
+    public int getBagCapacity(){
+        return bagCapacity;
     }
+
+    public int getPower() {
+        return power;
+    }
+
 }
