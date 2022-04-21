@@ -6,8 +6,8 @@ package by.itAcademy.homeworks.threads;
 public class Task52 {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++){
-            Average t = new Average();
-            t.run();//наверное не так ,потоки веде не параллельно считают
+            Thread t = new Thread(new Average());
+            t.start();   //наверное не так ,потоки веде не параллельно считают
         }
     }
 }

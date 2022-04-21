@@ -4,11 +4,6 @@ import by.itAcademy.homeworks.io.Task51;
 import java.util.ArrayList;
 
 public class Average implements Runnable{
-    Thread thread;
-
-    public Average() {
-        thread = new Thread();
-    }
 
     @Override
     public void run() {
@@ -24,6 +19,6 @@ public class Average implements Runnable{
             sum += integer;
         }
         average = (float)sum/arr.size();
-        System.out.println(thread.getName()+ " вычислил: " + average);
+        System.out.println(Thread.currentThread().getName()+ " вычислил: " + average);
     }
 }
