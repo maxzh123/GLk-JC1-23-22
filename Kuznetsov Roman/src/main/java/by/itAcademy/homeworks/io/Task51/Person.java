@@ -44,7 +44,11 @@ public class Person implements Serializable {
         this.surname = "Doe";
         this.age = random.nextInt(80);
     }
-
+    public Person(int age, String name,String surname) {
+        this.name =name;
+        this.surname = surname;
+        this.age = age;
+    }
     @Override
     public String toString() {
         return "Person{" +
