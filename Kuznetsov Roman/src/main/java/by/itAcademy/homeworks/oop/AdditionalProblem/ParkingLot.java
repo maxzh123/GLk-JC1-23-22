@@ -1,41 +1,56 @@
 package by.itAcademy.homeworks.oop.AdditionalProblem;
 
 import by.itAcademy.homeworks.generics.Vehicle;
+import by.itAcademy.homeworks.oop.AdditionalProblem.Interfaces.IParkingLot;
 
-public class ParkingLot<T extends Vehicle> {
-    private boolean isBusy;
-    private int number;
-    private T vehicle;
+public class ParkingLot<T extends Vehicle> implements IParkingLot<T> {
+    private T vehicle = null;
 
-
-    public ParkingLot(int number) {
-        this.number = number;
-    }
-
-    public boolean isBusy() {
-        return isBusy;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    //Парковка автомобиля на месте
+    /**
+     * Метод для парковки транспорта
+     * @param vehicle
+     * @return
+     */
+    @Override
     public boolean parkVehicle(T vehicle) {
-        if (!this.isBusy()) {
+        boolean result = false;
+        if (this.vehicle == null) {
             this.vehicle = vehicle;
-            this.isBusy = true;
-            return true;
+            result = true;
         }
-        return false;
+        return result;
     }
 
-    //Заборка автомобиля с места
-    public boolean takeVehicleBack() {
-        if (vehicle != null) {
-            vehicle = null;
-            return true;
+    /**
+     * Метод для изъятия транспорта с парковки
+     * @param vehicle
+     * @return
+     */
+    @Override
+    public boolean takeVehicleBack(T vehicle) {
+        boolean result = false;
+        if (this.vehicle == vehicle) {
+            this.vehicle = null;
+            result = true;
         }
-        return false;
+        return result;
+    }
+
+    /**
+     * Метод для проверки занятости места
+     * @return
+     */
+    @Override
+    public boolean isBusy() {
+        return vehicle == null;
+    }
+
+    /**
+     * Метод для получения хранимого на парковочном месте ТС
+     * @return
+     */
+    @Override
+    public T getVehicle() {
+        return vehicle;
     }
 }

@@ -2,14 +2,24 @@
 
 package by.itAcademy.homeworks.loops;
 
+import java.math.BigDecimal;
+
+
 public class Task13 {
     public static void main(String[] args) {
         int i = 1;
-        int result = 1;
-        do{
-            result *= i;
-            i++;
-        }while(i<=25);
-        System.out.println(result);
+        int last = 25;
+        System.out.println(resultOfCalc(i,last));
+
+
     }
-}
+    public static BigDecimal resultOfCalc(int i, int last){
+        BigDecimal c = new BigDecimal("1");
+        do {
+            c = c.multiply(BigDecimal.valueOf(i));
+            i++;
+        }while(i<=last);
+            return c;
+        }
+    }
+

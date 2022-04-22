@@ -30,10 +30,11 @@
    <module>Sinelnik Anton</module>
    <module>Artur Brylkou</module>
    <module>Mikolai Sidzelnikau</module>
-   <module>Borysenka Aksana</module>
+   <module>Borysenka_Aksana</module>
    <module>Hameza Aliaksandr</module>
    <module>Arkhangelskiy Vlad</module>
    <module>Denis Stelmashok</module>
+<module>SpringApp</module>
 </modules>
 
 </project>

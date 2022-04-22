@@ -13,6 +13,7 @@ public class Task18 {
         }
     }
 
+
     public static boolean check(int x){
         System.out.println("Вызов для:"+x);
         return x>5;
