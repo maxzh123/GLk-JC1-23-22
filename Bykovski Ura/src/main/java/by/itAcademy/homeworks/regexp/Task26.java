@@ -15,7 +15,7 @@ public class Task26 {
 
     public static int getcount(String s){
         int count=0;
-        Pattern p=Pattern.compile("[!?]+|[.]{3}|[,.?!;:-\\\\\"']");
+        Pattern p=Pattern.compile("[!?]+|[.]{3}|[,.?!;:\"'-]");
         Matcher m=p.matcher(s);
         while (m.find()){
             count++;

@@ -27,6 +27,10 @@ public class Test21 {
         int result=Task21.summaMinMax(arr);
         Assertions.assertEquals(sum, result,"Для масива "+ Arrays.toString(arr)+" ожидался результат "+ sum +", а получен:"+result);
     }
+    @Test
+    public void test1(){
+        Assertions.assertEquals(13, Task21.summaMinMax(new int[]{3,2,2,1,1,2,1,1,3,1,3,3}));
+    }
 
 }
 

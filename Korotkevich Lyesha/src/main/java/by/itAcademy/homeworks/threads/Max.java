@@ -1,14 +1,14 @@
 package by.itAcademy.homeworks.threads;
 
 import by.itAcademy.homeworks.io.Task51;
+
 import java.util.ArrayList;
 
-public class Average implements Runnable{
+public class Max implements Runnable{
 
     @Override
     public void run() {
-        float average;
-        int sum = 0;
+        int max = 0;
 
         ArrayList<Integer> arr= new ArrayList<>(10);
         for (int i = 0; i < 10; i++){
@@ -16,9 +16,11 @@ public class Average implements Runnable{
         }
 
         for (Integer integer : arr) {
-            sum += integer;
+            if (integer > max){
+                max = integer;
+            }
         }
-        average = (float)sum/arr.size();
-        System.out.println(Thread.currentThread().getName()+ " вычислил: " + average);
+
+        System.out.println(Thread.currentThread().getName()+ " вычислил: " + max);
     }
 }
