@@ -21,12 +21,11 @@ public abstract class AbstarctAppliancesForCleaning implements Appliances {
         return model;
     }
 
-    public void turnOn() {
+    public abstract void turnOn();
 
-    }
-    public  void turnOff(){
 
-    }
+    public abstract void turnOff();
+
     public void setOn (boolean isOn){
         isOn = true;
     }
