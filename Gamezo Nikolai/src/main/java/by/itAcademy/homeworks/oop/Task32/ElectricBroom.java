@@ -4,33 +4,40 @@ public class ElectricBroom extends AbstarctAppliancesForCleaning {
 
     private int batteryСapacity;
     private boolean needСharging;
-    private int tankCapacity;
+    private float tankCapacity;
 
-    public ElectricBroom(String brand, String model, int batteryСapacity, boolean needСharging, int tankCapacity) {
+    public ElectricBroom(String brand, String model, int batteryСapacity, boolean needСharging, float tankCapacity) {
         super(brand, model);
         this.batteryСapacity = batteryСapacity;
         this.needСharging = needСharging;
         this.tankCapacity = tankCapacity;
     }
-
     public int getBatteryСapacity() {
         return batteryСapacity;
     }
-
-    public boolean isNeedСharging() {
-        return needСharging;
+    public void isNeedСharging() {
+        if (needСharging = true) {
+            System.out.println("Нужно зарядить электровеник :)");
+        }
+        else {
+            System.out.println("Электровеник заряжен");
+        }
     }
-
-    public int getTankCapacity() {
+    public float getTankCapacity() {
         return tankCapacity;
     }
 
     public void turnOn() {
         super.setOn(true);
+        System.out.println("Брэнд: " + getBrand());
+        System.out.println("Модель: " + getModel());
         System.out.println("Электровеник включен, да он существует o_O");
-        System.out.println("Ёмкость батареи: " + getBatteryСapacity());
-        System.out.println(isNeedСharging());
-        System.out.println(getTankCapacity());
+        System.out.println("Ёмкость батареи: " + getBatteryСapacity() + " mAh");
+        isNeedСharging();
+        System.out.println("Ёмкость бака: " + getTankCapacity() + " л.");
+    }
+    public void turnOff(){
+        System.out.println("Электровеник выключен");
     }
 
 
