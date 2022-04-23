@@ -19,4 +19,13 @@ public class VacuumCleaner extends AbstarctAppliancesForCleaning {
         return power;
     }
 
+    @Override
+    public void turnOn() {
+
+    }
+
+    @Override
+    public void turnOff() {
+
+    }
 }

@@ -5,11 +5,20 @@ package by.itAcademy.homeworks.threads;
  * Реализовать механизм синхронизации, чтобы все потоки выполнились последовательно.
  */
 
-public class Task55 {
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            Thread t = new Thread(new PrintName());
-            t.start();
+public class PrintName implements Runnable{
+    public void print(){
+        System.out.println(Thread.currentThread().getName());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void run() {
+        synchronized (Thread.currentThread()){
+            print();
         }
     }
 }
