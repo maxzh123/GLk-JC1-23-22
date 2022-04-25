@@ -66,6 +66,7 @@ public class   Task63 {
         };
         v=(a)-> System.out.println(a);
         v=a-> System.out.println(a);
+        v=System.out::println;
     }
 
     public static Comparator<Student> getComparatorByName(){
