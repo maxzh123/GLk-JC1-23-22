@@ -1,7 +1,6 @@
 package by.itAcademy.homeworks.lamda;
 
 @FunctionalInterface
-public interface NumProvider {
-    int getNum();
-
+public interface VoidIface {
+    void func(int a);
 }
