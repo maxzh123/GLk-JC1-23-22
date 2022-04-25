@@ -1,32 +1,19 @@
 package by.itAcademy.homeworks.oop.Task32;
 
 public abstract class AbstarctAppliancesForCleaning implements Appliances {
-    private boolean isOn;
+    public boolean isOn;
     private String brand;
     private String model;
-
-    protected AbstarctAppliancesForCleaning(String brand, String model) {
+    protected AbstarctAppliancesForCleaning(boolean isOn, String brand, String model) {
+        this.isOn = isOn;
         this.brand = brand;
         this.model = model;
-    }
-
-    public boolean getState() {
-        return isOn;
     }
     public String getBrand() {
         return brand;
     }
-
     public String getModel() {
         return model;
     }
-
     public abstract void turnOn();
-
-
-    public abstract void turnOff();
-
-    public void setOn (boolean isOn){
-        isOn = true;
-    }
 }
