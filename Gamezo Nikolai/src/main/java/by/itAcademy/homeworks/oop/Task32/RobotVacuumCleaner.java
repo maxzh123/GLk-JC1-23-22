@@ -19,18 +19,15 @@ public class RobotVacuumCleaner extends VacuumCleaner implements Appliances{
             System.out.println("Робот-пылесос заряжен");
         }
     }
-    public void turnOn() {
-        if (this.isOn == true) {
-            System.out.println("Робот-пылесос включен");
-            System.out.println("Брэнд: " + getBrand());
-            System.out.println("Модель: " + getModel());
-            System.out.println("Объём пылесборника: " + getBagCapacity() + " л.");
-            System.out.println("Мощность: " + getPower() + " Вт");
-            System.out.println("Ёмкость аккумулятора: " + getBatteryСapacity() + " mAh");
-            isNeedСharging();
-            System.out.println("\n");
-        } else {
-            System.out.println("Робот-пылесос выключен");
-        }
+    public void printInfo() {
+        turnOn();
+        System.out.println("Робот-пылесос");
+        System.out.println("Брэнд: " + getBrand());
+        System.out.println("Модель: " + getModel());
+        System.out.println("Объём пылесборника: " + getBagCapacity() + " л.");
+        System.out.println("Мощность: " + getPower() + " Вт");
+        System.out.println("Ёмкость аккумулятора: " + getBatteryСapacity() + " mAh");
+        isNeedСharging();
+        System.out.println("\n");
     }
 }

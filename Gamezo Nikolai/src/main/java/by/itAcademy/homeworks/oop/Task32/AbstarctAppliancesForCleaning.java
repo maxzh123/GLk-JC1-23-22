@@ -15,5 +15,14 @@ public abstract class AbstarctAppliancesForCleaning implements Appliances {
     public String getModel() {
         return model;
     }
-    public abstract void turnOn();
+    public  void turnOn(){
+        if (this.isOn == true) {
+            System.out.println("Прибор включен");
+        }
+        else {
+            System.out.println("Прибор выключен");
+        }
+    }
+    public void printInfo(){}
+
 }
