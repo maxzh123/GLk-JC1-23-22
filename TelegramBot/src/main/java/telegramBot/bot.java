@@ -10,8 +10,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.HashMap;
 
 public class bot extends TelegramLongPollingCommandBot {
-    private final String BOT_NAME;
-    private final String BOT_TOKEN;
+    private final String BOT_NAME="";
+    private final String BOT_TOKEN="";
 
     //Настройки по умолчанию
     //@Getter
@@ -24,12 +24,12 @@ public class bot extends TelegramLongPollingCommandBot {
      * Настройки файла для разных пользователей. Ключ - уникальный id чата
      */
    // @Getter
+    public static void main(String[] args) {
+        new bot();
+    }
 
-
-    public bot(String botName, String botToken) {
+    public bot() {
         super();
-        this.BOT_NAME = botName;
-        this.BOT_TOKEN = botToken;
         //создаём вспомогательный класс для работы с сообщениями, не являющимися командами
 //        this.nonCommand = new NonCommand();
 //        //регистрируем команды
