@@ -28,7 +28,7 @@
     <logger name="jul.example.anotherPackage" level="DEBUG"/>
     <logger name="jul.example" level="DEBUG"/>
 
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>

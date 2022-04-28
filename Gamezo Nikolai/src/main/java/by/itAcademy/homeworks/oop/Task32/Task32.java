@@ -9,11 +9,11 @@ package by.itAcademy.homeworks.oop.Task32;
 
 public class Task32 {
     public static void main(String[] args) {
-        VacuumCleaner vacuumCleaner = new VacuumCleaner("","", 1, 2);
-        vacuumCleaner.turnOn();
-        RobotVacuumCleaner robotVacuumCleaner = new RobotVacuumCleaner("", "", 1, 2, 3, true);
-        robotVacuumCleaner.turnOn();
-        ElectricBroom  electricBroom = new  ElectricBroom("", "", 1, true, 2);
-        electricBroom.turnOn();
+        VacuumCleaner vacuumCleaner = new VacuumCleaner(false,"Samsung", "VCC4520S36/XEV", 1.3F, 1600);
+        vacuumCleaner.printInfo();
+        RobotVacuumCleaner robotVacuumCleaner = new RobotVacuumCleaner(true, "Xiaomi", "Mi Robot Vacuum-Mop 2 Lite MJSTL", 0.45F, 35, 2600, true);
+        robotVacuumCleaner.printInfo();
+        ElectricBroom  electricBroom = new  ElectricBroom(true,"Karcher", "KB 5 Premium 1.258-021.0", 3000, true, 0.8F);
+        electricBroom.printInfo();
     }
 }
