@@ -9,11 +9,9 @@ import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
-import java.util.HashMap;
-
 public class bot extends TelegramLongPollingBot {
     private final String BOT_NAME="MyTest1275Bot";
-    private final String BOT_TOKEN;
+    private final String BOT_TOKEN="";
 
     public static void main(String[] args) {
         try {
