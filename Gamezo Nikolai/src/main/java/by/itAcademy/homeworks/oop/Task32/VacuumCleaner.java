@@ -14,17 +14,14 @@ public class VacuumCleaner extends AbstarctAppliancesForCleaning {
     public int getPower() {
         return power;
     }
-    public void turnOn() {
-        if (this.isOn == true) {
-            System.out.println("Пылесос включен");
-            System.out.println("Брэнд: " + getBrand());
-            System.out.println("Модель: " + getModel());
-            System.out.println("Объём пылесборника: " + getBagCapacity() + " л.");
-            System.out.println("Мощность: " + getPower() + " Вт" + "\n");
-        }
-        else {
-            System.out.println("Пылесос выключен");
-        }
+
+    public void printInfo() {
+        turnOn();
+        System.out.println("Пылесос");
+        System.out.println("Брэнд: " + getBrand());
+        System.out.println("Модель: " + getModel());
+        System.out.println("Объём пылесборника: " + getBagCapacity() + " л.");
+        System.out.println("Мощность: " + getPower() + " Вт" + "\n");
     }
 }
 
