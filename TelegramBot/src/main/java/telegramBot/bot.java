@@ -1,31 +1,28 @@
 package telegramBot;
 
-import org.telegram.telegrambots.extensions.bots.commandbot.TelegramLongPollingCommandBot;
+import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 import java.util.HashMap;
 
-public class bot extends TelegramLongPollingCommandBot {
-    private final String BOT_NAME="";
-    private final String BOT_TOKEN="";
+public class bot extends TelegramLongPollingBot {
+    private final String BOT_NAME="MyTest1275Bot";
+    private final String BOT_TOKEN;
 
-    //Настройки по умолчанию
-    //@Getter
-
-
-    //Класс для обработки сообщений, не являющихся командой
-   // private final NonCommand nonCommand;
-
-    /**
-     * Настройки файла для разных пользователей. Ключ - уникальный id чата
-     */
-   // @Getter
     public static void main(String[] args) {
-        new bot();
+        try {
+            TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
+            botsApi.registerBot(new bot());
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public bot() {
@@ -51,23 +48,6 @@ public class bot extends TelegramLongPollingCommandBot {
     public String getBotUsername() {
         return BOT_NAME;
     }
-
-    /**
-     * Ответ на запрос, не являющийся командой
-     */
-    @Override
-    public void processNonCommandUpdate(Update update) {
-        Message msg = update.getMessage();
-        Long chatId = msg.getChatId();
-        String userName = getUserName(msg);
-
-        //String answer = nonCommand.nonCommandExecute(chatId, userName, msg.getText());
-        //setAnswer(chatId, userName, answer);
-    }
-
-    /**
-     * Получение настроек по id чата. Если ранее для этого чата в ходе сеанса работы бота настройки не были установлены, используются настройки по умолчанию
-     */
 
 
     /**
@@ -95,5 +75,15 @@ public class bot extends TelegramLongPollingCommandBot {
         } catch (TelegramApiException e) {
             //логируем сбой Telegram Bot API, используя userName
         }
+    }
+
+    @Override
+    public void onUpdateReceived(Update update) {
+        Message msg = update.getMessage();
+        Long chatId = msg.getChatId();
+        String userName = getUserName(msg);
+        //@MyTest1275Bot
+        String answer = "Дорогой "+userName + " вы написали: "+msg.getText();
+        setAnswer(chatId, userName, answer);
     }
 }
