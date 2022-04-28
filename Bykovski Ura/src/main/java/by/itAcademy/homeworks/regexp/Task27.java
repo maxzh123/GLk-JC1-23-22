@@ -17,7 +17,7 @@ public class Task27 {
 
     public static int getCount(String s1){
         int count=1;
-        Pattern p=Pattern.compile(" +");
+        Pattern p=Pattern.compile("[A-Za-zА-Яа-яЁё]\\b");
         Matcher m= p.matcher(s1);
         while (m.find()){
             count++;
