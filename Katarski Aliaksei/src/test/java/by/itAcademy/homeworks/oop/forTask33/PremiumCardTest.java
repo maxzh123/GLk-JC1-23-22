@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task33;
+package by.itAcademy.homeworks.oop.forTask33;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

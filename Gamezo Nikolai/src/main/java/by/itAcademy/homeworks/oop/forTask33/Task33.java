@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task33;
+package by.itAcademy.homeworks.oop.forTask33;
 
 /**
  * Задание 33

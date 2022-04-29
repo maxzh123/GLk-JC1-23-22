@@ -1,6 +1,4 @@
-package by.itAcademy.homeworks.oop.Task33;
-
-import java.util.Calendar;
+package by.itAcademy.homeworks.oop.forTask33;
 
 /**
  * > Создать цепочку наследования (минимум 3 звена) классов, описывающих

@@ -1,6 +1,5 @@
-package by.itAcademy.homeworks.oop.Task33;
+package by.itAcademy.homeworks.oop.forTask33;
 
-import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;
 
 public class PremiumCard extends SomeCard implements Overdraft{

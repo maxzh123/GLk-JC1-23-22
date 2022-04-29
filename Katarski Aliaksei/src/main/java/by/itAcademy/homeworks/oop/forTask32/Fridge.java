@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task32;
+package by.itAcademy.homeworks.oop.forTask32;
 
 public class Fridge extends Appliances implements TurnOnOff,DoSomething{
     private int weight;
