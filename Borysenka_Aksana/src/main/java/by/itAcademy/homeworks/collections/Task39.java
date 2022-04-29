@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.lang.Integer;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Task39 {
 
@@ -46,9 +47,14 @@ public class Task39 {
 
 
         // третий вариант (вроде работает, но что-то смущает...так принимается?)
+        List<Integer>m=marks(numberOfStudents);
+        System.out.println(m);
+//        System.out.println(newMarksWithoutNegatives(m, negativeMarks));
 
-        System.out.println(marks(numberOfStudents));
-        System.out.println(newMarksWithoutNegatives(marks(numberOfStudents), negativeMarks));
+        m.stream().filter(mark->mark>negativeMarks)
+                .forEach(System.out::println);
+
+
     }
 
 

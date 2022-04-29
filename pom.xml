@@ -16,7 +16,7 @@
 <modules>    
  <module>Interfaces</module>
  <module>Examples</module>
-
+<module>TelegramBot</module>
    <module>Bykovski Ura</module>
    <module>Gamezo Nikolai</module>
    <module>Katarski Aliaksei</module>
