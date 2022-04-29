@@ -7,6 +7,6 @@ package by.itAcademy.homeworks.patterns;
 
 public class Task67 {
     public static void main(String[] args) {
-        Singleton sn=Singleton.getSn();
+        ThreadSafeSingleton.getInstance().getCurrentDate();
     }
 }
