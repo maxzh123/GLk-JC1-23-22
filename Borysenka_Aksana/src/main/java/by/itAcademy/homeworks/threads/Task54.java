@@ -14,13 +14,11 @@ class MyThread54 extends Thread{
 
     @Override
     public void run() {
-        synchronized (this) {
             newFile(array(countElementArray), path);
             System.out.println(Thread.currentThread().getName() + " created");
-        }
     }
 
-    public void newFile (int [] arr, String path){
+    public static synchronized void newFile (int [] arr, String path){
         try {
             BufferedWriter bf = new BufferedWriter(new FileWriter(path, true));
             bf.write(Arrays.toString(arr));
