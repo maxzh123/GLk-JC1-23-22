@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task34;
+package by.itAcademy.homeworks.oop.forTask34;
 
 public class Master extends DeputyForProduction implements SalaryCalculation{
     public Master(float salary, float hoursWorked, float premium, float planCompletionPercentage) {

@@ -1,9 +1,7 @@
-package by.itAcademy.homeworks.oop.Task34;
+package by.itAcademy.homeworks.oop.forTask34;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class WorkerTest {
     Loader test_1=new Loader("Aliaksei","Loader",800,Currency.BYN,120,130);

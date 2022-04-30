@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task34;
+package by.itAcademy.homeworks.oop.forTask34;
 
 public class Task34 {
     public static void main(String[] args) {

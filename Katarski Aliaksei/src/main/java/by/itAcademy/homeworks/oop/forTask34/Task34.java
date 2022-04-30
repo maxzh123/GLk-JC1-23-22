@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task34;
+package by.itAcademy.homeworks.oop.forTask34;
 
 /**
  *  Создать цепочку наследования (минимум 3 звена) классов, описывающих
