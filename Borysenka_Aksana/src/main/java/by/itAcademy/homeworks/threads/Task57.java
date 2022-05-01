@@ -7,7 +7,6 @@ import java.util.concurrent.BlockingQueue;
 
 class Producer implements Runnable {
     private BlockingQueue<Integer> q;
-    private static boolean sleeping = false;
 
     public Producer(BlockingQueue<Integer> q) {
         this.q = q;
@@ -16,36 +15,39 @@ class Producer implements Runnable {
     @Override
     public void run() {
         while (Task57.processedElements < 10_000) {
-            try {
-                while (q.size() >= 100) {
+            while(q.size() <= 80) {
+                wakeUp();
+                produce();
+                if(q.size() >= 100){
                     System.out.println(Thread.currentThread().getName() + "продукции много, спим");
                     asleep();
-                    q.wait();
                 }
-            }catch (InterruptedException e){
-                e.printStackTrace();
             }
-            produce();
         }
     }
 
-    public void asleep() {
-        sleeping = true;
+    public void asleep(){
+        synchronized (q) {
+            try {
+                q.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
-    public static void wakeUp() {
-        sleeping = false;
+    public void wakeUp() {
+        synchronized (q) {
+            q.notifyAll();
+        }
     }
 
     public void produce() {
         int x = (int) (Math.random() * 100 + 1);
-        if (!sleeping) {
             q.add(x);
             System.out.println(Thread.currentThread().getName()+ " добавил элемент: " + x + ", количество обработанных элементов: " + Task57.processedElements++);
         }
-
     }
-}
 
 class Consumer implements Runnable{
     BlockingQueue q;
@@ -57,26 +59,22 @@ class Consumer implements Runnable{
     @Override
     public void run() {
         while (Task57.processedElements < 10_000){
-            while (q.size() == 0) {
-                System.out.println("нет элементов, спим");
-                try {
-                    q.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
             consume();
         }
     }
 
     public void consume(){
-        while(q.size() != 0){
-            System.out.println(Thread.currentThread().getName() + " взял элемент: " + q.poll() + ", количество обработанных элементов: " +  Task57.processedElements++);
-        }
-        if(q.size() <=80){
-            System.out.println("заставляем работать производителей");
-            Producer.wakeUp();
-            q.notifyAll();
+        if(q.size() != 0){
+            System.out.println(Thread.currentThread().getName() + " взял элемент: " + q.poll() + ", количество обработанных элементов: " + Task57.processedElements++);
+        }else if (q.size() == 0) {
+            System.out.println("нет элементов, спим");
+            try {
+                synchronized (q) {
+                    q.wait();
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
@@ -92,16 +90,11 @@ public class Task57 {
      */
 
     public static volatile int processedElements;
-//    AtomicInteger processedElements = new AtomicInteger();
 
     public static void main(String[] args) {
 
         int countElementOfQueue = 200;
         BlockingQueue<Integer> queue = new ArrayBlockingQueue(countElementOfQueue,true);
-//        for (int i = 0; i<80; i++){
-//            queue.add(i);
-//        }
-//        System.out.println(queue.remainingCapacity() + ", " + queue.size());
 
         Thread p1 = new Thread(new Producer(queue));
         Thread p2 = new Thread(new Producer(queue));
