@@ -46,12 +46,14 @@ public class MyCallableForTask58 implements Callable {
         String fileExtension = ".txt";
 
         for (int j = 1; j <= numberOfFile; j++) {
-            try (BufferedWriter bf = new BufferedWriter(new FileWriter(path + prefixOfNameFile + j + fileExtension))) {
+            try {
+                BufferedWriter bw = new BufferedWriter(new FileWriter(path + prefixOfNameFile + j + fileExtension));
                 for (int i = 0; i < numberOfRows; i++) {
-                    bf.write(str);
-                    bf.newLine();
+                    bw.write(str);
+                    bw.newLine();
                 }
-                bf.flush();
+                bw.flush();
+                bw.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
