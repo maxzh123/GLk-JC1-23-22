@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task34;
+package by.itAcademy.homeworks.oop.forTask34;
 
 public class Engineer extends Worker {
     public Engineer (String position, String name, double workingHours, double standardHours){

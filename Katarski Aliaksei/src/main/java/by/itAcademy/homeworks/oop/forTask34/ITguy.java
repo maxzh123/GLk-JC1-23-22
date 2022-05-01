@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.oop.Task34;
+package by.itAcademy.homeworks.oop.forTask34;
 
 public class ITguy extends Worker implements GetSalary{
     private long minNumberOfKeystroke;
