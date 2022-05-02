@@ -1,5 +1,11 @@
 package by.itAcademy.homeworks.oop;
 
+/**
+ * Создать цепочку наследования (минимум 3 звена) классов, описывающих бытовую технику.
+ * Создать несколько объектов описанных классов, часть из них включить в розетку.
+ * Иерархия должна иметь хотя бы три уровня.
+ */
+
 import by.itAcademy.homeworks.oop.ForTask32.Fridge;
 import by.itAcademy.homeworks.oop.ForTask32.Notebook;
 
