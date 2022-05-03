@@ -1,8 +1,8 @@
 package by.itAcademy.homeworks.oop;
 
-import by.itAcademy.homeworks.oop.Task32.Fridge;
-import by.itAcademy.homeworks.oop.Task32.Teapot;
-import by.itAcademy.homeworks.oop.Task32.Washer;
+import by.itAcademy.homeworks.oop.forTask32.Fridge;
+import by.itAcademy.homeworks.oop.forTask32.Teapot;
+import by.itAcademy.homeworks.oop.forTask32.Washer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
