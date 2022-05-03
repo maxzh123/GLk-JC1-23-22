@@ -8,31 +8,29 @@ import java.util.Objects;
 public class Task46 {
     public static void main(String[] args) {
         File path = new File(".");
-        outputListOfDirectory(path,0);
-        outputListOfFiles(path,0);
+        outputListOfDirectory(path);
+        outputListOfFiles(path);
     }
 
-    public static void outputListOfDirectory(File directory, int step) {
+    public static void outputListOfDirectory(File directory) {
         for (File file : directory.listFiles()) {
                 if(file.isDirectory()){
                     System.out.println(file.getName()+":");
-                    outputListOfFiles(file, step);
+                    outputListOfFiles(file);
                 }
                 else {
-                    System.out.print("-");
                     System.out.println(file.getName());
                 }
         }
     }
 
-    public static void outputListOfFiles(File directory, int step) {
+    public static void outputListOfFiles(File directory) {
         for (File file : Objects.requireNonNull(directory.listFiles())) {
-            System.out.print("-");
             if (file.isFile()) {
                 System.out.println(file.getName());
             }
             else {
-                outputListOfDirectory(file,step++);
+                outputListOfDirectory(file);
             }
         }
     }
