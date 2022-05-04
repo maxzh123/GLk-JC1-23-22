@@ -12,10 +12,6 @@ public class WashingMachine extends householdAppliances{
         this.depth=depth;
     }
 
-    public WashingMachine() {
-        super();
-    }
-
     public float getMaxLoad(){
         return maxLoad;
     }
