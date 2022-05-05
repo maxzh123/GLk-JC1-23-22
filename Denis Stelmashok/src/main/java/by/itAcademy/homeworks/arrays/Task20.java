@@ -14,7 +14,6 @@ public class Task20 {
         System.out.println("Максимальный элемент " + array[maxIdx]);
         System.out.println("Индекс " + maxIdx);
     }
-
     public static  void printArray(int[] array){
 //        for (int i = 0; i < array.length; i++) {
 //            System.out.println("Элемент " + i +" равен " +array[i]);

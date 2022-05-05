@@ -15,9 +15,7 @@ public class Task11 {
         int in = day.nextInt();
         copy(week, in);
     }
-
     public static void copy(String[] week, int in) {
         System.out.println("Your plan for the day: " +  " " + (in) + week[in-1]);
-
     }
-    }
+}
