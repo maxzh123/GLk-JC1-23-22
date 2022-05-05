@@ -7,6 +7,6 @@ public class Task67 {
      * Сделайте его Singleton и используйте в основном телепрограммы.
      */
     public static void main(String[] args) {
-        MySingleton.getExample().getCurrentDate();
+        System.out.println(MySingleton.example);
     }
 }

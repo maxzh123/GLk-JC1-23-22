@@ -11,7 +11,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class bot extends TelegramLongPollingBot {
     private final String BOT_NAME="MyTest1275Bot";
-    private final String BOT_TOKEN="";
+    private final String BOT_TOKEN="5116940800:AAEv8_JFnsoLU7GXS3OYM88mt0Sahinq13E";
 
     public static void main(String[] args) {
         try {

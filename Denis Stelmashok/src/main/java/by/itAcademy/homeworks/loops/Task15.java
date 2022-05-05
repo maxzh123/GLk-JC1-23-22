@@ -12,7 +12,7 @@ public class Task15 {
                     break;
                 }
             }if (isTrue){
-                    System.out.println(i);
+                System.out.println(i);
 
             }
         }
