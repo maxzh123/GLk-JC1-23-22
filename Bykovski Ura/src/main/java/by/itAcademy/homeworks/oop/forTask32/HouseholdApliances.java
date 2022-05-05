@@ -45,7 +45,7 @@ import java.util.Calendar;
                     ", manufacturer=" + manufacturer +
                     ", model=" + model  +
                     ", state=" + state +
-                    ")" ;
+                    ")";
         }
     }
 

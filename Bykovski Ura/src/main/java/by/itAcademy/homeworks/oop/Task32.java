@@ -16,6 +16,6 @@ public class Task32 {
 
         WasherDryer m2=new WasherDryer(1400,"woic","5",7,1500,50,true,false);
         m2.turnOn();
-        m2.washAndDry() ;
+        m2.washAndDry();
     }
 }
