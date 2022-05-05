@@ -16,11 +16,11 @@ public class Task50 {
         new File(path).mkdirs();
         createFiles();
         generateAndWrite();
-        createReadAndWrite();
-
+        readAndWrite();
+        createCatalog();
     }
     public static void createFiles() throws Exception {
-        for (int i = 1; i <= 5; i++){
+        for (int i = 1; i <= 5; i++) {
             File file = new File(path + "File" + i + ".txt");
             file.createNewFile();
         }
@@ -35,26 +35,52 @@ public class Task50 {
                 writer.write(Arrays.toString(array));
                 writer.flush();
             }
-            catch(IOException ex){
+            catch (IOException ex) {
                 System.out.println(ex.getMessage());
             }
         }
     }
-    public static void createReadAndWrite() throws IOException {
+    public static void readAndWrite() throws IOException {
         File file = new File(path + "FromPrevious5.txt");
         file.createNewFile();
-
+        char[] array = new char[256];
+        int c;
+        String str = "";
         String string = "";
-        String str;
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(path + "File" + 1 + ".txt"));
-        str = bufferedReader.readLine();
-        while (str != null) {
-            str = bufferedReader.readLine();
-            if (str != null) {
-                string = string + str + " ";
+        for (int i = 1; i <= 5; i++) {
+            try (FileReader reader = new FileReader(path + "File" + i + ".txt")) {
+                while ((c = reader.read(array)) > 0) {
+                    str = String.valueOf(Arrays.copyOf(array, c));
+                }
             }
+            catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+            string = string + str;
         }
-        System.out.println(string);
+        try (FileWriter writer = new FileWriter(path + "FromPrevious5.txt", false)) {
+            writer.write(string);
+            writer.flush();
+        }
+        catch(IOException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
-
+    public static void createCatalog() {
+        File file= new File(path);
+        try (FileWriter writer = new FileWriter(path + "Catalog.txt", false)) {
+            for (File f: file.listFiles()){
+                try {
+                    writer.write(f.getName() + "\n");
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            writer.flush();
+        }
+        catch(IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 }
