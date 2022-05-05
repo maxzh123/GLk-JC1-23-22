@@ -1,6 +1,6 @@
 package by.itAcademy.homeworks.oop.forTask32;
 
-public class WashingMachine extends householdAppliances{
+public class WashingMachine extends HouseholdApliances{
     public float maxLoad;
     public int spinSpeed;
     public float depth;
@@ -25,7 +25,7 @@ public class WashingMachine extends householdAppliances{
     }
 
     public void wash(){
-        if(whatState()) System.out.println("Стирает");
+        if(whatState()==true) System.out.println("Стирает");
         else System.out.println("Включите");
     }
 
@@ -35,7 +35,7 @@ public class WashingMachine extends householdAppliances{
                 "price=" + getPrice() +
                 ", manufacturer=" + getManufacturer() +
                 ", model=" + getModel()  +
-                ", state=" + getState() +
+                ", state=" + whatState() +
                 ", maxLoad=" + maxLoad +
                 ", spinSpeed=" + spinSpeed +
                 ", depth=" + depth +

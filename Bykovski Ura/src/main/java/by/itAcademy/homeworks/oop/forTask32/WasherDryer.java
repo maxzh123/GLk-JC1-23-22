@@ -18,8 +18,8 @@ public class WasherDryer extends WashingMachine{
         return dryingByTimer;
     }
 
-    public void washAndDryer(){
-        if(whatState()) System.out.println("Стирает");
+    public void washAndDry(){
+        if(whatState()==true) System.out.println("Стирает, а потом высушит");
         else System.out.println("Включите");
     }
 
@@ -29,12 +29,14 @@ public class WasherDryer extends WashingMachine{
                 "price=" + getPrice() +
                 ", manufacturer=" + getManufacturer() +
                 ", model=" + getModel() +
-                ", state=" + getState() +
+                ", state=" + whatState() +
                 ", maxLoad=" + getMaxLoad() +
                 ", spinSpeed=" + getSpinSpeed() +
                 ", depth=" + getDepth() +
                 ", steamTreatment=" + isSteamTreatment() +
                 ", dryingByTimer=" + isDryingByTimer() +
+                ", steamTreatment=" + steamTreatment +
+                ", dryingByTimer" + dryingByTimer +
                 ")";
     }
 }

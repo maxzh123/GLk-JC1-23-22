@@ -2,10 +2,6 @@ package by.itAcademy.homeworks.oop.forTask32;
 
 import java.util.Calendar;
 
-public class householdAppliances {
-    public householdAppliances(float price, String manufacturer, String model) {
-    }
-
     public class HouseholdApliances{
         public float price;
         public String manufacturer;
@@ -52,4 +48,4 @@ public class householdAppliances {
                     ")";
         }
     }
-}
+
