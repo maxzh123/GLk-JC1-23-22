@@ -37,6 +37,6 @@ public class WasherDryer extends WashingMachine{
                 ", dryingByTimer=" + isDryingByTimer() +
                 ", steamTreatment=" + steamTreatment +
                 ", dryingByTimer" + dryingByTimer +
-                ")";
+                ")" ;
     }
 }

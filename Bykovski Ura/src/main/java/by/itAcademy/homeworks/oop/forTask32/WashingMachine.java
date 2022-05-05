@@ -39,6 +39,6 @@ public class WashingMachine extends HouseholdApliances{
                 ", maxLoad=" + maxLoad +
                 ", spinSpeed=" + spinSpeed +
                 ", depth=" + depth +
-                ")";
+                ")" ;
     }
 }
