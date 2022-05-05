@@ -15,7 +15,7 @@ public class SingletonTime {
             return instance;
     }
 
-    public static LocalDate getCurrentDate(){
+    public LocalDate getCurrentDate(){
         return LocalDate.now();
     }
 }
