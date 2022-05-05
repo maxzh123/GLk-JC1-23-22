@@ -8,7 +8,7 @@ public class SingletonTime {
     private SingletonTime() {
     }
 
-    public static SingletonTime getDate(){
+    public static synchronized SingletonTime getDate(){
             if (instance == null) {
                 instance = new SingletonTime();
             }
