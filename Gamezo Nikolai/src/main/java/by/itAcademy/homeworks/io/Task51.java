@@ -13,20 +13,26 @@ public class Task51 {
     public static void main(String[] args) throws IOException {
         File file = new File("Gamezo Nikolai\\src\\main\\resources\\ForTask51");
         file.createNewFile();
-        Person person1 = new Person("Vlad","Surname1",25);
-        Person person2 = new Person("Artur","Surname2",26);
-        Person person3 = new Person("Aksana","Surname3",27);
-        Person person4 = new Person("Ura","Surname4",28);
-        Person person5 = new Person("Denis","Surname5",29);
-        Person person6 = new Person("Nikolai","Surname6",30);
-        Person person7 = new Person("Aliaksandr","Surname7",31);
-        Person person8 = new Person("Aliaksei","Surname8",32);
-        Person person9 = new Person("Lyesha","Surname9",33);
-        Person person10 = new Person("Alexander","Surname10",34);
-        createAndWrite(person1);
+        try (FileWriter writer = new FileWriter("Gamezo Nikolai\\src\\main\\resources\\ForTask51", false)) {
+            writer.write("");
+            writer.flush();
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("Файл не найден");
+        }
+        createAndWrite(new Person("Vlad","Surname1",25));
+        createAndWrite(new Person("Artur","Surname2",26));
+        createAndWrite(new Person("Aksana","Surname3",27));
+        createAndWrite(new Person("Ura","Surname4",28));
+        createAndWrite(new Person("Denis","Surname5",29));
+        createAndWrite(new Person("Nikolai","Surname6",30));
+        createAndWrite(new Person("Aliaksandr","Surname7",31));
+        createAndWrite(new Person("Aliaksei","Surname8",32));
+        createAndWrite(new Person("Lyesha","Surname9",33));
+        createAndWrite(new Person("Alexander","Surname10",34));
     }
     public static void createAndWrite(Person person) throws IOException {
-        try (FileWriter writer = new FileWriter("Gamezo Nikolai\\src\\main\\resources\\ForTask51", false)) {
+        try (FileWriter writer = new FileWriter("Gamezo Nikolai\\src\\main\\resources\\ForTask51", true)) {
             writer.write(person.toString());
             writer.flush();
         }
