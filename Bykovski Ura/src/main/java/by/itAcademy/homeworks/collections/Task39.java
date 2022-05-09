@@ -13,7 +13,7 @@ public class Task39 {
             arrayList.add((int)(Math.random()*10)+1);
         }
         System.out.println(arrayList);
-        arrayList.removeIf(i ->(i<5));
+        arrayList.removeIf(i ->i<5);
         System.out.println(arrayList);
     }
 }
