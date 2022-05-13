@@ -1,6 +1,7 @@
 package by.itAcademy.homeworks.threads;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -26,12 +27,20 @@ public class Task59 {
             //добавив Future в список, мы можем получить возвращаемое значение
             list.add(future);
         }
-        for(Future f: list){
-            try {
-                // выводим возвращаемое значение Future, замечаем задержку вывода в консоли, потому что Future.get() ожидает завершения задачи
-                System.out.println(f.get());
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
+        while(list.size()>0){
+            Iterator<Future> i = list.iterator();
+            while (i.hasNext()){
+                Future f = i.next();
+                if(f.isDone()){
+                    try {
+                        System.out.println(f.get());
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    }
+                    i.remove();
+                }
             }
         }
         //закрыть службу

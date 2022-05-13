@@ -4,10 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.*;
 
 public class Task58 {
@@ -33,12 +30,21 @@ public class Task58 {
             //добавив Future в список, мы можем получить возвращаемое значение
             list.add(future);
         }
-        for(Future f: list){
-            try {
-        // выводим возвращаемое значение Future, замечаем задержку вывода в консоли, потому что Future.get() ожидает завершения задачи
-                System.out.println(f.get());
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
+
+        while(list.size()>0){
+            Iterator<Future> i = list.iterator();
+            while (i.hasNext()){
+                Future f = i.next();
+                if(f.isDone()){
+                    try {
+                        System.out.println(f.get());
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    }
+                    i.remove();
+                }
             }
         }
         //закрыть службу
