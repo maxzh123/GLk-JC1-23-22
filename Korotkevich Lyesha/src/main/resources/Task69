@@ -1,0 +1,2 @@
+null
+Cannot invoke "String.length()" because "str" is null
