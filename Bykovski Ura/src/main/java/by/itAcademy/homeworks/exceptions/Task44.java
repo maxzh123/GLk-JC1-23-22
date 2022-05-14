@@ -11,6 +11,6 @@ public class Task44 {
         } catch (MyExeption e) {
             e.printStackTrace();
         }
-        System.out.println("Оно работает");
+        System.out.println("Оно работает") ;
     }
 }
