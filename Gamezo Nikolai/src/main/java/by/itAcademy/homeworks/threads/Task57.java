@@ -14,7 +14,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Task57 {
     public static volatile int producedElements;
-    private static boolean sleep = false;
+    private static volatile boolean sleep = false;
     public static void main(String[] args) {
         Queue<Integer> queue = new ConcurrentLinkedQueue<>();
         for (int i = 1; i <= 3; i++) {
