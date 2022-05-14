@@ -24,7 +24,7 @@ public class Logger {
             writer.write("Error: " + error + " Happened in " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("\"d MMMM uuuu в HH:mm:ss")) +"\n");
             writer.flush();
         }
-        catch (FileNotFoundException e) {
+        catch (FileNotFoundException exp) {
             System.out.println("Файл не найден");
         }
     }

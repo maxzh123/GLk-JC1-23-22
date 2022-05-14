@@ -15,7 +15,7 @@ public class Task69 {
         Logger logger = Logger.getLogger();
         Integer num = null;
         try {
-            int x = num * 2;
+            int x = num * 3;
         } catch (NullPointerException exc) {
             logger.writeLog(String.valueOf(exc));
         }
