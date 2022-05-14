@@ -18,6 +18,6 @@ public class Task68 {
         System.out.print("Введите год рождения: ");
         int birthYear = in.nextInt();
         Person person = new Person.PersonBuilder().setName(name).setSurname(surname).setBirthYear(birthYear).build();
-        System.out.println(person);
+        System.out.println("\n" + person);
     }
 }

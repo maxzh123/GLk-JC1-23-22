@@ -9,7 +9,6 @@ public class Person {
     public String toString() {
         return "Имя: " + name + "\n" + "Фамилия: " + surname + "\n" + "Год рождения: " + birthYear ;
     }
-
     public static class PersonBuilder {
         private Person person;
         public PersonBuilder() {
