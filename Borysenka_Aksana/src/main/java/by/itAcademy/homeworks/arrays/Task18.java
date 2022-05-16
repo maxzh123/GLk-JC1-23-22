@@ -12,7 +12,7 @@ public class Task18 {
     public static void main(String[] args){
         int [] array = new int [11];
         elementArr(array);
-        System.out.println("Еhe last element of the array: " + lastElementArr(array));
+        System.out.println("Еhe last element of рвр the array: " + lastElementArr(array));
     }
 
     public static void elementArr(int[] arr){
