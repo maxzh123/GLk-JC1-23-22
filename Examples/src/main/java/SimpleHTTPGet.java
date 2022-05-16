@@ -19,6 +19,8 @@ public class SimpleHTTPGet {
         while (r.ready()){
             System.out.println(r.readLine());
         }
+
+        // То чего увас нет
         con.disconnect();
     }
 }
