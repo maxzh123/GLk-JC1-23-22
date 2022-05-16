@@ -8,8 +8,8 @@ import java.util.Base64;
 public class DESDecrypter {
     public static void main(String[] args) {
         String key="Thikdglgjd93389503034858";
-        String text="uE7QLw09eX7eXwqeQwTI4/LSCp/SiR9WoAzdFBM1M7I="; //то что надо расшифровать
-        System.out.println(decrypt(key,text));
+        //String text="uE7QLw09eX7eXwqeQwTI4/LSCp/SiR9WoAzdFBM1M7I="; //то что надо расшифровать
+        System.out.println(decrypt(key,"3h7sAkYOwt6gVAUTicogA0tow1OP5j4pxMkjYHR6/NSMVtzoeILRqhO7YaVAe3YL"));
     }
 
     public static  String decrypt(String key,String encrypted){
