@@ -8,7 +8,7 @@ import java.util.Base64;
 public class DESEncrypter {
     public static void main(String[] args) {
         String key="Thikdglgjd93389503034858";
-        String text="То чтоdfpg[oflg[d;fghfggfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh;dfg'f" ;
+        String text="5116940800:AAEv8_JFnsoLU7GXS3OYM88mt0Sahinq13E" ;
         try {
             SecretKeyFactory f = SecretKeyFactory.getInstance("DESede");
             SecretKey skey = f.generateSecret(new DESedeKeySpec(key.getBytes(StandardCharsets.UTF_8)));
