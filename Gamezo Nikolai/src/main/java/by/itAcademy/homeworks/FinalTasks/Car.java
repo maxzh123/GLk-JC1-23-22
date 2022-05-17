@@ -19,11 +19,8 @@ public class Car {
     public int getEngineCapacity() {
         return engineCapacity;
     }
-    public String getName() {
-        return name;
-    }
     public String toString(){
-        return name + " " + engineCapacity + " " + carModel;
+        return "<" + name + "> : <"  + carModel  + "> : " + engineCapacity + " ";
     }
 }
 
