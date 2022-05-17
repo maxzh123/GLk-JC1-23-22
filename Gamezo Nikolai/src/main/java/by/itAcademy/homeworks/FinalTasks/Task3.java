@@ -20,9 +20,12 @@ public class Task3 {
         List Car = new ArrayList();
         Car.add(car1);
         Car.add(car2);
+        Car.add(car3);
+        Car.add(car4);
         Map<Integer, List<Car>> map = new HashMap<>();
 
         map.put(car1.getEngineCapacity(), (List<Car>) Car);
-
+    //    map.put(car2.getEngineCapacity(), (List<Car>) Car);
+        System.out.println(map);
     }
 }
