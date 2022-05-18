@@ -30,11 +30,13 @@ public class PlayerGeneratorTask extends Thread implements Serializable {
     }
 
     public String write () throws IOException {
-        FileOutputStream fos = new FileOutputStream(path);
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObject(players);
-        oos.close();
-        oos.flush();
-        return path;
+        synchronized (path) {
+            FileOutputStream fos = new FileOutputStream(path);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(players);
+            oos.close();
+            oos.flush();
+            return path;
+        }
     }
 }
