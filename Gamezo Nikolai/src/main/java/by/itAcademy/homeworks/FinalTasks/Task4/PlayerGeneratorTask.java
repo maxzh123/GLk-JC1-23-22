@@ -3,7 +3,7 @@ package by.itAcademy.homeworks.FinalTasks.Task4;
 import java.io.*;
 import java.util.ArrayList;
 
-public class PlayerGeneratorTask extends Thread implements Serializable {
+public class PlayerGeneratorTask extends Thread {
     ArrayList<Player> players = new ArrayList<Player>();
     public String path;
 
@@ -19,17 +19,18 @@ public class PlayerGeneratorTask extends Thread implements Serializable {
         players.add(new Player("Denis", 26, true));
         players.add(new Player("Nikolai", 27, true));
         players.add(new Player("Aliaksandr", 28, true));
-        players.add(new Player("Aliaksei", 22, true));
-        players.add(new Player("Lyesha", 21, true));
+        players.add(new Player("Aliaksei", 26, true));
+        players.add(new Player("Lyesha", 27, true));
         players.add(new Player("Roman", 20, false));
         try {
-            write();
+            writeToFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("gen");
     }
 
-    public String write () throws IOException {
+    public String writeToFile () throws IOException {
         synchronized (path) {
             FileOutputStream fos = new FileOutputStream(path);
             ObjectOutputStream oos = new ObjectOutputStream(fos);

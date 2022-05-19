@@ -40,7 +40,7 @@ public class Car {
     public void setCarModel(CarModel carModel) {
         this.carModel = carModel;
     }
-
+    @Override
     public String toString() {
         return "<" + name + "> : <" + carModel + "> : " + engineCapacity;
     }
