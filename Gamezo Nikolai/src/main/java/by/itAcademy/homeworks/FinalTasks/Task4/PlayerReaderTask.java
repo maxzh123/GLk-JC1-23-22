@@ -10,6 +10,7 @@ public class PlayerReaderTask extends Thread {
     public PlayerReaderTask(String path) {
         this.path = path;
     }
+
     public void run() {
         try {
             readFromFile();
@@ -26,7 +27,6 @@ public class PlayerReaderTask extends Thread {
         synchronized (path) {
             FileInputStream fis = new FileInputStream(path);
             ObjectInputStream ois = new ObjectInputStream(fis);
-
             ArrayList<Player> players = (ArrayList<Player>) ois.readObject();
             ois.close();
             for (Player player : players) {
