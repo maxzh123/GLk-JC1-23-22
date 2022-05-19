@@ -3,15 +3,16 @@ package by.itAcademy.homeworks.FinalTasks.Task4;
 import java.io.*;
 import java.util.ArrayList;
 
-public class PlayerReaderTask extends Thread implements Serializable {
+public class PlayerReaderTask extends Thread {
     public String path;
     ArrayList<Player> sortPlayers = new ArrayList<>();
+
     public PlayerReaderTask(String path) {
         this.path = path;
     }
     public void run() {
         try {
-            read();
+            readFromFile();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -19,10 +20,11 @@ public class PlayerReaderTask extends Thread implements Serializable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-     //   System.out.println(sortPlayers);
+        System.out.println("read");
+      //  System.out.println(sortPlayers);
     }
 
-    public ArrayList<Player> read() throws IOException, ClassNotFoundException, InterruptedException {
+    public ArrayList<Player> readFromFile() throws IOException, ClassNotFoundException, InterruptedException {
         synchronized (path) {
             FileInputStream fis = new FileInputStream(path);
             ObjectInputStream ois = new ObjectInputStream(fis);
@@ -34,7 +36,6 @@ public class PlayerReaderTask extends Thread implements Serializable {
                     sortPlayers.add(player);
                 }
             }
-       //     System.out.println(sortPlayers.stream().peek(System.out::println));
             return sortPlayers;
         }
     }
