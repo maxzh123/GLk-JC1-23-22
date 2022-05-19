@@ -1,4 +1,4 @@
-package by.itAcademy.homeworks.FinalTasks;
+package by.itAcademy.homeworks.FinalTasks.Task4;
 
 import java.io.Serializable;
 

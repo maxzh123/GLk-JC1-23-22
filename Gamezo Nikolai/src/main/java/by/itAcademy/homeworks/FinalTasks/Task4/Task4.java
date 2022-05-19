@@ -1,15 +1,11 @@
-package by.itAcademy.homeworks.FinalTasks;
-
-import by.itAcademy.homeworks.lamda.Task62;
+package by.itAcademy.homeworks.FinalTasks.Task4;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.stream.Stream;
 
 public class Task4 {
     private volatile static String path = "Gamezo Nikolai\\src\\main\\resources\\ForFinalTask4";
