@@ -18,13 +18,13 @@ public class Task4 {
     public static void threadPool() throws InterruptedException {
         ExecutorService executor = Executors.newFixedThreadPool(4);
         for (int i = 1; i <= 20; i++) {
-            Thread gen = new Thread(new PlayerGeneratorTask(path));
+            Thread generate = new Thread(new PlayerGeneratorTask(path));
             Thread read = new Thread(new PlayerReaderTask(path));
             read.join();
-            gen.join();
+            generate.join();
             read.start();
-            executor.execute(gen);
-            gen.sleep(100);
+            executor.execute(generate);
+            generate.sleep(100);
         }
         executor.shutdown();
     }
