@@ -12,16 +12,16 @@ public class PlayerGeneratorTask extends Thread implements Serializable {
     }
 
     public void run () {
-        players.add(new Player("Vlad", 20, false));
-        players.add(new Player("Artur", 21, false));
-        players.add(new Player("Aksana", 22, false));
+        players.add(new Player("Vlad", 40, false));
+        players.add(new Player("Artur", 30, false));
+        players.add(new Player("Aksana", 29, false));
         players.add(new Player("Ura", 25, true));
         players.add(new Player("Denis", 26, true));
         players.add(new Player("Nikolai", 27, true));
         players.add(new Player("Aliaksandr", 28, true));
-        players.add(new Player("Aliaksei", 29, true));
-        players.add(new Player("Lyesha", 30, true));
-        players.add(new Player("Roman", 40, false));
+        players.add(new Player("Aliaksei", 22, true));
+        players.add(new Player("Lyesha", 21, true));
+        players.add(new Player("Roman", 20, false));
         try {
             write();
         } catch (IOException e) {

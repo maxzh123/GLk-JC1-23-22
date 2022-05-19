@@ -19,7 +19,7 @@ public class PlayerReaderTask extends Thread implements Serializable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(sortPlayers);
+     //   System.out.println(sortPlayers);
     }
 
     public ArrayList<Player> read() throws IOException, ClassNotFoundException, InterruptedException {
@@ -34,6 +34,7 @@ public class PlayerReaderTask extends Thread implements Serializable {
                     sortPlayers.add(player);
                 }
             }
+       //     System.out.println(sortPlayers.stream().peek(System.out::println));
             return sortPlayers;
         }
     }
