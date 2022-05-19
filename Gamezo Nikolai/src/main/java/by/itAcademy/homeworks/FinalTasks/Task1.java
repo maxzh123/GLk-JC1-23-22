@@ -16,6 +16,6 @@ public class Task1 {
         } else {
             System.out.println("z = " + z);
         }
-        System.out.println("Среднее арифметическое = "+  (x + y + z) / 3);
+        System.out.println("Среднее арифметическое = " + (x + y + z) / 3);
     }
 }
