@@ -12,24 +12,21 @@ public class Task4 {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         createFile();
         threadPool();
-        stream();
+        outputStream();
     }
 
     public static void threadPool() throws InterruptedException {
         ExecutorService executor = Executors.newFixedThreadPool(4);
+        Thread read = new Thread(new PlayerReaderTask(path));
         for (int i = 1; i <= 20; i++) {
             Thread gen = new Thread(new PlayerGeneratorTask(path));
-            Thread read = new Thread(new PlayerReaderTask(path));
-            gen.start();
-            read.start();
-            gen.join();
-            read.join();
             executor.execute(gen);
+            executor.execute(read);
         }
         executor.shutdown();
     }
 
-    public static void stream() throws IOException, ClassNotFoundException {
+    public static void outputStream() throws IOException, ClassNotFoundException {
         FileInputStream fis = new FileInputStream(path);
         ObjectInputStream ois = new ObjectInputStream(fis);
         ArrayList<Player> players = (ArrayList<Player>) ois.readObject();

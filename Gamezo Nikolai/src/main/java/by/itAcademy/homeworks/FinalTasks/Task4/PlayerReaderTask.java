@@ -20,8 +20,6 @@ public class PlayerReaderTask extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("read");
-      //  System.out.println(sortPlayers);
     }
 
     public ArrayList<Player> readFromFile() throws IOException, ClassNotFoundException, InterruptedException {

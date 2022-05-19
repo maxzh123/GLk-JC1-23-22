@@ -27,7 +27,6 @@ public class PlayerGeneratorTask extends Thread {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("gen");
     }
 
     public String writeToFile () throws IOException {
